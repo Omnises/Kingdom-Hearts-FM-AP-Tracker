@@ -2,3 +2,5 @@ todo.*
 .~lock.*
 *.xcf
 Notes.md
+.vscode
+.gitignore
