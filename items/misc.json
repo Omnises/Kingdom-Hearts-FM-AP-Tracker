@@ -51,6 +51,22 @@
         "overlay_font_size": 15
     },
     {
+        "name": "Mythril",
+        "type": "consumable",
+        "img": "images/misc/mythril.png",
+        "max_quantity": 16,
+        "codes": "mythril",
+        "overlay_font_size": 15
+    },
+    {
+        "name": "Orichalcum",
+        "type": "consumable",
+        "img": "images/misc/bottle.png",
+        "max_quantity": 17,
+        "codes": "orichalcum",
+        "overlay_font_size": 15
+    },
+    {
         "name": "Torn Pages",
         "type": "consumable",
         "img": "images/misc/pages.png",

@@ -142,5 +142,11 @@
         "img": "images/worlds/End of the World.png",
         "type": "toggle",
         "codes": "end_of_the_world"
+    },
+    {
+        "name": "Destiny Island",
+        "img": "images/worlds/Destiny Island.png",
+        "type": "toggle",
+        "codes": "destiny_island"
     }
 ]

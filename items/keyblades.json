@@ -66,9 +66,15 @@
         "codes": "wishing_star"
     },
     {
-        "name": "Hundred Acre Wood - Oathkeeper",
+        "name": "Destiny Island - Oathkeeper",
         "img": "images/keyblades/oathkeeper.png",
         "type": "toggle",
         "codes": "oathkeeper"
+    },
+    {
+        "name": "100 Acre Woods - Spell Binder",
+        "img": "images/keyblades/spell_binder.png",
+        "type": "toggle",
+        "codes": "spell_binder"
     }
 ]
