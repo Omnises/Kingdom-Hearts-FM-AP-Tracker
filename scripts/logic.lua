@@ -1,5 +1,5 @@
-WORLDS = {"wonderland", "olympus_coliseum", "deep_jungle", "agrabah", "monstro", "halloween_town", "neverland", "hollow_bastion", "end_of_the_world"}
-KEYBLADES = {"lady_luck", "olympia", "jungle_king", "three_wishes", "wishing_star", "pumpkinhead", "fairy_harp", "divine_rose", "oblivion"}
+WORLDS = {"wonderland", "olympus_coliseum", "deep_jungle", "agrabah", "monstro", "halloween_town", "neverland", "hollow_bastion", "end_of_the_world", "destiny_islands"}
+KEYBLADES = {"lady_luck", "olympia", "jungle_king", "three_wishes", "wishing_star", "pumpkinhead", "fairy_harp", "divine_rose", "oblivion", "oathkeeper"}
 CUPS = {"phil_cup,", "pegasus_cup", "hercules_cup"}
 MAGIC = {"fire", "blizzard", "thunder", "cure", "gravity", "stop", "aero"}
 
@@ -118,6 +118,20 @@ function tt_chests()
 end
 
 function haw_chests()
+    local lock_status = Tracker:FindObjectForCode("keyblade_locks").CurrentStage --- 0 = open, 1 = locked
+
+    if lock_status == 0 then
+        return true
+    elseif lock_status == 1 then
+        if has("spellbinder") then
+            return true
+        end
+    end
+
+    return false
+end
+
+function di_chests()
     local lock_status = Tracker:FindObjectForCode("keyblade_locks").CurrentStage --- 0 = open, 1 = locked
 
     if lock_status == 0 then

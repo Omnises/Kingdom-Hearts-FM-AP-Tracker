@@ -82,5 +82,11 @@
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/end.png"
+    },
+    {
+        "name": "DI",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/destiny_islands.png"
     }
 ]

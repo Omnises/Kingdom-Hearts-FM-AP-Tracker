@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Destiny Islands - Day 1",
+        "children": [
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Log under Bridge",
+                        "ref": "Overview/Destiny Islands - Day 1/Seashore - Log under Bridge"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 949,
+                        "y": 311
+                    }
+                ]
+            },
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Log on Riku's Island",
+                        "ref": "Overview/Destiny Islands - Day 1/Seashore - Log on Riku's Island"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 1122,
+                        "y": 514
+                    }
+                ]
+            },
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Rope",
+                        "ref": "Overview/Destiny Islands - Day 1/Seashore - Rope"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 141,
+                        "y": 161
+                    }
+                ]
+            },
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Cloth",
+                        "ref": "Overview/Destiny Islands - Day 1/Seashore - Cloth"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 462,
+                        "y": 54
+                    }
+                ]
+            }
+        ]
+    }
+]

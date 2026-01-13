@@ -12,11 +12,6 @@
                         "access_rules":["$tt_chests"]
                     },
                     {
-                        "name": "1st District - Talk to Cid",
-                        "chest_unopened_img": "/images/misc/emblem.png",
-                        "chest_opened_img": "/images/misc/emblem_bw.png"
-                    },
-                    {
                         "name": "1st District - Talk to Aerith before Defeating Guard Armor - MISSABLE", 
                         "visibility_rules":["missables_on"],
                         "chest_unopened_img": "/images/misc/emblem.png",
@@ -72,19 +67,10 @@
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
-                        "name": "Defeat Guard Armor",
-                        "chest_unopened_img": "/images/misc/emblem.png",
-                        "chest_opened_img": "/images/misc/emblem_bw.png"
-                    },
-                    {
                         "name": "Guard Armor Rewards",
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
-                        "item_count": 3
-                    },
-                    {
-                        "name": "Defeat Leon - MISSABLE",
-                        "visibility_rules":["missables_on"]
+                        "item_count": 5
                     }
                 ],
                 "map_locations": [
@@ -107,6 +93,18 @@
                         "access_rules":["$tt_chests, ^$tt_balcony_access"]
                     },
                     {
+                        "name": "1st District - Blue Trinity by Exit Door",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png",
+                        "access_rules":["blue_trinity"]
+                    },
+                    {
+                        "name": "3rd District - Blue Trinity",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png",
+                        "access_rules":["blue_trinity"]
+                    },
+                    {
                         "name": "Alleyway - Chest Behind Crates",
                         "access_rules":["$tt_chests, red_trinity"]
                     },
@@ -118,13 +116,21 @@
                         "name": "Secret Waterway - Kairi",
                         "access_rules": ["hollow_bastion, [$world_count:5], $has_emblems"],
                         "chest_unopened_img": "/images/misc/emblem.png",
-                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                        "chest_opened_img": "/images/misc/emblem_bw.png",
+                        "item_count": 2
                     },
                     {
                         "name": "Defeat Opposite Armor",
                         "access_rules": ["red_trinity"],
                         "chest_unopened_img": "/images/misc/emblem.png",
-                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                        "chest_opened_img": "/images/misc/emblem_bw.png",
+                        "item_count": 2
+                    },
+                    {
+                        "name": "Magician's Study - Blue Trinity",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png",
+                        "access_rules":["blue_trinity, fire:1"]
                     },
                     {
                         "name": "Mystical House - Yellow Trinity Chest",
@@ -183,28 +189,13 @@
                         "name": "Postcard Behind Poster"
                     },
                     {
-                        "name": "Synth Log",
-                        "access_rules":["bottle:1, [bottle:6]"]
+                        "name": "Synth Items",
+                        "access_rules":["orichalcum:17, mythril:16"],
+                        "item_count": 33
                     },
                     {
-                        "name": "Synth Cloth",
-                        "access_rules":["bottle:1, [bottle:6]"]
-                    },
-                    {
-                        "name": "Synth Rope",
-                        "access_rules":["bottle:1, [bottle:6]"]
-                    },
-                    {
-                        "name": "Synth Seagull Egg",
-                        "access_rules":["bottle:1, [bottle:6]"]
-                    },
-                    {
-                        "name": "Synth Fish",
-                        "access_rules":["bottle:1, [bottle:6]"]
-                    },
-                    {
-                        "name": "Synth Mushroom",
-                        "access_rules":["bottle:1, [bottle:6]"]
+                        "name": "Synth 15 Items",
+                        "access_rules":["orichalcum:9, mythril:9"]
                     }
                 ],
                 "map_locations": [
@@ -420,6 +411,22 @@
                         "access_rules":["[$jump_or_glide_access]"]
                     },
                     {
+                        "name": "Lotus Forest - Ether Red Flowers",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Lotus Forest - Potion Yellow Flowers",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Lotus Forest - Blue Trinity in Alcove",
+                        "access_rules":["blue_trinity"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
                         "name": "Tea Party Garden - 1st Chest Above Lotus Forest Entrance",
                         "access_rules":["^$wl_tea_party_entrance_access"]
                     },
@@ -430,6 +437,13 @@
                     {
                         "name": "Tea Party Garden - Chest Across Bizarre Room Entrance",
                         "access_rules":["^$wl_tea_party_high_hedge_access"]
+                    },
+                    {
+                        "name": "Tea Party Garden - Chairs",
+                        "item_count": 5,
+                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
                     }
                 ],
                 "map_locations": [
@@ -457,8 +471,15 @@
                         "access_rules":["$access_chests|1, white_trinity"]
                     },
                     {
-                        "name": "Bizarre Room - Lamp Chest",
-                        "access_rules":["$access_chests|1"]
+                        "name": "Lotus Forest - Blue Trinity by Moving Boulder",
+                        "access_rules":["blue_trinity"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Lotus Forest - Elixir Yellow Flower",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Tea Party Garden - Bear and Clock Puzzle Chest",
@@ -479,7 +500,16 @@
                         "name": "Bizarre Room - Seal Keyhole",
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
-                    }
+                    },
+                    {
+                        "name": "Bizarre Room - Lamp Chest",
+                        "access_rules":["$access_chests|1"]
+                    },
+                    {
+                        "name": "Bizarre Room - Flower Pot",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
                 ],
                 "map_locations": [
                     {
@@ -566,7 +596,13 @@
                     {
                         "name": "Cliff - Right Chest",
                         "access_rules":["$access_chests|3"]
-                    }
+                    },
+                    {
+                        "name": "Treetop - Green Trinity",
+                        "access_rules":["green_trinity"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
                 ],
                 "map_locations": [
                     {
@@ -984,6 +1020,14 @@
                         "name": "Palace Gates - Defeat Pot Centipede"
                     },
                     {
+                        "name": "Bazaar - Blue Trinity",
+                        "access_rules": ["blue_trinity"]
+                    },
+                    {
+                        "name": "Treasure Room - Red Trinity",
+                        "access_rules": ["red_trinity"]
+                    },
+                    {
                         "name": "Lamp Chamber - Defeat Jafar"
                     },
                     {
@@ -1119,6 +1163,18 @@
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "access_rules":["monstro, [$world_count:2]"],
                 "sections": [
+                    {
+                        "name": "Mouth - Blue Trinity",
+                        "access_rules":["blue_trinity"]
+                    },
+                    {
+                        "name": "Chamber 5 - Blue Trinity",
+                        "access_rules":["blue_trinity"]
+                    },
+                    {
+                        "name": "Throat - Blue Trinity",
+                        "access_rules":["blue_trinity, ^$mon_parasite_ii_access"]
+                    },
                     {
                         "name": "Bowels - Defeat Parasite Cage"
                     },
@@ -1499,6 +1555,10 @@
                         "item_count": 3
                     },
                     {
+                        "name": "Clock Tower - Doors",
+                        "item_count": 12
+                    },
+                    {
                         "name": "Clock Tower - Defeat Phantom",
                         "access_rules":["[$has_lv_magic|2], [$has_defenses], hollow_bastion, [$world_count:5], $has_emblems"],
                         "visibility_rules":["superbosses_on", "door_superbosses"]
@@ -1573,6 +1633,12 @@
                     {
                         "name": "Dungeon - Chest in Corner",
                         "access_rules":["$access_chests|8"]
+                    },
+                    {
+                        "name": "Dungeon - Blue Trinity",
+                        "access_rules":["blue_trinity"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Library - Chest on Bookshelf",
@@ -1667,6 +1733,12 @@
                         "access_rules":["$access_chests|8, $has_emblems"]
                     },
                     {
+                        "name": "Great Crest - Blue Trinity",
+                        "access_rules":["blue_trinity, $has_emblems"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
                         "name": "Great Crest - Chest after Battle Platform",
                         "access_rules":["$access_chests|8, $has_emblems"]
                     },
@@ -1681,6 +1753,12 @@
                     {
                         "name": "High Tower - Chest Above Sliding Blocks",
                         "access_rules":["$access_chests|8, $has_emblems"]
+                    },
+                    {
+                        "name": "Lift Stop - Examine Node",
+                        "access_rules":["$has_emblems"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Lift Stop - Gravity Chest in Library Node After High Tower Switch",
@@ -1995,6 +2073,62 @@
                         "map": "OV",
                         "x": 225,
                         "y": 150
+                    }
+                ]
+            },
+            {
+                "name": "Destiny Islands - Day 1",
+                "access_rules":["destiny_islands"],
+                "visibility_rules":[""],
+                "chest_unopened_img": "/images/misc/emblem.png",
+                "chest_opened_img": "/images/misc/emblem_bw.png",
+                "sections": [
+                    {
+                        "name": "Seashore - Log under Bridge"
+                    },
+                    {
+                        "name": "Seashore - Log on Riku's Island"
+                    },
+                    {
+                        "name": "Seashore - Cloth"
+                    },
+                    {
+                        "name": "Seashore - Rope"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OV",
+                        "x": 170,
+                        "y": 470
+                    }
+                ]
+            },
+            {
+                "name": "Destiny Islands - Day 2",
+                "access_rules":["destiny_islands"],
+                "visibility_rules":[""],
+                "chest_unopened_img": "/images/misc/emblem.png",
+                "chest_opened_img": "/images/misc/emblem_bw.png",
+                "sections": [
+                    {
+                        "name": "Seashore - Log under Bridge"
+                    },
+                    {
+                        "name": "Seashore - Log on Riku's Islands"
+                    },
+                    {
+                        "name": "Seashore - Cloth"
+                    },
+                    {
+                        "name": "Seashore - Rope"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OV",
+                        "x": 200,
+                        "y": 470
                     }
                 ]
             }

@@ -621,6 +621,38 @@
                 ]
             },
             {
+                "name": "Bazaar",
+                "sections": [
+                    {
+                        "name": "Blue Trinity",
+                        "ref": "Overview/Agrabah - Events/Bazaar - Blue Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AG",
+                        "x": 655,
+                        "y": 384
+                    }
+                ]
+            },
+            {
+                "name": "Treasure Room",
+                "sections": [
+                    {
+                        "name": "Red Trinity",
+                        "ref": "Overview/Agrabah - Events/Treasure Room - Red Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "AG_Cave",
+                        "x": 156,
+                        "y": 214
+                    }
+                ]
+            },
+            {
                 "name": "Lamp Chamber",
                 "sections": [
                     {

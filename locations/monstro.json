@@ -345,6 +345,54 @@
         "name": "Monstro - Events",
         "children": [
             {
+                "name": "Mouth",
+                "sections": [
+                    {
+                        "name": "Blue Trinity",
+                        "ref": "Overview/Monstro - Events/Mouth - Blue Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Mon",
+                        "x": 460,
+                        "y": 108
+                    }
+                ]
+            },
+            {
+                "name": "Chamber 5",
+                "sections": [
+                    {
+                        "name": "Blue Trinity",
+                        "ref": "Overview/Monstro - Events/Chamber 5 - Blue Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Mon",
+                        "x": 740,
+                        "y": 607
+                    }
+                ]
+            },
+            {
+                "name": "Throat",
+                "sections": [
+                    {
+                        "name": "Blue Trinity",
+                        "ref": "Overview/Monstro - Events/Throat - Blue Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Mon",
+                        "x": 200,
+                        "y": 921
+                    }
+                ]
+            },
+            {
                 "name": "Defeat Parasite Cage",
                 "sections": [
                     {

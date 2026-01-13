@@ -823,6 +823,54 @@
                         "y": 363
                     }
                 ]
+            },
+            {
+                "name": "Dungeon",
+                "sections": [
+                    {
+                        "name": "Blue Trinity",
+                        "ref": "Overview/Hollow Bastion - Before Emblems/Dungeon - Blue Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "HB",
+                        "x": 424,
+                        "y": 411
+                    }
+                ]
+            },
+            {
+                "name": "Great Crest",
+                "sections": [
+                    {
+                        "name": "Blue Trinity",
+                        "ref": "Overview/Hollow Bastion - After Emblems/Great Crest - Blue Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "HB",
+                        "x": 855,
+                        "y": 945
+                    }
+                ]
+            },
+            {
+                "name": "Lift Stop",
+                "sections": [
+                    {
+                        "name": "Examine Node",
+                        "ref": "Overview/Hollow Bastion - After Emblems/Lift Stop - Examine Node"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "HB",
+                        "x": 751,
+                        "y": 585
+                    }
+                ]
             }
         ]
     }

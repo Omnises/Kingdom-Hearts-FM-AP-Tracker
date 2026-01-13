@@ -1,7 +1,7 @@
 [
     {
         "name": "Wonderland",
-        "type": "toggle",
+        "type": "consumable",
         "codes": "wonderland",
         "img": "images/worlds/Wonderland.png"
     },
@@ -13,7 +13,7 @@
     },
     {
         "name": "Deep Jungle",
-        "type": "toggle",
+        "type": "consumable",
         "codes": "deep_jungle",
         "img": "images/worlds/Deep Jungle.png"
     },
@@ -25,7 +25,7 @@
     },
     {
         "name": "Olympus Coliseum",
-        "type": "toggle",
+        "type": "consumable",
         "img": "images/worlds/Olympus Coliseum KH1.png",
         "codes": "olympus_coliseum"
     },
@@ -61,7 +61,7 @@
     },
     {
         "name": "Halloween Town",
-        "type": "toggle",
+        "type": "consumable",
         "codes": "halloween_town",
         "img": "images/worlds/Halloween Town.png"
     },
@@ -79,7 +79,7 @@
     },
     {
         "name": "Atlantica",
-        "type": "toggle",
+        "type": "consumable",
         "img": "images/worlds/Atlantica KH1.png",
         "codes": "atlantica"
     },
@@ -97,7 +97,7 @@
     },
     {
         "name": "Hollow Bastion",
-        "type": "toggle",
+        "type": "consumable",
         "codes": "hollow_bastion",
         "img": "images/worlds/Hollow Bastion.png"
     },
@@ -142,5 +142,11 @@
         "img": "images/worlds/End of the World.png",
         "type": "toggle",
         "codes": "end_of_the_world"
+    },
+    {
+        "name": "Destiny Islands",
+        "img": "images/worlds/Destiny Islands.png",
+        "type": "toggle",
+        "codes": "destiny_islands"
     }
 ]

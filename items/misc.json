@@ -67,27 +67,38 @@
         "overlay_font_size": 15
     },
     {
-        "name": "Single Puppies",
-        "type": "consumable",
-        "max_quantity": 99,
-        "codes": "puppies_single"
-    },
-    {
-        "name": "Triplet Puppies",
-        "type": "consumable",
-        "max_quantity": 33,
-        "codes": "puppies_triplets"
-    },
-    {
-        "name": "All Puppies",
-        "type": "toggle",
-        "codes": "puppies_all"
-    },
-    {
         "name": "Puppies",
         "type": "consumable",
         "img": "images/misc/puppies.png",
         "max_quantity": 99,
         "codes": "puppies"
+    },
+    {
+        "name": "Lucky Emblem",
+        "type": "consumable",
+        "img": "images/misc/lucky_emblem.png",
+        "max_quantity": 99,
+        "codes": "lucky_emblem"
+    },
+    {
+        "name": "Raft Materials",
+        "type": "consumable",
+        "img": "images/misc/Raft Supplies.png",
+        "max_quantity": 99,
+        "codes": "raft_materials"
+    },
+    {
+        "name": "Mythril",
+        "type": "consumable",
+        "img": "images/misc/mythril.png",
+        "max_quantity": 99,
+        "codes": "mythril"
+    },
+    {
+        "name": "Orichalcum",
+        "type": "consumable",
+        "img": "images/misc/orichalcum.png",
+        "max_quantity": 99,
+        "codes": "orichalcum"
     }
 ]

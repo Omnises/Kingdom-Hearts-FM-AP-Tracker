@@ -5,8 +5,8 @@
         "item_size": "40,40",
         "rows": [
             ["wonderland", "olympus_coliseum", "deep_jungle"],
-            ["agrabah", "monstro", "atlantica"],
-            ["halloween_town","neverland", "hollow_bastion"]
+            ["agrabah", "monstro", "halloween_town", "atlantica"],
+            ["destiny_islands", "neverland", "hollow_bastion"]
         ]
     },
     "worlds": {
@@ -14,9 +14,9 @@
         "item_margin": "5,5",
         "item_size": "40,40",
         "rows": [
-            ["footprints", "slides"],
-            ["entry_pass", "phil_cup", "pegasus_cup", "hercules_cup"],
-            ["forget_me_not", "jack_box", "trident", "theon_6"]
+            ["footprints", "entry_pass", "slides"],
+            ["forget_me_not", "jack_box", "trident", "theon_6"],
+            ["phil_cup", "pegasus_cup", "hercules_cup"]
         ]
     },
     "keyblade_unlocks": {
@@ -26,7 +26,7 @@
         "rows": [
             ["lady_luck", "olympia", "jungle_king", "three_wishes"],
             ["wishing_star", "pumpkinhead", "fairy_harp", "divine_rose"],
-            ["lionheart", "oathkeeper", "oblivion"]
+            ["spellbinder", "lionheart", "oathkeeper", "oblivion"]
         ]
     },
     "abilities": {
@@ -36,8 +36,8 @@
         "rows": [
             ["fire", "blizzard", "thunder", "cure", "gravity", "stop", "aero"],
             ["simba", "bambi", "genie", "dumbo", "tinkerbell", "mushu"],
-            ["high_jump", "glide", "mermaid_kick"],
-            ["blue_trinity", "red_trinity", "green_trinity", "yellow_trinity", "white_trinity"]
+            ["blue_trinity", "red_trinity", "green_trinity", "yellow_trinity", "white_trinity"],
+            ["high_jump", "glide", "mermaid_kick"]
         ]
     },
     "collectibles": {
@@ -45,8 +45,9 @@
         "item_margin": "5,5",
         "item_size": "40,40",
         "rows": [
-            ["postcard", "bottle", "torn_page", "report", "puppies"],
-            ["emblem_fountain", "emblem_flame", "emblem_chest", "emblem_statue"]
+            ["lucky_emblem", "raft_materials", "puppies"],
+            ["emblem_fountain", "emblem_flame", "emblem_chest", "emblem_statue"],
+            ["postcard", "torn_page", "orichalcum", "mythril"]
         ]
     }
 }

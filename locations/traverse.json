@@ -296,22 +296,6 @@
         "name": "Traverse Town Events",
         "children": [
             {
-                "name": "1st District",
-                "sections": [
-                    {
-                        "name": "Talk to Cid",
-                        "ref": "Overview/Traverse Town - 1st Visit/1st District - Talk to Cid"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "TT",
-                        "x": 494,
-                        "y": 589
-                    }
-                ]
-            },
-            {
                 "name": "1st District", 
                 "sections": [
                     {
@@ -369,10 +353,6 @@
                     {
                         "name": "Guard Armor Rewards",
                         "ref": "Overview/Traverse Town - 1st Visit/Guard Armor Rewards"
-                    },
-                    {
-                        "name": "Defeat Leon - MISSABLE",
-                        "ref": "Overview/Traverse Town - 1st Visit/Defeat Leon - MISSABLE"
                     }
                 ],
                 "map_locations": [
@@ -380,6 +360,38 @@
                         "map": "TT",
                         "x": 452,
                         "y": 680
+                    }
+                ]
+            },
+            {
+                "name": "1st District",
+                "sections": [
+                    {
+                        "name": "Blue Trinity by Exit Door",
+                        "ref": "Overview/Traverse Town - Further Visits/1st District - Blue Trinity by Exit Door"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                        "x": 454,
+                        "y": 707
+                    }
+                ]
+            },
+            {
+                "name": "3rd District",
+                "sections": [
+                    {
+                        "name": "Blue Trinity",
+                        "ref": "Overview/Traverse Town - Further Visits/3rd District - Blue Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                        "x": 850,
+                        "y": 535
                     }
                 ]
             },
@@ -420,6 +432,22 @@
                         "map": "TT",
                         "x": 754,
                         "y": 726
+                    }
+                ]
+            },
+            {
+                "name": "Magician's Study",
+                "sections": [
+                    {
+                        "name": "Blue Trinity",
+                        "ref": "Overview/Traverse Town - Further Visits/Magician's Study - Blue Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                        "x": 758,
+                        "y": 762
                     }
                 ]
             },
@@ -533,28 +561,13 @@
                 "name": "Moogle Workshop",
                 "sections": [
                     {
-                        "name": "Synth Log",
-                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth Log"
+                        "name": "Synth 15 Items",
+                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth 15 Items"
                     },
                     {
-                        "name": "Synth Cloth",
-                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth Cloth"
-                    },
-                    {
-                        "name": "Synth Rope",
-                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth Rope"
-                    },
-                    {
-                        "name": "Synth Seagull Egg",
-                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth Seagull Egg"
-                    },
-                    {
-                        "name": "Synth Fish",
-                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth Fish"
-                    },
-                    {
-                        "name": "Synth Mushroom",
-                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth Mushroom"
+                        "name": "Synth Items",
+                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth Items",
+                        "item_count": 33
                     }
                 ],
                 "map_locations": [
@@ -564,7 +577,8 @@
                         "y": 745
                     }
                 ]
-            }
+            },
+            
         ]
     },
     {
