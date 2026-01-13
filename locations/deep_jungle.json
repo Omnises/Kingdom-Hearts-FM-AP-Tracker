@@ -507,6 +507,22 @@
                         "y": 515
                     }
                 ]
+            },
+            {
+                "name": "Treetop",
+                "sections": [
+                    {
+                        "name": "Green Trinity",
+                        "ref": "Overview/Deep Jungle - Before Slides/Treetop - Green Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DJ",
+                        "x": 280,
+                        "y": 672
+                    }
+                ]
             }
         ]
     },

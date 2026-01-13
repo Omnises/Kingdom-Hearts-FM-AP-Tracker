@@ -99,6 +99,13 @@
                     "type": "map",
                     "maps": ["100Acre"]
                 }
+            },
+            {
+                "title": "Destiny Islands",
+                "content": {
+                    "type": "map",
+                    "maps": ["DI"]
+                }
             }
         ]
     }

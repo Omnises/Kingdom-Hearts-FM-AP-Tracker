@@ -348,6 +348,128 @@
                         "y": 570
                     }
                 ]
+            },
+            {
+                "name": "Bizarre Room",
+                "sections": [
+                    {
+                        "name": "Flower Pot",
+                        "ref": "Overview/Wonderland - After Footprints/Bizarre Room - Flower Pot"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 764,
+                        "y": 543
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest",
+                "sections": [
+                    {
+                        "name": "Ether Red Flowers",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Ether Red Flowers"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 298,
+                        "y": 226
+                    },
+                    {
+                        "map": "WL",
+                        "x": 155,
+                        "y": 262
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest",
+                "sections": [
+                    {
+                        "name": "Potion Yellow Flowers",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Potion Yellow Flowers"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 296,
+                        "y": 155
+                    },
+                    {
+                        "map": "WL",
+                        "x": 322,
+                        "y": 40
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest",
+                "sections": [
+                    {
+                        "name": "Elixir Yellow Flower",
+                        "ref": "Overview/Wonderland - After Footprints/Lotus Forest - Elixir Yellow Flower"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 300,
+                        "y": 52
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest",
+                "sections": [
+                    {
+                        "name": "Blue Trinity in Alcove",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Blue Trinity in Alcove"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 270,
+                        "y": 159
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest",
+                "sections": [
+                    {
+                        "name": "Blue Trinity by Moving Boulder",
+                        "ref": "Overview/Wonderland - After Footprints/Lotus Forest - Blue Trinity by Moving Boulder"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 117,
+                        "y": 388
+                    }
+                ]
+            },
+            {
+                "name": "Tea Party Garden",
+                "sections": [
+                    {
+                        "name": "Chairs",
+                        "ref": "Overview/Wonderland - Before Footprints/Tea Party Garden - Chairs"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 338,
+                        "y": 574
+                    }
+                ]
             }
         ]
     }

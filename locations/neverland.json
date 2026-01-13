@@ -251,6 +251,22 @@
                 "name": "Clock Tower",
                 "sections": [
                     {
+                        "name": "Doors",
+                        "ref": "Overview/Neverland - Events/Clock Tower - Doors"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "NL",
+                        "x": 731,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "name": "Clock Tower",
+                "sections": [
+                    {
                         "name": "Defeat Phantom",
                         "ref": "Overview/Neverland - Events/Clock Tower - Defeat Phantom"
                     }
