@@ -78,6 +78,12 @@
         "img": "images/maps/100acre.png"
     },
     {
+        "name": "DI",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/destiny_island.png"
+    },
+    {
         "name": "EOTW",
         "location_size": 12,
         "location_border_thickness": 2,

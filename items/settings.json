@@ -149,6 +149,9 @@
         ]
     },
     {
+        "name": "Destiny Island"
+    },
+    {
         "name": "Manual - Missable Checks",
         "type": "progressive",
         "allow_disabled": false,
