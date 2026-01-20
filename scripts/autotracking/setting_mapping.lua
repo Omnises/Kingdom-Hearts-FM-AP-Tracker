@@ -18,13 +18,12 @@ SLOT_CODES =
             [true] = 1  -- 100 Acre On
         }
     },
-    advanced_logic =
+    logic_difficulty =
     {
-        code = "advanced_logic",
+        code = "logic_difficulty",
         mapping =
         {
-            [false] = 0, -- Advanced Logic Off
-            [true] = 1  -- Advanced Logic On
+            
         }
     }
 }

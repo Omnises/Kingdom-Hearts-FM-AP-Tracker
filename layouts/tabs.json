@@ -94,6 +94,13 @@
                 }
             },
             {
+                "title": "Destiny Islands",
+                "content": {
+                    "type": "map",
+                    "maps": ["DI"]
+                }
+            },
+            {
                 "title": "100 Acre Wood",
                 "content": {
                     "type": "map",

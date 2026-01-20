@@ -1,5 +1,9 @@
 WORLDS = {"wonderland", "olympus_coliseum", "deep_jungle", "agrabah", "monstro", "halloween_town", "neverland", "hollow_bastion", "end_of_the_world", "destiny_islands"}
+<<<<<<< HEAD
+KEYBLADES = {"lady_luck", "olympia", "jungle_king", "three_wishes", "wishing_star", "pumpkinhead", "fairy_harp", "divine_rose", "oblivion", "spell_binder"}
+=======
 KEYBLADES = {"lady_luck", "olympia", "jungle_king", "three_wishes", "wishing_star", "pumpkinhead", "fairy_harp", "divine_rose", "oblivion", "oathkeeper"}
+>>>>>>> ab725a4217bf20380323e801b505bf0d96b146b3
 CUPS = {"phil_cup,", "pegasus_cup", "hercules_cup"}
 MAGIC = {"fire", "blizzard", "thunder", "cure", "gravity", "stop", "aero"}
 

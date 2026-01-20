@@ -1,8 +1,11 @@
 ITEM_MAPPING = {
     [2641009] = {"torn_page", "consumable"},
+<<<<<<< HEAD
+=======
     [2641010] = {"final_door_key", "toggle"},
     [2641011] = {"destiny_islands", "toggle"},
     [2641012] = {"raft_materials", "consumable"},
+>>>>>>> ab725a4217bf20380323e801b505bf0d96b146b3
     [2641086] = {"jungle_king", "toggle"},
     [2641087] = {"three_wishes", "toggle"},
     [2641088] = {"fairy_harp", "toggle"},

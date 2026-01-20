@@ -75,9 +75,9 @@
         "overlay_font_size": 15
     },
     {
-        "name": "Ansem's Reports",
+        "name": "Lucky Emblems",
         "type": "consumable",
-        "img": "images/misc/report.png",
+        "img": "images/misc/lucky_emblem.png",
         "codes": "report",
         "max_quantity": 13,
         "overlay_font_size": 15

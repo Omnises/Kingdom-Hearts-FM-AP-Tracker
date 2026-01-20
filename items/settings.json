@@ -211,36 +211,48 @@
         "loop": true,
         "stages": [
             {
-                "img": "/images/settings/advanced_logic.png",
+                "img": "/images/settings/beginner_logic.png",
                 "img_mods": "@disabled",
-                "codes": "advanced_logic, advanced_logic_off",
+                "codes": "logic_difficulty, logic_difficulty_beginner",
                 "inherit_codes": false,
-                "name": "Advanced Logic Off"
+                "name": "Logic Difficulty - Beginner"
             },
             {
-                "img": "/images/settings/advanced_logic.png",
-                "codes": "advanced_logic, advanced_logic_on",
+                "img": "/images/settings/normal_logic.png",
+                "codes": "logic_difficulty, logic_difficulty_normal",
                 "inherit_codes": false,
-                "name": "Advanced Logic On"
+                "name": "Logic Difficulty - Normal"
+            },
+            {
+                "img": "/images/settings/proud_logic.png",
+                "codes": "logic_difficulty, logic_difficulty_proud",
+                "inherit_codes": false,
+                "name": "Logic Difficulty - Proud"
+            },
+            {
+                "img": "/images/settings/minimal_logic.png",
+                "codes": "minimal_logic, minimal_logic_on",
+                "inherit_codes": false,
+                "name": "Logic Difficulty - Minimal"
             }
         ]
     },
     {
-        "name": "End of the World - Reports Requirement",
+        "name": "End of the World - Lucky Emblem Requirement",
         "img": "/images/settings/eotw.png",
         "codes": "eotw_req",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 14,
+        "max_quantity": 20,
         "initial_quantity": 4
     },
     {
-        "name": "Final Rest Door - Reports Requirement",
+        "name": "Final Rest Door - Lucky Emblem Requirement",
         "img": "/images/settings/door.png",
         "codes": "door_req",
         "type": "consumable",
         "min_quantity": 0,
-        "max_quantity": 14,
+        "max_quantity": 20,
         "initial_quantity": 4
     },
     {

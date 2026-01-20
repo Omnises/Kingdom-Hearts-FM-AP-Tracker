@@ -1,0 +1,243 @@
+[
+    {
+        "name": "Destiny Islands Day 1",
+        "children": [
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Log under Bridge",
+                        "ref": "Overview/Destiny Islands/Seashore - Log under Bridge"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Log on Riku's Island",
+                        "ref": "Overview/Destiny Islands/Seashore - Log on Riku's Island"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Gather Cloth",
+                        "ref": "Overview/Destiny Islands/Seashore - Gather Cloth"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Gather Rope",
+                        "ref": "Overview/Destiny Islands/Seashore - Gather Rope"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Destiny Islands Day 2",
+        "children": [
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Capture Fish 1",
+                        "ref": "Overview/Destiny Islands/Seashore - Capture Fish 1"
+                    },
+                    {
+                        "name": "Capture Fish 2",
+                        "ref": "Overview/Destiny Islands/Seashore - Capture Fish 2"
+                    },
+                    {
+                        "name": "Capture Fish 3",
+                        "ref": "Overview/Destiny Islands/Seashore - Capture Fish 3"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Gather Seagull Egg",
+                        "ref": "Overview/Destiny Islands/Seashore - Gather Seagull Egg"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Gather Seagull Egg",
+                        "ref": "Overview/Destiny Islands/Seashore - Gather Seagull Egg"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Seashore",
+                "sections": [
+                    {
+                        "name": "Gather Drinking Water",
+                        "ref": "Overview/Destiny Islands/Seashore - Gather Drinking Water"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Secret Place",
+                "sections": [
+                    {
+                        "name": "Gather Mushroom",
+                        "ref": "Overview/Destiny Islands/Secret Cove - Gather Mushroom"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Cove",
+                "sections": [
+                    {
+                        "name": "Gather Mushroom Near Zip Line",
+                        "ref": "Overview/Destiny Islands/Cove - Gather Mushroom Near Zip Line"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Cove",
+                "sections": [
+                    {
+                        "name": "Gather Mushroom in Small Cave",
+                        "ref": "Overview/Destiny Islands/Cove - Gather Mushroom in Small Cave"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "name": "Cove",
+                "sections": [
+                    {
+                        "name": "Talk to Kairi",
+                        "ref": "Overview/Destiny Islands/Cove - Talk to Kairi"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Destiny Islands Chest",
+        "children": [
+            {
+                "name": "Cove",
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "ref": "Overview/Destiny Islands/Cove - Chest"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

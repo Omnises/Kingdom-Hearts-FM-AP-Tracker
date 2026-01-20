@@ -147,6 +147,16 @@
         "name": "Destiny Islands",
         "img": "images/worlds/Destiny Islands.png",
         "type": "toggle",
+<<<<<<< HEAD
+        "codes": "destiny_island"
+    },
+    {
+        "name": "Day 2",
+        "img": "images/worlds/Destiny Islands.png",
+        "type": "toggle",
+        "codes": "day2"
+=======
         "codes": "destiny_islands"
+>>>>>>> ab725a4217bf20380323e801b505bf0d96b146b3
     }
 ]
