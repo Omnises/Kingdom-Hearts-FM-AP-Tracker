@@ -24,7 +24,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Cliff Left of Pooh",
                 "sections": [
                     {
                         "name": "Chest on Cliff on Left Side",
@@ -40,7 +40,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Tree Alcove Above Seesaw",
                 "sections": [
                     {
                         "name": "Chest in Tree Alcove",
@@ -56,7 +56,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Under Giant Pot",
                 "sections": [
                     {
                         "name": "Chest in Tree Stump",
@@ -77,7 +77,7 @@
         "name": "100 Acre Events",
         "children": [
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Rare Nut 1",
                 "sections": [
                     {
                         "name": "Turn in Rare Nut #1",
@@ -93,7 +93,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Rare Nut 2",
                 "sections": [
                     {
                         "name": "Turn in Rare Nut #2",
@@ -109,7 +109,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Rare Nut 3",
                 "sections": [
                     {
                         "name": "Turn in Rare Nut #3",
@@ -125,7 +125,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Rare Nut 4",
                 "sections": [
                     {
                         "name": "Turn in Rare Nut #4",
@@ -141,7 +141,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Rare Nut 5",
                 "sections": [
                     {
                         "name": "Turn in Rare Nut #5",
@@ -157,34 +157,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot - Turn in Rare Nuts",
-                "sections": [
-                    {
-                        "ref": "Overview/Hundred Acre Wood/Bouncing Spot - Turn in Rare Nut #1"
-                    },
-                    {
-                        "ref": "Overview/Hundred Acre Wood/Bouncing Spot - Turn in Rare Nut #2"
-                    },
-                    {
-                        "ref": "Overview/Hundred Acre Wood/Bouncing Spot - Turn in Rare Nut #3"
-                    },
-                    {
-                        "ref": "Overview/Hundred Acre Wood/Bouncing Spot - Turn in Rare Nut #4"
-                    },
-                    {
-                        "ref": "Overview/Hundred Acre Wood/Bouncing Spot - Turn in Rare Nut #5"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "100Acre",
-                        "x": 505,
-                        "y": 862
-                    }
-                ]
-            },
-            {
-                "name": "Pooh's House",
+                "name": "Pooh's House - Owl",
                 "sections": [
                     {
                         "name": "Talk to Owl",
@@ -200,7 +173,7 @@
                 ]
             },
             {
-                "name": "Pooh's House",
+                "name": "Pooh's House - Firepit",
                 "sections": [
                     {
                         "name": "Light the Fire",
@@ -216,7 +189,7 @@
                 ]
             },
             {
-                "name": "Pooh's House",
+                "name": "Pooh's House - Inside",
                 "sections": [
                     {
                         "name": "Open Cabinet",
@@ -232,10 +205,10 @@
                 ]
             },
             {
-                "name": "Pooh's House",
+                "name": "Pooh's House - Chimney",
                 "sections": [
                     {
-                        "name": "Strike Chimney",
+                        "name": "Strike Chimney on Roof/Collect Inside House",
                         "ref": "Overview/Hundred Acre Wood/Pooh's House - Strike Chimney"
                     }
                 ],
@@ -253,7 +226,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Log Near Pooh",
                 "sections": [
                     {
                         "name": "Break the Log",
@@ -269,7 +242,7 @@
                 ]
             },
             {
-                "name": "Bouncing Spot",
+                "name": "Bouncing Spot - Hole in Upper Tree By Pooh",
                 "sections": [
                     {
                         "name": "Use the Seesaw",
@@ -288,8 +261,6 @@
     },
     {
         "name": "100 Acre Overworld",
-        "access_rules":["fire:1"],
-        "visibility_rules":["100_acre_on"],
         "chest_unopened_img": "/images/misc/emblem.png",
         "chest_opened_img": "/images/misc/emblem_bw.png",
         "children": [

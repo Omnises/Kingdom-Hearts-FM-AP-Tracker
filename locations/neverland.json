@@ -3,7 +3,7 @@
         "name": "Neverland - Chests",
         "children": [
             {
-                "name": "Pirate Ship",
+                "name": "Pirate Ship - White Trinity",
                 "sections": [
                     {
                         "name": "White Trinity Chest on Deck",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "Pirate Ship",
+                "name": "Pirate Ship - Crows Nest",
                 "sections": [
                     {
                         "name": "Chest in Crows Nest",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "Hold",
+                "name": "Hold 4 - Right",
                 "sections": [
                     {
                         "name": "Right Blue Chest",
@@ -51,7 +51,7 @@
                 ]
             },
             {
-                "name": "Hold",
+                "name": "Hold 4 - Left",
                 "sections": [
                     {
                         "name": "Left Blue Chest",
@@ -99,7 +99,7 @@
                 ]
             },
             {
-                "name": "Hold",
+                "name": "Hold 2 - Beam Right",
                 "sections": [
                     {
                         "name": "1st Chest on Beam",
@@ -115,7 +115,7 @@
                 ]
             },
             {
-                "name": "Clock Tower",
+                "name": "Clock Tower - Walkway Corner",
                 "sections": [
                     {
                         "name": "Chest",
@@ -131,7 +131,7 @@
                 ]
             },
             {
-                "name": "Hold",
+                "name": "Hold 2 - Beam Left",
                 "sections": [
                     {
                         "name": "2nd Chest on Beam",
@@ -147,7 +147,7 @@
                 ]
             },
             {
-                "name": "Hold",
+                "name": "Hold 4 - Near Wall",
                 "sections": [
                     {
                         "name": "Green Chest",
@@ -163,7 +163,7 @@
                 ]
             },
             {
-                "name": "Captain's Cabin",
+                "name": "Captain's Cabin - On Bed",
                 "sections": [
                     {
                         "name": "Chest",
@@ -179,7 +179,7 @@
                 ]
             },
             {
-                "name": "Hold",
+                "name": "Hold 4 - On Shelf",
                 "sections": [
                     {
                         "name": "Red Chest",
@@ -200,7 +200,7 @@
         "name": "Neverland - Events",
         "children": [
             {
-                "name": "Captain's Cabin",
+                "name": "Captain's Cabin - Anti Sora",
                 "sections": [
                     {
                         "name": "Defeat Anti Sora",
@@ -216,11 +216,15 @@
                 ]
             },
             {
-                "name": "Pirate Ship",
+                "name": "Pirate Ship - Deck",
                 "sections": [
                     {
                         "name": "Encounter Captain Hook",
                         "ref": "Overview/Neverland - Events/Pirate Ship - Encounter Captain Hook"
+                    },
+                    {
+                        "name": "Defeat Captain Hook",
+                        "ref": "Overview/Neverland - Events/Pirate Ship - Defeat Captain Hook"
                     }
                 ],
                 "map_locations": [
@@ -232,11 +236,15 @@
                 ]
             },
             {
-                "name": "Clock Tower",
+                "name": "Clock Tower - Keyhole",
                 "sections": [
                     {
                         "name": "Seal Keyhole",
                         "ref": "Overview/Neverland - Events/Clock Tower - Seal Keyhole"
+                    },
+                    {
+                        "name": "Seal Keyhole Navi-G Piece",
+                        "ref": "Overview/Neverland - Events/Clock Tower - Seal Keyhole Navi-G Piece"
                     }
                 ],
                 "map_locations": [
@@ -248,7 +256,7 @@
                 ]
             },
             {
-                "name": "Clock Tower",
+                "name": "Clock Tower - Rooftop Doors",
                 "sections": [
                     {
                         "name": "Doors",
@@ -264,7 +272,7 @@
                 ]
             },
             {
-                "name": "Clock Tower",
+                "name": "Clock Tower - Phantom",
                 "sections": [
                     {
                         "name": "Defeat Phantom",
@@ -276,22 +284,6 @@
                         "map": "NL",
                         "x": 634,
                         "y": 259
-                    }
-                ]
-            },
-            {
-                "name": "Pirate Ship",
-                "sections": [
-                    {
-                        "name": "Defeat Captain Hook",
-                        "ref": "Overview/Neverland - Events/Pirate Ship - Defeat Captain Hook"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "NL",
-                        "x": 438,
-                        "y": 177
                     }
                 ]
             }

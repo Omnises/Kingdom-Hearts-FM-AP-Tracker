@@ -3,7 +3,7 @@
         "name": "Traverse Town Chests",
         "children": [
             {
-                "name": "1st District",
+                "name": "1st District - Accessory Shop Roof",
                 "sections": [
                     {
                         "name": "Accessory Shop Roof Chest",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "1st District",
+                "name": "1st District - Accessory Shop",
                 "sections": [
                     {
                         "name": "Accessory Shop Chest",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "2nd District",
+                "name": "2nd District - Awning",
                 "sections": [
                     {
                         "name": "Boots and Shoes Awning Chest",
@@ -51,7 +51,7 @@
                 ]
             },
             {
-                "name": "2nd District",
+                "name": "2nd District - Rooftops",
                 "sections": [
                     {
                         "name": "Rooftop Chest",
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "name": "2nd District",
+                "name": "2nd District - Ledge Near Gizmo Shop",
                 "sections": [
                     {
                         "name": "Gizmo Shop Facade Chest",
@@ -83,7 +83,7 @@
                 ]
             },
             {
-                "name": "Alleyway",
+                "name": "Alleyway - Balcony Near Waterway",
                 "sections": [
                     {
                         "name": "Balcony Chest",
@@ -99,7 +99,7 @@
                 ]
             },
             {
-                "name": "Alleyway",
+                "name": "Alleyway - Balcony Near Blue Room",
                 "sections": [
                     {
                         "name": "Blue Room Awning Chest",
@@ -115,7 +115,7 @@
                 ]
             },
             {
-                "name": "Alleyway",
+                "name": "Alleyway - Corner",
                 "sections": [
                     {
                         "name": "Corner Chest",
@@ -131,7 +131,7 @@
                 ]
             },
             {
-                "name": "Green Room",
+                "name": "Green Room - Clock Puzzle",
                 "sections": [
                     {
                         "name": "Clock Puzzle Chest",
@@ -147,7 +147,7 @@
                 ]
             },
             {
-                "name": "Green Room",
+                "name": "Green Room - Table",
                 "sections": [
                     {
                         "name": "Table Chest",
@@ -179,7 +179,7 @@
                 ]
             },
             {
-                "name": "Secret Waterway",
+                "name": "Secret Waterway - Stairs",
                 "sections": [
                     {
                         "name": "Chest Near Stairs",
@@ -195,7 +195,7 @@
                 ]
             },
             {
-                "name": "1st District",
+                "name": "1st District - Blizzard Candles",
                 "sections": [
                     {
                         "name": "Candle Puzzle Chest",
@@ -211,7 +211,7 @@
                 ]
             },
             {
-                "name": "1st District",
+                "name": "1st District - Blue Trinity Below Balcony",
                 "sections": [
                     {
                         "name": "Blue Trinity Balcony Chest",
@@ -227,7 +227,7 @@
                 ]
             },
             {
-                "name": "Alleyway",
+                "name": "Alleyway - After Red Trinity",
                 "sections": [
                     {
                         "name": "Chest Behind Crates",
@@ -243,7 +243,7 @@
                 ]
             },
             {
-                "name": "Secret Waterway",
+                "name": "Secret Waterway - White Trinity",
                 "sections": [
                     {
                         "name": "White Trinity Chest",
@@ -254,12 +254,12 @@
                     {
                         "map": "TT",
                         "x": 781,
-                        "y": 860
+                        "y": 852
                     }
                 ]
             },
             {
-                "name": "Mystical House",
+                "name": "Mystical House - Back Ledge",
                 "sections": [
                     {
                         "name": "Yellow Trinity Chest",
@@ -275,7 +275,7 @@
                 ]
             },
             {
-                "name": "Mystical House",
+                "name": "Mystical House - Floating Rock",
                 "sections": [
                     {
                         "name": "Glide Chest",
@@ -295,22 +295,6 @@
     {
         "name": "Traverse Town Events",
         "children": [
-            {
-                "name": "1st District", 
-                "sections": [
-                    {
-                        "name": "Talk to Aerith before Defeating Guard Armor - MISSABLE",
-                        "ref": "Overview/Traverse Town - 1st Visit/1st District - Talk to Aerith before Defeating Guard Armor - MISSABLE"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "TT",
-                        "x": 499,
-                        "y": 631
-                    }
-                ]
-            },
             {
                 "name": "Secret Waterway",
                 "sections": [
@@ -332,11 +316,15 @@
                 ]
             },
             {
-                "name": "3rd District",
+                "name": "3rd District - Guard Armor",
                 "sections": [
                     {
                         "name": "Defeat Guard Armor",
                         "ref": "Overview/Traverse Town - 1st Visit/Defeat Guard Armor"
+                    },
+                    {
+                        "name": "Guard Armor Rewards",
+                        "ref": "Overview/Traverse Town - 1st Visit/Guard Armor Rewards"
                     }
                 ],
                 "map_locations": [
@@ -348,23 +336,7 @@
                 ]
             },
             {
-                "name": "1st District",
-                "sections": [
-                    {
-                        "name": "Guard Armor Rewards",
-                        "ref": "Overview/Traverse Town - 1st Visit/Guard Armor Rewards"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "TT",
-                        "x": 452,
-                        "y": 680
-                    }
-                ]
-            },
-            {
-                "name": "1st District",
+                "name": "1st District - Blue Trinity Near Exit",
                 "sections": [
                     {
                         "name": "Blue Trinity by Exit Door",
@@ -380,7 +352,7 @@
                 ]
             },
             {
-                "name": "3rd District",
+                "name": "3rd District - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity",
@@ -396,7 +368,7 @@
                 ]
             },
             {
-                "name": "2nd District",
+                "name": "2nd District - Opposite Armor",
                 "sections": [
                     {
                         "name": "Defeat Opposite Armor",
@@ -436,7 +408,7 @@
                 ]
             },
             {
-                "name": "Magician's Study",
+                "name": "Magician's Study - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity",
@@ -510,11 +482,15 @@
         "name": "Traverse Town Moogle Workshop",
         "children": [
             {
-                "name": "Moogle Workshop",
+                "name": "Moogle Workshop - Table",
                 "sections": [
                     {
                         "name": "Left Chest",
                         "ref": "Overview/Traverse Town - Moogle Workshop/Left Chest"
+                    },
+                    {
+                        "name": "Right Chest",
+                        "ref": "Overview/Traverse Town - Moogle Workshop/Right Chest"
                     }
                 ],
                 "map_locations": [
@@ -526,23 +502,7 @@
                 ]
             },
             {
-                "name": "Moogle Workshop",
-                "sections": [
-                    {
-                        "name": "Right Chest",
-                        "ref": "Overview/Traverse Town - Moogle Workshop/Right Chest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "TT",
-                        "x": 323,
-                        "y": 777
-                    }
-                ]
-            },
-            {
-                "name": "Moogle Workshop",
+                "name": "Moogle Workshop - Poster",
                 "sections": [
                     {
                         "name": "Postcard Behind Poster",
@@ -558,7 +518,7 @@
                 ]
             },
             {
-                "name": "Moogle Workshop",
+                "name": "Moogle Workshop - Synthesis Shop",
                 "sections": [
                     {
                         "name": "Synth 15 Items",
@@ -566,8 +526,7 @@
                     },
                     {
                         "name": "Synth Items",
-                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth Items",
-                        "item_count": 33
+                        "ref": "Overview/Traverse Town - Moogle Workshop/Synth Items"
                     }
                 ],
                 "map_locations": [
@@ -577,7 +536,7 @@
                         "y": 745
                     }
                 ]
-            },
+            }
             
         ]
     },
@@ -585,7 +544,7 @@
         "name": "Traverse Town Gepetto",
         "children": [
             {
-                "name": "Gepetto's House",
+                "name": "Gepetto's House - Gepetto",
                 "sections": [
                     {
                         "name": "Gepetto's Rewards",
@@ -605,7 +564,7 @@
                 ]
             },
             {
-                "name": "Gepetto's House",
+                "name": "Gepetto's House - Pinocchio",
                 "sections": [
                     {
                         "name": "Talk to Pinocchio",
@@ -621,7 +580,7 @@
                 ]
             },
             {
-                "name": "Gepetto's House",
+                "name": "Gepetto's House - Corner",
                 "sections": [
                     {
                         "name": "Chest",
@@ -637,7 +596,7 @@
                 ]
             },
             {
-                "name": "Gepetto's House",
+                "name": "Gepetto's House - Bowl",
                 "sections": [
                     {
                         "name": "Postcard in Bowl",
@@ -658,7 +617,7 @@
         "name": "Traverse Town Postcards",
         "children": [
             {
-                "name": "1st District",
+                "name": "1st District - Item Shop",
                 "sections": [
                     {
                         "name": "Hit Fan in Item Shop",
@@ -674,7 +633,7 @@
                 ]
             },
             {
-                "name": "1st District",
+                "name": "1st District - Behind Accessory Shop",
                 "sections": [
                     {
                         "name": "Open Safe",
@@ -691,7 +650,7 @@
             },
 
             {
-                "name": "3rd District",
+                "name": "3rd District - Gizmo Shop",
                 "sections": [
                     {
                         "name": "Activate Clock in Gizmo Shop",
@@ -709,7 +668,7 @@
             },
 
             {
-                "name": "3rd District ",
+                "name": "3rd District - Balcony",
                 "sections": [
                     {
                         "name": "Corner on Balcony",
@@ -725,7 +684,7 @@
                 ]
             },
             {
-                "name": "Postcards",
+                "name": "Mailbox - Postcards",
                 "sections": [
                     {
                         "name": "Mail Postcard 01",

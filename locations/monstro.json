@@ -3,7 +3,7 @@
         "name": "Monstro - Chests",
         "children": [
             {
-                "name": "Chamber 6",
+                "name": "Chamber 6 - Platform Opposite Chamber 5",
                 "sections": [
                     {
                         "name": "Chest on Platform Opposite Chamber 5 Entrance",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "Chamber 6",
+                "name": "Chamber 6 - Platform Near Chamber 5",
                 "sections": [
                     {
                         "name": "Chest on Platform Near Chamber 5 Entrance",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "Chamber 6",
+                "name": "Chamber 6 - Raised Area",
                 "sections": [
                     {
                         "name": "Chest on Raised Area Near Chamber 1 Entrance",
@@ -51,7 +51,7 @@
                 ]
             },
             {
-                "name": "Chamber 6",
+                "name": "Chamber 6 - Lower Level",
                 "sections": [
                     {
                         "name": "Low Chest",
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "name": "Mouth",
+                "name": "Mouth - Ship Deck",
                 "sections": [
                     {
                         "name": "Boat Deck Chest After Defeating Parasite",
@@ -84,7 +84,7 @@
             }
             ,
             {
-                "name": "Mouth",
+                "name": "Mouth - Ship Side Platform",
                 "sections": [
                     {
                         "name": "Chest on High Platform Boat Side",
@@ -100,7 +100,7 @@
                 ]
             },
             {
-                "name": "Mouth",
+                "name": "Mouth - Platform Opposite Ship",
                 "sections": [
                     {
                         "name": "Chest on High Platform Across from Boat",
@@ -116,7 +116,7 @@
                 ]
             },
             {
-                "name": "Mouth",
+                "name": "Mouth - Near Ship",
                 "sections": [
                     {
                         "name": "Chest Near Ship",
@@ -132,7 +132,7 @@
                 ]
             },
             {
-                "name": "Mouth",
+                "name": "Mouth - Green Trinity",
                 "sections": [
                     {
                         "name": "Green Trinity Chest After Defeating Parasite",
@@ -148,7 +148,7 @@
                 ]
             },
             {
-                "name": "Chamber 2",
+                "name": "Chamber 2 - Ground",
                 "sections": [
                     {
                         "name": "Ground Chest",
@@ -164,7 +164,7 @@
                 ]
             },
             {
-                "name": "Chamber 2",
+                "name": "Chamber 2 - Platform",
                 "sections": [
                     {
                         "name": "Platform Chest",
@@ -180,7 +180,7 @@
                 ]
             },
             {
-                "name": "Chamber 5",
+                "name": "Chamber 5 - Platform",
                 "sections": [
                     {
                         "name": "Platform Chest",
@@ -196,7 +196,7 @@
                 ]
             },
             {
-                "name": "Chamber 3",
+                "name": "Chamber 3 - Ground",
                 "sections": [
                     {
                         "name": "Ground Chest",
@@ -212,7 +212,7 @@
                 ]
             },
             {
-                "name": "Chamber 3",
+                "name": "Chamber 3 - Platform Above Chamber 2",
                 "sections": [
                     {
                         "name": "Chest on Platform Above Chamber 2 Entrance",
@@ -228,7 +228,7 @@
                 ]
             },
             {
-                "name": "Chamber 3",
+                "name": "Chamber 3 - Near Chamber 6",
                 "sections": [
                     {
                         "name": "Chest Near Chamber 6 Entrance",
@@ -244,7 +244,7 @@
                 ]
             },
             {
-                "name": "Chamber 3",
+                "name": "Chamber 3 - Platform Near Chamber 6",
                 "sections": [
                     {
                         "name": "Chest on Platform Near Chamber 6 Entrance",
@@ -260,7 +260,7 @@
                 ]
             },
             {
-                "name": "Mouth",
+                "name": "Mouth - Platform Near Teeth",
                 "sections": [
                     {
                         "name": "Chest on High Platform Near Teeth",
@@ -276,7 +276,7 @@
                 ]
             },
             {
-                "name": "Chamber 5",
+                "name": "Chamber 5 - Barrel",
                 "sections": [
                     {
                         "name": "Chest Atop Barrel",
@@ -292,27 +292,15 @@
                 ]
             },
             {
-                "name": "Chamber 5",
-                "sections": [
-                    {
-                        "name": "2nd Low Chest",
-                        "ref": "Overview/Monstro - Chests Before Movement/Chamber 5 - 2nd Low Chest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Mon",
-                        "x": 748,
-                        "y": 574
-                    }
-                ]
-            },
-            {
-                "name": "Chamber 5",
+                "name": "Chamber 5 - Lower Level",
                 "sections": [
                     {
                         "name": "1st Low Chest",
                         "ref": "Overview/Monstro - Chests Before Movement/Chamber 5 - 1st Low Chest"
+                    },
+                    {
+                        "name": "2nd Low Chest",
+                        "ref": "Overview/Monstro - Chests Before Movement/Chamber 5 - 2nd Low Chest"
                     }
                 ],
                 "map_locations": [
@@ -324,7 +312,7 @@
                 ]
             },
             {
-                "name": "Chamber 6",
+                "name": "Chamber 6 - White Trinity",
                 "sections": [
                     {
                         "name": "White Trinity Chest",
@@ -345,7 +333,7 @@
         "name": "Monstro - Events",
         "children": [
             {
-                "name": "Mouth",
+                "name": "Mouth - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity",
@@ -361,7 +349,7 @@
                 ]
             },
             {
-                "name": "Chamber 5",
+                "name": "Chamber 5 - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity",
@@ -377,7 +365,7 @@
                 ]
             },
             {
-                "name": "Throat",
+                "name": "Throat - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity",
@@ -393,10 +381,10 @@
                 ]
             },
             {
-                "name": "Defeat Parasite Cage",
+                "name": "Bowels",
                 "sections": [
                     {
-                        "name": "",
+                        "name": "Defeat Parasite Cage",
                         "ref": "Overview/Monstro - Events/Bowels - Defeat Parasite Cage"
                     }
                 ],
@@ -409,10 +397,10 @@
                 ]
             },
             {
-                "name": "Defeat Parasite Cage II",
+                "name": "Stomach",
                 "sections": [
                     {
-                        "name": "",
+                        "name": "Defeat Parasite Cage II",
                         "ref": "Overview/Monstro - Events/Stomach - Defeat Parasite Cage II"
                     }
                 ],

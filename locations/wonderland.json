@@ -3,7 +3,7 @@
         "name": "Wonderland Chests",
         "children": [
             {
-                "name": "Rabbit Hole",
+                "name": "Rabbit Hole - Green Trinity",
                 "sections": [
                     {
                         "name": "Green Trinity Chest",
@@ -19,40 +19,16 @@
                 ]
             },
             {
-                "name": "Rabbit Hole",
+                "name": "Rabbit Hole - Re-Enter",
                 "sections": [
                     {
                         "name": "Defeat Heartless 1",
                         "ref": "Overview/Wonderland - Before Footprints/Rabbit Hole - Defeat Heartless 1"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "WL",
-                        "x": 230,
-                        "y": 811
-                    }
-                ]
-            },
-            {
-                "name": "Rabbit Hole",
-                "sections": [
+                    },
                     {
                         "name": "Defeat Heartless 2",
                         "ref": "Overview/Wonderland - Before Footprints/Rabbit Hole - Defeat Heartless 2"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "WL",
-                        "x": 274,
-                        "y": 756
-                    }
-                ]
-            },
-            {
-                "name": "Rabbit Hole",
-                "sections": [
+                    },
                     {
                         "name": "Defeat Heartless 3",
                         "ref": "Overview/Wonderland - Before Footprints/Rabbit Hole - Defeat Heartless 3"
@@ -67,7 +43,7 @@
                 ]
             },
             {
-                "name": "Bizarre Room",
+                "name": "Bizarre Room - Green Trinity",
                 "sections": [
                     {
                         "name": "Green Trinity Chest",
@@ -83,7 +59,7 @@
                 ]
             },
             {
-                "name": "Queen's Castle",
+                "name": "Queen's Castle - Left Hedge",
                 "sections": [
                     {
                         "name": "Left Hedge Chest",
@@ -99,7 +75,7 @@
                 ]
             },
             {
-                "name": "Queen's Castle",
+                "name": "Queen's Castle - Right Hedge Near Bizarre Room",
                 "sections": [
                     {
                         "name": "Right Hedge Blue Chest",
@@ -115,7 +91,7 @@
                 ]
             },
             {
-                "name": "Queen's Castle",
+                "name": "Queen's Castle - Right Hedge Near Queen",
                 "sections": [
                     {
                         "name": "Right Hedge Red Chest",
@@ -131,7 +107,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - Corner Platform Above Pond",
                 "sections": [
                     {
                         "name": "Southwest Corner Chest",
@@ -147,7 +123,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - Platform Near Nut",
                 "sections": [
                     {
                         "name": "Chest Near Nut",
@@ -163,7 +139,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - Corner Platform Near Tea Party Garden",
                 "sections": [
                     {
                         "name": "Northeast Corner Chest",
@@ -179,7 +155,7 @@
                 ]
             },
             {
-                "name": "Tea Party Garden",
+                "name": "Tea Party Garden - Above Entrance Left",
                 "sections": [
                     {
                         "name": "1st Chest Above Lotus Forest Entrance",
@@ -195,7 +171,7 @@
                 ]
             },
             {
-                "name": "Tea Party Garden",
+                "name": "Tea Party Garden - Above Entrance Right",
                 "sections": [
                     {
                         "name": "2nd Chest Above Lotus Forest Entrance",
@@ -211,7 +187,7 @@
                 ]
             },
             {
-                "name": "Tea Party Garden",
+                "name": "Tea Party Garden - Ledge Across From Balcony",
                 "sections": [
                     {
                         "name": "Chest Across Bizarre Room Entrance",
@@ -227,7 +203,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - After Moving Boulder",
                 "sections": [
                     {
                         "name": "Thunder Plant Chest 1",
@@ -243,7 +219,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - Through Painting",
                 "sections": [
                     {
                         "name": "Thunder Plant Chest 2",
@@ -259,7 +235,7 @@
                 ]
             },
             {
-                "name": "Bizarre Room",
+                "name": "Bizarre Room - Near Lion's Mouth",
                 "sections": [
                     {
                         "name": "Lamp Chest",
@@ -275,7 +251,7 @@
                 ]
             },
             {
-                "name": "Tea Party Garden",
+                "name": "Tea Party Garden - Balcony",
                 "sections": [
                     {
                         "name": "Bear and Clock Puzzle Chest",
@@ -291,7 +267,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - White Trinity",
                 "sections": [
                     {
                         "name": "White Trinity Chest",
@@ -314,7 +290,7 @@
         "chest_opened_img": "/images/misc/emblem_bw.png",
         "children": [
             {
-                "name": "Bizarre Room",
+                "name": "Bizarre Room - Book After Dropping Teddy Bear",
                 "sections": [
                     {
                         "name": "Read Book",
@@ -330,15 +306,15 @@
                 ]
             },
             {
-                "name": "Bizarre Room",
+                "name": "Bizarre Room - Trickmaster",
                 "sections": [
                     {
                         "name": "Defeat Trickmaster",
-                        "ref": "Overview/Wonderland - After Footprints/Defeat Trickmaster"
+                        "ref": "Overview/Wonderland - After Footprints/Bizarre Room - Defeat Trickmaster"
                     },
                     {
                         "name": "Seal Keyhole",
-                        "ref": "Overview/Wonderland - After Footprints/Seal Keyhole"
+                        "ref": "Overview/Wonderland - After Footprints/Bizarre Room - Seal Keyhole"
                     }
                 ],
                 "map_locations": [
@@ -350,7 +326,7 @@
                 ]
             },
             {
-                "name": "Bizarre Room",
+                "name": "Bizarre Room - After Lighting Lamps",
                 "sections": [
                     {
                         "name": "Flower Pot",
@@ -366,7 +342,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - Red Flowers",
                 "sections": [
                     {
                         "name": "Ether Red Flowers",
@@ -387,7 +363,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - Yellow Flowers",
                 "sections": [
                     {
                         "name": "Potion Yellow Flowers",
@@ -408,7 +384,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - Yellow Flower Through Painting",
                 "sections": [
                     {
                         "name": "Elixir Yellow Flower",
@@ -424,7 +400,23 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - Red Flower After Moving Boulder",
+                "sections": [
+                    {
+                        "name": "Hi-Potion Red Flower",
+                        "ref": "Overview/Wonderland - After Footprints/Lotus Forest - Hi-Potion Red Flower"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 160,
+                        "y": 365
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest - Blue Trinity in Alcove",
                 "sections": [
                     {
                         "name": "Blue Trinity in Alcove",
@@ -440,7 +432,7 @@
                 ]
             },
             {
-                "name": "Lotus Forest",
+                "name": "Lotus Forest - Blue Trinty After Moving Boulder",
                 "sections": [
                     {
                         "name": "Blue Trinity by Moving Boulder",
@@ -456,11 +448,27 @@
                 ]
             },
             {
-                "name": "Tea Party Garden",
+                "name": "Tea Party Garden - Chairs",
                 "sections": [
                     {
-                        "name": "Chairs",
-                        "ref": "Overview/Wonderland - Before Footprints/Tea Party Garden - Chairs"
+                        "name": "Left Cusioned Chair",
+                        "ref": "Overview/Wonderland - Before Footprints/Tea Party Garden - Left Cushioned Chair"
+                    },
+                    {
+                        "name": "Left Pink Chair",
+                        "ref": "Overview/Wonderland - Before Footprints/Tea Party Garden - Left Pink Chair"
+                    },
+                    {
+                        "name": "Left Gray Chair",
+                        "ref": "Overview/Wonderland - Before Footprints/Tea Party Garden - Left Gray Chair"
+                    },
+                    {
+                        "name": "Right Yellow Chair",
+                        "ref": "Overview/Wonderland - Before Footprints/Tea Party Garden - Right Yellow Chair"
+                    },
+                    {
+                        "name": "Right Brown Chair",
+                        "ref": "Overview/Wonderland - Before Footprints/Tea Party Garden - Right Brown Chair"
                     }
                 ],
                 "map_locations": [

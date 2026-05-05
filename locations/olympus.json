@@ -3,7 +3,7 @@
         "name": "Olympus Coliseum Chests",
         "children": [
             {
-                "name": "Coliseum Gates",
+                "name": "Coliseum Gates - Left Columns",
                 "sections": [
                     {
                         "name": "Chest Behind Left Columns",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "Coliseum Gates",
+                "name": "Coliseum Gates - Right Blue Trinityy",
                 "sections": [
                     {
                         "name": "",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "Coliseum Gates",
+                "name": "Coliseum Gates - Left Blue Trinity",
                 "sections": [
                     {
                         "name": "",
@@ -51,7 +51,7 @@
                 ]
             },
             {
-                "name": "Coliseum Gates",
+                "name": "Coliseum Gates - White Trinity",
                 "sections": [
                     {
                         "name": "",
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "name": "Coliseum Gates",
+                "name": "Coliseum Gates - Blizzara Braziers",
                 "sections": [
                     {
                         "name": "",
@@ -83,7 +83,7 @@
                 ]
             },
             {
-                "name": "Coliseum Gates",
+                "name": "Coliseum Gates - Blizzaga Braziers",
                 "sections": [
                     {
                         "name": "",
@@ -99,7 +99,7 @@
                 ]
             },
             {
-                "name": "Coliseum Gates",
+                "name": "Coliseum Gates - Right Columns After Hades",
                 "sections": [
                     {
                         "name": "Purple Jar after defeating Hades",
@@ -115,7 +115,7 @@
                 ]
             },
             {
-                "name": "Coliseum Lobby",
+                "name": "Coliseum Lobby - After Hercules",
                 "sections": [
                     {
                         "name": "Olympia Chest after defeating Hercules",
@@ -139,87 +139,13 @@
                 "name": "Coliseum Lobby",
                 "sections": [
                     {
-                        "name": "",
+                        "name": "Phil's Trainig",
                         "ref": "Overview/Olympus Coliseum - Before Entry Pass/Coliseum Lobby - Phil's Training"
-                    }
-                ],
-                "map_locations": [
+                    },
                     {
-                        "map": "OC",
-                        "x": 63,
-                        "y": 541
-                    }
-                ]
-            },
-            {
-                "name": "Coliseum Gates",
-                "sections": [
-                    {
-                        "name": "",
+                        "name": "Obtain Entry Pass",
                         "ref": "Overview/Olympus Coliseum - Before Entry Pass/Coliseum Gates - Obtain Entry Pass"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "OC",
-                        "x": 201,
-                        "y": 201
-                    }
-                ]
-            },
-            {
-                "name": "Coliseum Lobby",
-                "sections": [
-                    {
-                        "name": "",
-                        "ref": "Overview/Olympus Coliseum - After Entry Pass/Coliseum Lobby - Defeat Cerberus"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "OC",
-                        "x": 92,
-                        "y": 580
-                    }
-                ]
-            },
-            {
-                "name": "Coliseum Lobby",
-                "access_rules":["entry_pass"],
-                "sections": [
-                    {
-                        "name": "",
-                        "ref": "Overview/Olympus Coliseum - After Entry Pass/Coliseum Gates - Talk to Cloud"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "OC",
-                        "x": 293,
-                        "y": 119
-                    }
-                ]
-            },
-            {
-                "name": "Coliseum Gates",
-                "access_rules":["green_trinity"],
-                "sections": [
-                    {
-                        "name": "Green Trinity",
-                        "ref": "Overview/Olympus Coliseum - Before Entry Pass/Coliseum Gates - Green Trinity"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "OC",
-                        "x": 383,
-                        "y": 166
-                    }
-                ]
-            },
-            {
-                "name": "Olympus Coliseum Cups",
-                "sections": [
+                    },
                     {
                         "name": "Phil Cup",
                         "ref": "Overview/Olympus Coliseum - Cups/Phil Cup"
@@ -253,7 +179,55 @@
                     {
                         "map": "OC",
                         "x": 63,
-                        "y": 525
+                        "y": 541
+                    }
+                ]
+            },
+            {
+                "name": "Coliseum Lobby - Cerberus",
+                "sections": [
+                    {
+                        "name": "Defeat Cerberus",
+                        "ref": "Overview/Olympus Coliseum - After Entry Pass/Coliseum Lobby - Defeat Cerberus"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OC",
+                        "x": 92,
+                        "y": 580
+                    }
+                ]
+            },
+            {
+                "name": "Coliseum Gates - Cloud",
+                "sections": [
+                    {
+                        "name": "Talk to Cloud",
+                        "ref": "Overview/Olympus Coliseum - After Entry Pass/Coliseum Gates - Talk to Cloud"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OC",
+                        "x": 293,
+                        "y": 119
+                    }
+                ]
+            },
+            {
+                "name": "Coliseum Gates - Green Trinity",
+                "sections": [
+                    {
+                        "name": "Green Trinity",
+                        "ref": "Overview/Olympus Coliseum - Before Entry Pass/Coliseum Gates - Green Trinity"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OC",
+                        "x": 383,
+                        "y": 166
                     }
                 ]
             }

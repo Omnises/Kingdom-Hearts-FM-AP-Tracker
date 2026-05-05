@@ -8,18 +8,22 @@
                 "name": "Traverse Town - 1st Visit",
                 "sections": [
                     {
-                        "name": "1st District - Accessory Shop Roof Chest",
-                        "access_rules":["$tt_chests"]
-                    },
-                    {
-                        "name": "1st District - Talk to Aerith before Defeating Guard Armor - MISSABLE", 
-                        "visibility_rules":["missables_on"],
+                        "name": "Hit Fan in Item Shop",
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
+                        "name": "1st District - Accessory Shop Roof Chest",
+                        "access_rules":["$tt_chests"]
+                    },
+                    {
                         "name": "Accessory Shop Chest",
                         "access_rules":["$tt_chests"]
+                    },
+                    {
+                        "name": "Open Safe in 1st District",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "2nd District - Boots and Shoes Awning Chest",
@@ -32,6 +36,11 @@
                     {
                         "name": "2nd District - Gizmo Shop Facade Chest",
                         "access_rules":["$tt_chests"]
+                    },
+                    {
+                        "name": "3rd District Balcony",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Alleyway - Balcony Chest",
@@ -71,6 +80,18 @@
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 5
+                    },
+                    {
+                        "name": "Donald Starting Accessories",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png",
+                        "item_count": 2
+                    },
+                    {
+                        "name": "Goofy Starting Accessories",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png",
+                        "item_count": 2
                     }
                 ],
                 "map_locations": [
@@ -94,15 +115,22 @@
                     },
                     {
                         "name": "1st District - Blue Trinity by Exit Door",
+                        "access_rules":["blue_trinity"],
                         "chest_unopened_img": "/images/misc/emblem.png",
-                        "chest_opened_img": "/images/misc/emblem_bw.png",
-                        "access_rules":["blue_trinity"]
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "3rd District - Blue Trinity",
+                        "access_rules":["blue_trinity"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Activate Clock in Gizmo Shop",
+                        "access_rules":["thunder:1"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
-                        "access_rules":["blue_trinity"]
+                        "item_count": 2
                     },
                     {
                         "name": "Alleyway - Chest Behind Crates",
@@ -128,9 +156,9 @@
                     },
                     {
                         "name": "Magician's Study - Blue Trinity",
+                        "access_rules":["blue_trinity, fire:1"],
                         "chest_unopened_img": "/images/misc/emblem.png",
-                        "chest_opened_img": "/images/misc/emblem_bw.png",
-                        "access_rules":["blue_trinity, fire:1"]
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Mystical House - Yellow Trinity Chest",
@@ -236,7 +264,7 @@
                 "map_locations": [
                     {
                         "map": "OV",
-                        "x": 142,
+                        "x": 143,
                         "y": 45
                     }
                 ]
@@ -246,20 +274,6 @@
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
-                    {
-                        "name": "Hit Fan in Item Shop"
-                    },
-                    {
-                        "name": "Open Safe in 1st District"
-                    },
-                    {
-                        "name": "Activate Clock in Gizmo Shop",
-                        "access_rules":["thunder:1"],
-                        "item_count": 2
-                    },
-                    {
-                        "name": "3rd District Balcony"
-                    },
                     {
                         "name": "Mail Postcard 01",
                         "access_rules": ["postcard:1"]
@@ -304,7 +318,7 @@
                 "map_locations": [
                     {
                         "map": "OV",
-                        "x": 168,
+                        "x": 169,
                         "y": 45
                     }
                 ]
@@ -332,8 +346,8 @@
                     },
                     {
                         "name": "Return 50 Puppies",
-                        "item_count": 2,
-                        "access_rules": ["$puppy_count:50"]
+                        "access_rules": ["$puppy_count:50"],
+                        "item_count": 2
                     },
                     {
                         "name": "Return 60 Puppies",
@@ -353,14 +367,14 @@
                     },
                     {
                         "name": "Return 99 Puppies",
-                        "item_count": 2,
-                        "access_rules": ["$puppy_count:99"]
+                        "access_rules": ["$puppy_count:99"],
+                        "item_count": 2
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "OV",
-                        "x": 193,
+                        "x": 195,
                         "y": 45
                     }
                 ]
@@ -439,8 +453,31 @@
                         "access_rules":["^$wl_tea_party_high_hedge_access"]
                     },
                     {
-                        "name": "Tea Party Garden - Chairs",
-                        "item_count": 5,
+                        "name": "Tea Party Garden - Left Cushioned Chair",
+                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Tea Party Garden - Left Pink Chair",
+                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Tea Party Garden - Left Gray Chair",
+                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Tea Party Garden - Right Yellow Chair",
+                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Tea Party Garden - Right Brown Chair",
                         "access_rules":["^$wl_tea_party_high_hedge_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
@@ -482,6 +519,11 @@
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
+                        "name": "Lotus Forest - Hi-Potion Red Flower",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
                         "name": "Tea Party Garden - Bear and Clock Puzzle Chest",
                         "access_rules":["$access_chests|1, ^$wl_tea_party_bear_access"]
                     },
@@ -509,7 +551,7 @@
                         "name": "Bizarre Room - Flower Pot",
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
-                    },
+                    }
                 ],
                 "map_locations": [
                     {
@@ -523,6 +565,11 @@
                 "name": "Deep Jungle - Before Slides",
                 "access_rules": ["deep_jungle, [$world_count:2]"],
                 "sections": [
+                    {
+                        "name": "Tarzan Starting Accessory",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
                     {
                         "name": "Tree House - Chest Beneath Tree House",
                         "access_rules":["$access_chests|3"]
@@ -602,7 +649,7 @@
                         "access_rules":["green_trinity"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
-                    },
+                    }
                 ],
                 "map_locations": [
                     {
@@ -641,27 +688,27 @@
                     },
                     {
                         "name": "Waterfall Cavern - Lower Chest",
+                        "access_rules":["$access_chests|3"],
                         "chest_unopened_img": "/images/misc/chest.png",
-                        "chest_opened_img": "/images/misc/chest_bw.png",
-                        "access_rules":["$access_chests|3"]
+                        "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Waterfall Cavern - Middle Chest",
+                        "access_rules":["$access_chests|3"],
                         "chest_unopened_img": "/images/misc/chest.png",
-                        "chest_opened_img": "/images/misc/chest_bw.png",
-                        "access_rules":["$access_chests|3"]
+                        "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Waterfall Cavern - High Wall Chest",
+                        "access_rules":["$access_chests|3"],
                         "chest_unopened_img": "/images/misc/chest.png",
-                        "chest_opened_img": "/images/misc/chest_bw.png",
-                        "access_rules":["$access_chests|3"]
+                        "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Waterfall Cavern - High Middle Chest",
+                        "access_rules":["$access_chests|3"],
                         "chest_unopened_img": "/images/misc/chest.png",
-                        "chest_opened_img": "/images/misc/chest_bw.png",
-                        "access_rules":["$access_chests|3"]
+                        "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Cavern of Hearts - Seal the Keyhole",
@@ -669,9 +716,9 @@
                     },
                     {
                         "name": "Cavern of Hearts - White Trinity Chest",
+                        "access_rules":["white_trinity, $access_chests|3"],
                         "chest_unopened_img": "/images/misc/chest.png",
-                        "chest_opened_img": "/images/misc/chest_bw.png",
-                        "access_rules":["white_trinity, $access_chests|3"]
+                        "chest_opened_img": "/images/misc/chest_bw.png"
                     }
                 ],
                 "map_locations": [
@@ -1017,6 +1064,10 @@
                 "access_rules":["agrabah, [$world_count:2]"],
                 "sections": [
                     {
+                        "name": "Aladdin Starting Accessories",
+                        "item_count": 2
+                    },
+                    {
                         "name": "Palace Gates - Defeat Pot Centipede"
                     },
                     {
@@ -1040,8 +1091,8 @@
                     },
                     {
                         "name": "Desert - Defeat Kurt Zisa",
-                        "access_rules":["hollow_bastion, $has_emblems, [$world_count:7], [$has_defenses], [blizzard:3]"],
                         "visibility_rules":["superbosses_on", "door_superbosses"],
+                        "access_rules":["hollow_bastion, $has_emblems, [$world_count:7], [$has_defenses], [blizzard:3]"],
                         "item_count": 2
                     }
                 ],
@@ -1193,8 +1244,8 @@
             },
             {
                 "name": "Atlantica - Chests",
-                "access_rules": ["atlantica, [$world_count:2]"],
                 "visibility_rules":["atlantica_on"],
+                "access_rules": ["atlantica, [$world_count:2]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
@@ -1238,8 +1289,8 @@
             },
             {
                 "name": "Atlantica - Clams",
-                "access_rules":["atlantica, [$world_count:2]"],
                 "visibility_rules":["atlantica_on"],
+                "access_rules":["atlantica, [$world_count:2]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
@@ -1306,11 +1357,15 @@
             },
             {
                 "name": "Atlantica - Events",
-                "access_rules":["atlantica, [$world_count:2]"],
                 "visibility_rules":["atlantica_on"],
+                "access_rules":["atlantica, [$world_count:2]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
+                    {
+                        "name": "Ariel Starting Accessories",
+                        "item_count": 3
+                    },
                     {
                         "name": "Sunken Ship - Obtain Crystal Trident"
                     },
@@ -1324,7 +1379,6 @@
                         "item_count": 2
                     },
                     {
-                        "name": "Ariel's Grotto - Seal Atlantica Keyhole",
                         "access_rules":["mermaid_kick, $has_offensive_magic, trident"]
                     }
                 ],
@@ -1342,6 +1396,12 @@
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
+                    {
+                        "name": "Jack Starting Accessories",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png",
+                        "item_count": 2
+                    },
                     {
                         "name": "Guillotine Square - Chest Under Jack's House",
                         "access_rules":["$access_chests|6"]
@@ -1541,6 +1601,10 @@
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
                     {
+                        "name": "Peter Pan Starting Accessories",
+                        "item_count": 2
+                    },
+                    {
                         "name": "Captain's Cabin - Defeat Anti Sora"
                     },
                     {
@@ -1555,13 +1619,16 @@
                         "item_count": 3
                     },
                     {
+                        "name": "Clock Tower - Seal Keyhole Navi-G Piece"
+                    },
+                    {
                         "name": "Clock Tower - Doors",
                         "item_count": 12
                     },
                     {
                         "name": "Clock Tower - Defeat Phantom",
-                        "access_rules":["[$has_lv_magic|2], [$has_defenses], hollow_bastion, [$world_count:5], $has_emblems"],
-                        "visibility_rules":["superbosses_on", "door_superbosses"]
+                        "visibility_rules":["superbosses_on", "door_superbosses"],
+                        "access_rules":["[$has_lv_magic|2], [$has_defenses], hollow_bastion, [$world_count:5], $has_emblems"]
                     }
                 ],
                 "map_locations": [
@@ -1578,6 +1645,11 @@
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
+                    {
+                        "name": "Beast Starting Accessory",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
                     {
                         "name": "Rising Falls - Chest on Water Surface",
                         "access_rules":["$access_chests|8"]
@@ -1804,7 +1876,9 @@
                 "sections": [
                     {
                         "name": "Rising Falls - 2nd Chest Under Water",
-                        "access_rules":["$access_chests|8, $has_emblems"]
+                        "access_rules":["$access_chests|8, $has_emblems"],
+                        "chest_unopened_img": "/images/misc/chest.png",
+                        "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Library - Talk to Belle"
@@ -1957,6 +2031,10 @@
                         "access_rules":["$eotw_chests"]
                     },
                     {
+                        "name": "World Terminus - Hollow Bastion Chest",
+                        "access_rules":["$eotw_chests"]
+                    },
+                    {
                         "name": "World Terminus - Defeat Chernabog",
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
@@ -1976,8 +2054,8 @@
             },
             {
                 "name": "Hundred Acre Wood",
-                "access_rules":["fire:1"],
                 "visibility_rules":["100_acre_on"],
+                "access_rules":["fire:1"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -2078,8 +2156,8 @@
             },
             {
                 "name": "Destiny Islands - Day 1",
+                "visibility_rules":["destiny_islands_on"],
                 "access_rules":["destiny_islands"],
-                "visibility_rules":[""],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -2106,22 +2184,42 @@
             },
             {
                 "name": "Destiny Islands - Day 2",
+                "visibility_rules":["destiny_islands_on"],
                 "access_rules":["destiny_islands"],
-                "visibility_rules":[""],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
                     {
-                        "name": "Seashore - Log under Bridge"
+                        "name": "Seashore - Fish 1"
                     },
                     {
-                        "name": "Seashore - Log on Riku's Islands"
+                        "name": "Seashore - Fish 2"
                     },
                     {
-                        "name": "Seashore - Cloth"
+                        "name": "Seashore - Fish 3"
                     },
                     {
-                        "name": "Seashore - Rope"
+                        "name": "Seashore - Seagull Egg"
+                    },
+                    {
+                        "name": "Secret Place - Mushroom"
+                    },
+                    {
+                        "name": "Cove - Mushroom Near Zip Line"
+                    },
+                    {
+                        "name": "Cove - Mushroom in Small Cave"
+                    },
+                    {
+                        "name": "Cove - Talk to Kairi"
+                    },
+                    {
+                        "name": "Cove - Drinking Water"
+                    },
+                    {
+                        "name": "Cove - Chest",
+                        "chest_unopened_img": "/images/misc/chest.png",
+                        "chest_opened_img": "/images/misc/chest_bw.png"
                     }
                 ],
                 "map_locations": [
