@@ -1,11 +1,9 @@
 ITEM_MAPPING = {
     [2641009] = {"torn_page", "consumable"},
-<<<<<<< HEAD
-=======
-    [2641010] = {"final_door_key", "toggle"},
+    --TODO: confirm if required in tracker
+    --[2641010] = {"final_door_key", "toggle"},
     [2641011] = {"destiny_islands", "toggle"},
     [2641012] = {"raft_materials", "consumable"},
->>>>>>> ab725a4217bf20380323e801b505bf0d96b146b3
     [2641086] = {"jungle_king", "toggle"},
     [2641087] = {"three_wishes", "toggle"},
     [2641088] = {"fairy_harp", "toggle"},
@@ -34,6 +32,7 @@ ITEM_MAPPING = {
     [2641164] = {"aero_arts", "toggle"},
     [2641165] = {"neverland", "toggle"},
     [2641166] = {"halloween_town", "consumable"},
+    [2641167] = {"puppy", "consumable"},
     [2641168] = {"hollow_bastion", "consumable"},
     [2641169] = {"end_of_the_world", "toggle"},
     [2641170] = {"blue_trinity", "toggle"},
@@ -75,6 +74,10 @@ ITEM_MAPPING = {
     [2642001] = {"high_jump", "consumable"},
     [2642002] = {"mermaid_kick", "consumable"},
     [2642003] = {"glide", "consumable"},
+    [2643007] = {"air_combo_plus", "toggle"},
+    [2643011] = {"sonic_blade", "toggle"},
+    [2643013] = {"strike_raid", "toggle"},
+    [2643019] = {"counterattack", "toggle"},
     [2643021] = {"guard", "toggle"},
     [2643022] = {"dodge_roll", "toggle"},
     [2643024] = {"mp_rage", "toggle"},

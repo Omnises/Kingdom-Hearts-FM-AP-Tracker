@@ -1,33 +1,63 @@
 [
     {
         "name": "Leaf Bracer",
+        "img": "images/misc/ability.png",
         "type": "toggle",
         "codes": "leaf_bracer"
     },
     {
         "name": "Dodge Roll",
+        "img": "images/misc/ability.png",
         "type": "toggle",
         "codes": "dodge_roll"
     },
     {
         "name": "Second Chance",
+        "img": "images/misc/ability.png",
         "type": "toggle",
         "codes": "second_chance"
     },
     {
         "name": "MP Rage",
+        "img": "images/misc/ability.png",
         "type": "toggle",
         "codes": "mp_rage"
     },
     {
         "name": "Guard",
+        "img": "images/misc/ability.png",
         "type": "toggle",
         "codes": "guard"
     },
     {
         "name": "Combo Master",
+        "img": "images/misc/ability.png",
         "type": "toggle",
         "codes": "combo_master"
+    },
+    {
+        "name": "Strike Raid",
+        "img": "images/misc/ability.png",
+        "type": "toggle",
+        "codes": "strike_raid"
+    },
+    {
+        "name": "Sonic Blade",
+        "img": "images/misc/ability.png",
+        "type": "toggle",
+        "codes": "sonic_blade"
+    },
+    {
+        "name": "Counterattack",
+        "img": "images/misc/ability.png",
+        "type": "toggle",
+        "codes": "counterattack"
+    },
+    {
+        "name": "Air Combo Plus",
+        "img": "images/misc/ability.png",
+        "type": "toggle",
+        "codes": "air_combo_plus"
     },
     {
         "name": "High Jump",

@@ -52,6 +52,15 @@
                         },
                         {
                             "type": "group",
+                            "header": "Magic & Trinities",
+                            "dock": "top",
+                            "content": {
+                                "type": "layout",
+                                "key": "magic_trinities"
+                            }
+                        },
+                        {
+                            "type": "group",
                             "header": "Abilities",
                             "dock": "top",
                             "content": {

@@ -57,46 +57,37 @@ function onClear(slot_data)
     GLOBAL_ITEMS = {}
     -- get slot data
     for key, value in pairs(SLOT_DATA) do
-        if key == "required_reports_eotw" then
+        if key == "required_lucky_emblems_eotw" then
             Tracker:FindObjectForCode("eotw_req").AcquiredCount = value
-        elseif key == "required_reports_door" then
+        elseif key == "required_lucky_emblems_door" then
             Tracker:FindObjectForCode("door_req").AcquiredCount = value
         elseif key == "required_postcards" then
             Tracker:FindObjectForCode("postcards_req").AcquiredCount = value
         elseif key == "required_puppies" then
             Tracker:FindObjectForCode("puppies_req").AcquiredCount = value
-        elseif key == "chestslocked" then
-            Tracker:FindObjectForCode("keyblade_locks").CurrentStage = 1
-        elseif key == "chestsunlocked" then
-            Tracker:FindObjectForCode("keyblade_locks").CurrentStage = 0
-        elseif key == "goal" then
-            if value == "sephiroth" then
-                Tracker:FindObjectForCode("goal").CurrentStage = 0
-            elseif value == "unknown" then
-                Tracker:FindObjectForCode("goal").CurrentStage = 1
-            elseif value == "postcards" then
-                Tracker:FindObjectForCode("goal").CurrentStage = 2
-            elseif value == "final_ansem" then
-                Tracker:FindObjectForCode("goal").CurrentStage = 3
-            elseif value == "puppies" then
-                Tracker:FindObjectForCode("goal").CurrentStage = 4
-            elseif value == "final_rest" then
-                Tracker:FindObjectForCode("goal").CurrentStage = 5
-            end
-        elseif key == "door" then
-            if value == "reports" then
-                Tracker:FindObjectForCode("door_unlock").CurrentStage = 0
-            elseif value == "puppies" then
-                Tracker:FindObjectForCode("door_unlock").CurrentStage = 1
-            elseif value == "postcards" then
-                Tracker:FindObjectForCode("door_unlock").CurrentStage = 2
-            elseif value == "superbosses" then
-                Tracker:FindObjectForCode("door_unlock").CurrentStage = 3
-            end
-        elseif SLOT_CODES[key] then
+        elseif key == "day_2_materials" then
+            Tracker:FindObjectForCode("day_2_materials_req").AcquiredCount = value
+        elseif key == "homecoming_materials" then
+            Tracker:FindObjectForCode("homecoming_materials_req").AcquiredCount = value
+        elseif key == "materials_in_pool" then
+            Tracker:FindObjectForCode("raft_materials").MaxCount = value
+        elseif key == "orichalcum_in_pool" then
+            Tracker:FindObjectForCode("orichalcum").MaxCount = value
+        elseif key == "mythril_in_pool" then
+            Tracker:FindObjectForCode("mythril").MaxCount = value
+        elseif key == "randomize_puppies" then
+            RANDOMIZE_PUPPIES = value
+        elseif key == "puppy_value" then
+            PUPPY_VALUE = value
+        elseif key and SLOT_CODES[key] then
+            print(string.format("INFO: updating setting for slot data with key %s", key))
             Tracker:FindObjectForCode(SLOT_CODES[key].code).CurrentStage = SLOT_CODES[key].mapping[value]
         end
     end
+    if not RANDOMIZE_PUPPIES then
+        PUPPY_VALUE = 3
+    end
+    Tracker:FindObjectForCode("puppy").Increment = PUPPY_VALUE
 end
 
 -- called when an item gets collected

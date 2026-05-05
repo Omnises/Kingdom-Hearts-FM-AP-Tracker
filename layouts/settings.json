@@ -14,7 +14,7 @@
         "content":
         [
           {
-            "title": "Settings",
+            "title": "Locations",
             "type": "array",
             "orientation": "horizontal",
             "margin": "0,0",
@@ -25,8 +25,8 @@
                 "h_alignment": "center",
                 "rows":
                 [
-                  ["100_acre_checks", "atlantica_checks", "keyblade_locks", "logic_difficulty"],
-                  ["cups", "superbosses"]
+                  ["superbosses", "atlantica_checks", "cups", "100_acre_checks", "jungle_slider_checks"],
+                  ["keyblade_locks", "logic_difficulty", "random_accessories"]
                 ]
               }
             ]
@@ -43,8 +43,8 @@
                 "h_alignment": "center",
                 "rows":
                 [
-                  ["goal", "puppies_req", "postcards_req"],
-                  ["eotw_req", "door_unlock", "door_req"]
+                  ["goal", "door_req", "postcards_req", "puppies_req"],
+                  ["eotw_unlock", "eotw_req", "destiny_islands_checks", "day_2_materials_req", "homecoming_materials_req"]
                 ]
               }
             ]

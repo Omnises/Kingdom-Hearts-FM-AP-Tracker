@@ -1,18 +1,18 @@
 {
     "visits": {
         "type": "itemgrid",
-        "item_margin": "5,5",
-        "item_size": "40,40",
+        "item_margin": "2,2",
+        "item_size": "32,32",
         "rows": [
-            ["wonderland", "olympus_coliseum", "deep_jungle"],
+            ["destiny_islands", "wonderland", "olympus_coliseum", "deep_jungle"],
             ["agrabah", "monstro", "halloween_town", "atlantica"],
-            ["destiny_islands", "neverland", "hollow_bastion"]
+            ["neverland", "hollow_bastion", "end_of_the_world"]
         ]
     },
     "worlds": {
         "type": "itemgrid",
-        "item_margin": "5,5",
-        "item_size": "40,40",
+        "item_margin": "2,2",
+        "item_size": "32,32",
         "rows": [
             ["footprints", "entry_pass", "slides"],
             ["forget_me_not", "jack_box", "trident", "theon_6"],
@@ -21,33 +21,42 @@
     },
     "keyblade_unlocks": {
         "type": "itemgrid",
-        "item_margin": "5,5",
-        "item_size": "40,40",
+        "item_margin": "2,2",
+        "item_size": "32,32",
         "rows": [
             ["lady_luck", "olympia", "jungle_king", "three_wishes"],
             ["wishing_star", "pumpkinhead", "fairy_harp", "divine_rose"],
             ["spellbinder", "lionheart", "oathkeeper", "oblivion"]
         ]
     },
-    "abilities": {
+    "magic_trinities": {
         "type": "itemgrid",
-        "item_margin": "5,5",
-        "item_size": "35,35",
+        "item_margin": "2,2",
+        "item_size": "32,32",
         "rows": [
             ["fire", "blizzard", "thunder", "cure", "gravity", "stop", "aero"],
             ["simba", "bambi", "genie", "dumbo", "tinkerbell", "mushu"],
-            ["blue_trinity", "red_trinity", "green_trinity", "yellow_trinity", "white_trinity"],
-            ["high_jump", "glide", "mermaid_kick"]
+            ["blue_trinity", "red_trinity", "green_trinity", "yellow_trinity", "white_trinity"]
+        ]
+    },
+    "abilities": {
+        "type": "itemgrid",
+        "item_margin": "2,2",
+        "item_size": "32,32",
+        "rows": [
+            ["high_jump", "glide", "mermaid_kick"],
+            ["leaf_bracer", "dodge_roll", "second_chance", "mp_rage", "guard"],
+            ["combo_master", "strike_raid", "sonic_blade", "counterattack", "air_combo_plus"]
         ]
     },
     "collectibles": {
         "type": "itemgrid",
-        "item_margin": "5,5",
-        "item_size": "40,40",
+        "item_margin": "2,2",
+        "item_size": "32,32",
         "rows": [
-            ["lucky_emblem", "raft_materials", "puppies"],
+            ["lucky_emblem", "raft_materials", "postcard", "puppy"],
             ["emblem_fountain", "emblem_flame", "emblem_chest", "emblem_statue"],
-            ["postcard", "torn_page", "orichalcum", "mythril"]
+            ["torn_page", "orichalcum", "mythril"]
         ]
     }
 }

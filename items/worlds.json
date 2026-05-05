@@ -2,6 +2,7 @@
     {
         "name": "Wonderland",
         "type": "consumable",
+        "max_quantity": 2,
         "codes": "wonderland",
         "img": "images/worlds/Wonderland.png"
     },
@@ -14,6 +15,7 @@
     {
         "name": "Deep Jungle",
         "type": "consumable",
+        "max_quantity": 2,
         "codes": "deep_jungle",
         "img": "images/worlds/Deep Jungle.png"
     },
@@ -26,13 +28,14 @@
     {
         "name": "Olympus Coliseum",
         "type": "consumable",
+        "max_quantity": 2,
         "img": "images/worlds/Olympus Coliseum KH1.png",
         "codes": "olympus_coliseum"
     },
     {
         "name": "Entry Pass",
         "type": "toggle",
-        "img": "images/worlds/Barrels.png",
+        "img": "images/worlds/Entry Pass.png",
         "codes": "entry_pass"
     },
     {
@@ -55,13 +58,14 @@
     },
     {
         "name": "Agrabah",
-        "img": "images/worlds/Agrabah.png",
         "type": "toggle",
+        "img": "images/worlds/Agrabah.png",
         "codes": "agrabah"
     },
     {
         "name": "Halloween Town",
         "type": "consumable",
+        "max_quantity": 2,
         "codes": "halloween_town",
         "img": "images/worlds/Halloween Town.png"
     },
@@ -69,7 +73,7 @@
         "name": "Forget-Me-Not",
         "type": "toggle",
         "codes": "forget_me_not",
-        "img": "images/worlds/Mushrooms.png"
+        "img": "images/worlds/Forget Me Not.png"
     },
     {
         "name": "Jack-In-The-Box",
@@ -80,6 +84,7 @@
     {
         "name": "Atlantica",
         "type": "consumable",
+        "max_quantity": 2,
         "img": "images/worlds/Atlantica KH1.png",
         "codes": "atlantica"
     },
@@ -98,6 +103,7 @@
     {
         "name": "Hollow Bastion",
         "type": "consumable",
+        "max_quantity": 2,
         "codes": "hollow_bastion",
         "img": "images/worlds/Hollow Bastion.png"
     },
@@ -147,16 +153,6 @@
         "name": "Destiny Islands",
         "img": "images/worlds/Destiny Islands.png",
         "type": "toggle",
-<<<<<<< HEAD
-        "codes": "destiny_island"
-    },
-    {
-        "name": "Day 2",
-        "img": "images/worlds/Destiny Islands.png",
-        "type": "toggle",
-        "codes": "day2"
-=======
         "codes": "destiny_islands"
->>>>>>> ab725a4217bf20380323e801b505bf0d96b146b3
     }
 ]
