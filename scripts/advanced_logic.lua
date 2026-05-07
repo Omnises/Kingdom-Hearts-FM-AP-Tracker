@@ -672,3 +672,13 @@ function haw_bouncing_spot_access()
 
    return AccessibilityLevel.SequenceBreak
 end
+
+function boss_beginner_require_tools()
+   if has_basic_tools() then
+      return AccessibilityLevel.Normal
+   elseif logic_difficulty_at_least_normal() then
+      return AccessibilityLevel.Normal
+   end
+
+   return AccessibilityLevel.SequenceBreak
+end

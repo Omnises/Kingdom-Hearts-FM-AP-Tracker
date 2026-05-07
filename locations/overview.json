@@ -147,14 +147,14 @@
                     },
                     {
                         "name": "Secret Waterway - Kairi",
-                        "access_rules": ["hollow_bastion, [$world_count:6], $has_emblems"],
+                        "access_rules": ["hollow_bastion, [$world_count:6], $has_emblems, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
                     },
                     {
                         "name": "Defeat Opposite Armor",
-                        "access_rules": ["red_trinity"],
+                        "access_rules": ["red_trinity, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
@@ -249,7 +249,7 @@
                 "name": "Traverse Town - Gepetto's House",
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
-                "access_rules": ["^$mon_parasite_ii_access, [$world_count:3]"],
+                "access_rules": ["^$mon_parasite_ii_access, [$world_count:3], ^$boss_beginner_require_tools"],
                 "sections": [
                     {
                         "name": "Gepetto's Rewards",
@@ -551,12 +551,14 @@
                     },
                     {
                         "name": "Bizarre Room - Defeat Trickmaster",
+                        "access_rules":["^$boss_beginner_require_tools"],
                         "item_count": 2,
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Bizarre Room - Seal Keyhole",
+                        "access_rules":["^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
@@ -690,7 +692,8 @@
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
                     {
-                        "name": "Bamboo Thicket - Defeat Sabor"
+                        "name": "Bamboo Thicket - Defeat Sabor",
+                        "access_rules":["^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Camp - Save Gorillas"
@@ -708,39 +711,41 @@
                         "name": "Tree House - Save Gorillas"
                     },
                     {
-                        "name": "Cliff - Defeat Clayton"
+                        "name": "Cliff - Defeat Clayton",
+                        "access_rules":["^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Waterfall Cavern - Lower Chest",
-                        "access_rules":["$access_chest_for|deep_jungle"],
+                        "access_rules":["$access_chest_for|deep_jungle, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Waterfall Cavern - Middle Chest",
-                        "access_rules":["$access_chest_for|deep_jungle"],
+                        "access_rules":["$access_chest_for|deep_jungle, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Waterfall Cavern - High Wall Chest",
-                        "access_rules":["$access_chest_for|deep_jungle"],
+                        "access_rules":["$access_chest_for|deep_jungle, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Waterfall Cavern - High Middle Chest",
-                        "access_rules":["$access_chest_for|deep_jungle"],
+                        "access_rules":["$access_chest_for|deep_jungle, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Cavern of Hearts - Seal the Keyhole",
+                        "access_rules":["^$boss_beginner_require_tools"],
                         "item_count": 3
                     },
                     {
                         "name": "Cavern of Hearts - White Trinity Chest",
-                        "access_rules":["white_trinity, $access_chest_for|deep_jungle"],
+                        "access_rules":["white_trinity, $access_chest_for|deep_jungle, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     }
@@ -756,7 +761,7 @@
             {
                 "name": "Deep Jungle - Jungle Slider",
                 "visibility_rules":["jungle_slider_on"],
-                "access_rules":["$dj_after_slides, [$world_count:3]"],
+                "access_rules":["$dj_after_slides, [$world_count:3], ^$boss_beginner_require_tools"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -841,7 +846,7 @@
             },
             {
                 "name": "Olympus Coliseum - After Entry Pass",
-                "access_rules":["$oc_after_entry_pass, [$world_count:3]"],
+                "access_rules":["$oc_after_entry_pass, [$world_count:3], ^$boss_beginner_require_tools"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -863,7 +868,7 @@
             },
             {
                 "name": "Olympus Coliseum - Cups",
-                "access_rules":["$oc_after_entry_pass, [$world_count:3]"],
+                "access_rules":["$oc_after_entry_pass, [$world_count:3], ^$boss_beginner_require_tools"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -966,19 +971,19 @@
                     },
                     {
                         "name": "Palace Gates - Low Chest",
-                        "access_rules":["^$ag_high_jump_access"]
+                        "access_rules":["^$ag_high_jump_access, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Palace Gates - High Chest Opposite Palace",
                         "access_rules":[
-                            "high_jump",
+                            "high_jump, ^$boss_beginner_require_tools",
                             "glide, [$logic_difficulty_at_least_proud]",
                             "[$logic_difficulty_at_least_minimal]"
                         ]
                     },
                     {
                         "name": "Palace Gates - High Chest Close to Palace",
-                        "access_rules":["^$ag_palace_access"]
+                        "access_rules":["^$ag_palace_access, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Storage - Green Trinity Chest",
@@ -1004,7 +1009,7 @@
             },
             {
                 "name": "Cave of Wonders - Chests",
-                "access_rules":["agrabah, $access_chest_for|agrabah, [$world_count:3]"],
+                "access_rules":["agrabah, $access_chest_for|agrabah, [$world_count:3], ^$boss_beginner_require_tools"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
@@ -1103,7 +1108,8 @@
                         "item_count": 2
                     },
                     {
-                        "name": "Palace Gates - Defeat Pot Centipede"
+                        "name": "Palace Gates - Defeat Pot Centipede",
+                        "access_rules":["^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Bazaar - Blue Trinity",
@@ -1111,23 +1117,26 @@
                     },
                     {
                         "name": "Treasure Room - Red Trinity",
-                        "access_rules": ["red_trinity"]
+                        "access_rules": ["red_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
-                        "name": "Lamp Chamber - Defeat Jafar"
+                        "name": "Lamp Chamber - Defeat Jafar",
+                        "access_rules":["^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Lamp Chamber - Defeat Genie Jafar",
+                        "access_rules":["^$boss_beginner_require_tools"],
                         "item_count": 2
                     },
                     {
                         "name": "Lamp Chamber - Seal the Keyhole",
+                        "access_rules":["^$boss_beginner_require_tools"],
                         "item_count": 3
                     },
                     {
                         "name": "Desert - Defeat Kurt Zisa",
                         "visibility_rules":["superbosses_on"],
-                        "access_rules":["hollow_bastion, $has_emblems, [$world_count:8], [$has_defenses], ^$ag_kurt_zisa_magic_access"],
+                        "access_rules":["hollow_bastion, $has_emblems, ^$boss_beginner_require_tools, [$world_count:8], [$has_defenses], ^$ag_kurt_zisa_magic_access"],
                         "item_count": 2
                     }
                 ],
@@ -1146,10 +1155,12 @@
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
                     {
-                        "name": "Mouth - Boat Deck Chest"
+                        "name": "Mouth - Boat Deck Chest",
+                        "access_rules":["^$boss_beginner_require_tools"]
                     },
                     {
-                        "name": "Mouth - Chest on High Platform Near Teeth"
+                        "name": "Mouth - Chest on High Platform Near Teeth",
+                        "access_rules":["^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Chamber 2 - Ground Chest"
@@ -1171,7 +1182,7 @@
                     },
                     {
                         "name": "Chamber 6 - White Trinity Chest",
-                        "access_rules":["white_trinity"]
+                        "access_rules":["white_trinity, ^$boss_beginner_require_tools"]
                     }
                 ],
                 "map_locations": [
@@ -1214,7 +1225,7 @@
                     {
                         "name": "Mouth - Green Trinity Chest",
                         "access_rules":[
-                            "green_trinity, high_jump",
+                            "green_trinity, high_jump, ^$boss_beginner_require_tools",
                             "green_trinity, glide, [$logic_difficulty_at_least_normal]"
                         ]
                     },
@@ -1286,7 +1297,7 @@
                 "sections": [
                     {
                         "name": "Mouth - Blue Trinity",
-                        "access_rules":["blue_trinity"]
+                        "access_rules":["blue_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Chamber 5 - Blue Trinity",
@@ -1294,14 +1305,15 @@
                     },
                     {
                         "name": "Throat - Blue Trinity",
-                        "access_rules":["blue_trinity, ^$mon_parasite_ii_access"]
+                        "access_rules":["blue_trinity, ^$mon_parasite_ii_access, ^$boss_beginner_require_tools"]
                     },
                     {
-                        "name": "Bowels - Defeat Parasite Cage"
+                        "name": "Bowels - Defeat Parasite Cage",
+                        "access_rules":["^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Stomach - Defeat Parasite Cage II",
-                        "access_rules":["^$mon_parasite_ii_access"]
+                        "access_rules":["^$mon_parasite_ii_access, ^$boss_beginner_require_tools"]
                     }
                 ],
                 "map_locations": [
@@ -1342,7 +1354,7 @@
                     },
                     {
                         "name": "Ursula's Lair - Use Fire on Urchin Chest",
-                        "access_rules":["fire, $at_after_crystal_trident, ^$at_beginner_require_chest"]
+                        "access_rules":["fire, $at_after_crystal_trident, ^$at_beginner_require_chest, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Triton's Palace - White Trinity Chest",
@@ -1442,16 +1454,16 @@
                     },
                     {
                         "name": "Ursula's Lair - Defeat Ursula I",
-                        "access_rules":["$at_after_crystal_trident, ^$at_beginner_require_chest, ^$at_offensive_magic"]
+                        "access_rules":["$at_after_crystal_trident, ^$at_beginner_require_chest, ^$at_offensive_magic, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Ursula's Lair II - Defeat Ursula II",
-                        "access_rules":["mermaid_kick, $at_after_crystal_trident, ^$at_beginner_require_chest, ^$at_offensive_magic"],
+                        "access_rules":["mermaid_kick, $at_after_crystal_trident, ^$at_beginner_require_chest, ^$at_offensive_magic, ^$boss_beginner_require_tools"],
                         "item_count": 2
                     },
                     {
                         "name": "Ariel's Grotto - Seal Keyhole",
-                        "access_rules":["mermaid_kick, $at_after_crystal_trident, ^$at_beginner_require_chest, ^$at_offensive_magic"]
+                        "access_rules":["mermaid_kick, $at_after_crystal_trident, ^$at_beginner_require_chest, ^$at_offensive_magic, ^$boss_beginner_require_tools"]
                     }
                 ],
                 "map_locations": [
@@ -1563,37 +1575,37 @@
                     },
                     {
                         "name": "Oogie's Manor - Hollow Chest",
-                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Torture Chamber - Defeat Oogie Boogie",
-                        "access_rules":["^$ht_oogie_manor_access"],
+                        "access_rules":["^$ht_oogie_manor_access, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
                     },
                     {
                         "name": "Oogie's Manor - Defeat Oogie's Manor",
-                        "access_rules":["^$ht_oogie_manor_access"],
+                        "access_rules":["^$ht_oogie_manor_access, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
                     },
                     {
                         "name": "Cemetery - Chest Behind Grave",
-                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Cemetery - Chest By Cat Shaped Grave",
-                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Cemetery - Chest Between Graves",
-                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Cemetery - Chest by Striped Grave",
-                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access, ^$boss_beginner_require_tools"]
                     }
                 ],
                 "map_locations": [
@@ -1612,11 +1624,11 @@
                 "sections": [
                     {
                         "name": "Hold - 1st Chest on Beam",
-                        "access_rules":["$access_chest_for|neverland, ^$nl_hold_beam_access"]
+                        "access_rules":["$access_chest_for|neverland, ^$nl_hold_beam_access, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Hold - 2nd Chest on Beam",
-                        "access_rules":["$access_chest_for|neverland, ^$nl_hold_beam_access"]
+                        "access_rules":["$access_chest_for|neverland, ^$nl_hold_beam_access, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Hold - Right Blue Chest",
@@ -1640,23 +1652,23 @@
                     },
                     {
                         "name": "Captain's Cabin - Chest",
-                        "access_rules":["$access_chest_for|neverland, green_trinity"]
+                        "access_rules":["$access_chest_for|neverland, green_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Cabin - Chest",
-                        "access_rules":["$access_chest_for|neverland, green_trinity"]
+                        "access_rules":["$access_chest_for|neverland, green_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Pirate Ship - Chest in Crows Nest",
-                        "access_rules":["$access_chest_for|neverland, green_trinity"]
+                        "access_rules":["$access_chest_for|neverland, green_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Pirate Ship - White Trinity Chest on Deck",
-                        "access_rules":["$access_chest_for|neverland, white_trinity, green_trinity"]
+                        "access_rules":["$access_chest_for|neverland, white_trinity, green_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Clock Tower - Chest",
-                        "access_rules":["$access_chest_for|neverland, green_trinity"]
+                        "access_rules":["$access_chest_for|neverland, green_trinity, ^$boss_beginner_require_tools"]
                     }
                 ],
                 "map_locations": [
@@ -1680,35 +1692,35 @@
                     },
                     {
                         "name": "Captain's Cabin - Defeat Anti Sora",
-                        "access_rules":["green_trinity"]
+                        "access_rules":["green_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Pirate Ship - Encounter Captain Hook",
-                        "access_rules":["green_trinity"]
+                        "access_rules":["green_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Pirate Ship - Defeat Captain Hook",
-                        "access_rules":["green_trinity"],
+                        "access_rules":["green_trinity, ^$boss_beginner_require_tools"],
                         "item_count": 2
                     },
                     {
                         "name": "Clock Tower - Seal Keyhole",
-                        "access_rules":["green_trinity"],
+                        "access_rules":["green_trinity, ^$boss_beginner_require_tools"],
                         "item_count": 3
                     },
                     {
                         "name": "Clock Tower - Seal Keyhole Navi-G Piece",
-                        "access_rules":["green_trinity"]
+                        "access_rules":["green_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Clock Tower - Doors",
-                        "access_rules":["green_trinity"],
+                        "access_rules":["green_trinity, ^$boss_beginner_require_tools"],
                         "item_count": 12
                     },
                     {
                         "name": "Clock Tower - Defeat Phantom",
                         "visibility_rules":["superbosses_on"],
-                        "access_rules":["green_trinity, hollow_bastion, $has_emblems, ^$nl_phantom_magic_access, ^$nl_phantom_defense_access"]
+                        "access_rules":["green_trinity, hollow_bastion, $has_emblems, ^$nl_phantom_magic_access, ^$nl_phantom_defense_access, ^$boss_beginner_require_tools"]
                     }
                 ],
                 "map_locations": [
@@ -1753,7 +1765,7 @@
                     },
                     {
                         "name": "Rising Falls - White Trinity Chest",
-                        "access_rules":["$access_chest_for|hollow_bastion, white_trinity"]
+                        "access_rules":["$access_chest_for|hollow_bastion, white_trinity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Base Level - Use Bubble to Move Under the Wall",
@@ -1792,66 +1804,67 @@
                     },
                     {
                         "name": "Dungeon - Blue Trinity",
-                        "access_rules":["blue_trinity"],
+                        "access_rules":["blue_trinity, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Library - Chest on Bookshelf",
-                        "access_rules":["$access_chest_for|hollow_bastion"]
+                        "access_rules":["$access_chest_for|hollow_bastion, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Entrance Hall - Defeat Riku I",
+                        "access_rules":["^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Entrance Hall - Chest on Pillar Before Emblem Door",
-                        "access_rules":["$access_chest_for|hollow_bastion, ^$hb_entrance_hall_pillar_access"]
+                        "access_rules":["$access_chest_for|hollow_bastion, ^$hb_entrance_hall_pillar_access, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Library - Turning Carousel Chest on 1st Floor",
-                        "access_rules":["[$access_broken_chest_for|hollow_bastion]"]
+                        "access_rules":["[$access_broken_chest_for|hollow_bastion], ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Library - Turning Carousel Chest on Top of Bookshelf",
-                        "access_rules":["[$access_broken_chest_for|hollow_bastion]"]
+                        "access_rules":["[$access_broken_chest_for|hollow_bastion], ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Library - 1st Turning Carousel Chest on 2nd Floor",
-                        "access_rules":["[$access_broken_chest_for|hollow_bastion]"]
+                        "access_rules":["[$access_broken_chest_for|hollow_bastion], ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Library - 2nd Turning Carousel Chest on 2nd Floor",
-                        "access_rules":["[$access_broken_chest_for|hollow_bastion]"]
+                        "access_rules":["[$access_broken_chest_for|hollow_bastion], ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Lift Stop - Gravity Chest Behind Library Bookshelf",
-                        "access_rules":["$access_chest_for|hollow_bastion, gravity"]
+                        "access_rules":["$access_chest_for|hollow_bastion, gravity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Lift Stop - Gravity Chest in Library Node",
-                        "access_rules":["$access_chest_for|hollow_bastion, gravity"]
+                        "access_rules":["$access_chest_for|hollow_bastion, gravity, ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Entrance Hall - Emblem Piece (Flame)",
-                        "access_rules":["^$hb_entrance_hall_upper_level_access, fire, ^$hb_entrance_hall_flame_emblem_access"],
+                        "access_rules":["^$hb_entrance_hall_upper_level_access, fire, ^$hb_entrance_hall_flame_emblem_access, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Entrance Hall - Emblem Piece (Chest)",
-                        "access_rules":["^$hb_entrance_hall_upper_level_access, [$access_broken_chest_for|hollow_bastion]"]
+                        "access_rules":["^$hb_entrance_hall_upper_level_access, [$access_broken_chest_for|hollow_bastion], ^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Entrance Hall - Emblem Piece (Statue)",
-                        "access_rules":["^$hb_entrance_hall_upper_level_access, red_trinity"],
+                        "access_rules":["^$hb_entrance_hall_upper_level_access, red_trinity, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Entrance Hall - Emblem Piece (Fountain)",
-                        "access_rules":["^$hb_entrance_hall_upper_level_access"],
+                        "access_rules":["^$hb_entrance_hall_upper_level_access, ^$boss_beginner_require_tools"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     }
@@ -1866,7 +1879,7 @@
             },
             {
                 "name": "Hollow Bastion - After Emblems",
-                "access_rules":["hollow_bastion, [$world_count:6]"],
+                "access_rules":["hollow_bastion, [$world_count:6], ^$boss_beginner_require_tools"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
@@ -1959,7 +1972,7 @@
             },
             {
                 "name": "Hollow Bastion - 2nd Visit",
-                "access_rules":["hollow_bastion, $has_emblems, [$world_count:6]"],
+                "access_rules":["hollow_bastion, $has_emblems, [$world_count:6], ^$boss_beginner_require_tools"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -2020,7 +2033,7 @@
             },
             {
                 "name": "End of the World - Final Dimension",
-                "access_rules":["$eotw_access, $access_chest_for|end_of_the_world, [$world_count:8]"],
+                "access_rules":["$eotw_access, $access_chest_for|end_of_the_world, [$world_count:8], ^$boss_beginner_require_tools"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
@@ -2104,7 +2117,7 @@
             },
             {
                 "name": "End of the World - World Terminus",
-                "access_rules":["$eotw_access, [$world_count:8]"],
+                "access_rules":["$eotw_access, [$world_count:8], ^$boss_beginner_require_tools"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
