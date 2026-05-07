@@ -8,7 +8,7 @@
     {
         "name": "TT",
         "location_size": 12,
-        "location_border_thickness": 1,
+        "location_border_thickness": 2,
         "img": "images/maps/traverse.png"
     },
     {
@@ -72,18 +72,6 @@
         "img": "images/maps/hollow_bastion.png"
     },
     {
-        "name": "100Acre",
-        "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/100acre.png"
-    },
-    {
-        "name": "DI",
-        "location_size": 12,
-        "location_border_thickness": 2,
-        "img": "images/maps/destiny_island.png"
-    },
-    {
         "name": "EOTW",
         "location_size": 12,
         "location_border_thickness": 2,
@@ -94,5 +82,11 @@
         "location_size": 12,
         "location_border_thickness": 2,
         "img": "images/maps/destiny_islands.png"
+    },
+    {
+        "name": "100Acre",
+        "location_size": 12,
+        "location_border_thickness": 2,
+        "img": "images/maps/100acre.png"
     }
 ]
