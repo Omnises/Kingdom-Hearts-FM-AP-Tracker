@@ -56,7 +56,7 @@
     {
         "name": "Air Combo Plus",
         "img": "images/misc/ability.png",
-        "type": "toggle",
+        "type": "consumable",
         "codes": "air_combo_plus"
     },
     {

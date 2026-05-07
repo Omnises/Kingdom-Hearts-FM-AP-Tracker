@@ -98,25 +98,24 @@ SLOT_CODES =
             minimal = 3
         }
     },
-    -- TODO: add if logic requires these settings
-    --stacking_world_items =
-    --{
-    --    code = "stacking_world_items",
-    --    mapping =
-    --    {
-    --        [false] = 0,
-    --        [true] = 1
-    --    }
-    --},
-    --halloween_town_key_item_bundle =
-    --{
-    --    code = "halloween_town_key_item_bundle",
-    --    mapping =
-    --    {
-    --        [false] = 0,
-    --        [true] = 1
-    --    }
-    --}
+    stacking_world_items =
+    {
+        code = "stacking_world_items",
+        mapping =
+        {
+            [false] = 0,
+            [true] = 1
+        }
+    },
+    halloween_town_key_item_bundle =
+    {
+        code = "halloween_town_key_item_bundle",
+        mapping =
+        {
+            [false] = 0,
+            [true] = 1
+        }
+    },
     randomize_party_member_starting_accessories =
     {
         code = "random_accessories",

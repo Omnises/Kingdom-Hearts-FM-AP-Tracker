@@ -308,6 +308,48 @@
         ]
     },
     {
+        "name": "Stacking World Items",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/accessories.png",
+                "img_mods": "@disabled",
+                "codes": "stacking_world_items, stacking_world_items_off",
+                "inherit_codes": false,
+                "name": "Stacking World Items Off"
+            },
+            {
+                "img": "/images/settings/accessories.png",
+                "codes": "stacking_world_items, stacking_world_items_on",
+                "inherit_codes": false,
+                "name": "Stacking World Items On"
+            }
+        ]
+    },
+    {
+        "name": "Halloween Town Key Item Bundle",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/accessories.png",
+                "img_mods": "@disabled",
+                "codes": "halloween_town_key_item_bundle, halloween_town_key_item_bundle_off",
+                "inherit_codes": false,
+                "name": "Halloween Town Key Item Bundle Off"
+            },
+            {
+                "img": "/images/settings/accessories.png",
+                "codes": "halloween_town_key_item_bundle, halloween_town_key_item_bundle_on",
+                "inherit_codes": false,
+                "name": "Halloween Town Key Item Bundle On"
+            }
+        ]
+    },
+    {
         "name": "Randomize Party Member Starting Accessories",
         "type": "progressive",
         "allow_disabled": false,

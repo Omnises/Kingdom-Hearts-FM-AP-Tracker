@@ -109,5 +109,11 @@
         "img": "images/misc/orichalcum.png",
         "max_quantity": 99,
         "codes": "orichalcum"
+    },
+    {
+        "name": "Final Door Key",
+        "type": "toggle",
+        "img": "images/settings/door.png",
+        "codes": "final_door_key"
     }
 ]

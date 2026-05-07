@@ -120,7 +120,7 @@
                 "sections": [
                     {
                         "name": "Chest Near Ship",
-                        "ref": "Overview/Monstro - Chests Before Movement/Mouth - Chest Near Ship"
+                        "ref": "Overview/Monstro - Chests After Movement/Mouth - Chest Near Ship"
                     }
                 ],
                 "map_locations": [
@@ -168,7 +168,7 @@
                 "sections": [
                     {
                         "name": "Platform Chest",
-                        "ref": "Overview/Monstro - Chests Before Movement/Chamber 2 - Platform Chest"
+                        "ref": "Overview/Monstro - Chests After Movement/Chamber 2 - Platform Chest"
                     }
                 ],
                 "map_locations": [

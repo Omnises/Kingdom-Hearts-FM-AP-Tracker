@@ -296,6 +296,54 @@
         "name": "Traverse Town Events",
         "children": [
             {
+                "name": "1st District - Item Shop",
+                "sections": [
+                    {
+                        "name": "Hit Fan in Item Shop",
+                        "ref": "Overview/Traverse Town - 1st Visit/Hit Fan in Item Shop"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                        "x": 290,
+                        "y": 558 
+                    }
+                ]
+            },
+            {
+                "name": "1st District - Behind Accessory Shop",
+                "sections": [
+                    {
+                        "name": "Open Safe",
+                        "ref": "Overview/Traverse Town - 1st Visit/Open Safe in 1st District"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                        "x": 476,
+                        "y": 571
+                    }
+                ]
+            },
+            {
+                "name": "3rd District - Balcony",
+                "sections": [
+                    {
+                        "name": "Corner on Balcony",
+                        "ref": "Overview/Traverse Town - 1st Visit/3rd District Balcony"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                         "x": 898,
+                         "y": 420
+                    }
+                ]
+            },
+            {
                 "name": "Secret Waterway",
                 "sections": [
                     {
@@ -364,6 +412,23 @@
                         "map": "TT",
                         "x": 850,
                         "y": 535
+                    }
+                ]
+            },
+            {
+                "name": "3rd District - Gizmo Shop",
+                "sections": [
+                    {
+                        "name": "Activate Clock in Gizmo Shop",
+                        "ref": "Overview/Traverse Town - Further Visits/Activate Clock in Gizmo Shop"
+                        
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                         "x": 760,
+                         "y": 198
                     }
                 ]
             },
@@ -616,73 +681,6 @@
     {
         "name": "Traverse Town Postcards",
         "children": [
-            {
-                "name": "1st District - Item Shop",
-                "sections": [
-                    {
-                        "name": "Hit Fan in Item Shop",
-                        "ref": "Overview/Traverse Town - Postcards/Hit Fan in Item Shop"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "TT",
-                        "x": 290,
-                        "y": 558 
-                    }
-                ]
-            },
-            {
-                "name": "1st District - Behind Accessory Shop",
-                "sections": [
-                    {
-                        "name": "Open Safe",
-                        "ref": "Overview/Traverse Town - Postcards/Open Safe in 1st District"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "TT",
-                        "x": 476,
-                        "y": 571
-                    }
-                ]
-            },
-
-            {
-                "name": "3rd District - Gizmo Shop",
-                "sections": [
-                    {
-                        "name": "Activate Clock in Gizmo Shop",
-                        "ref": "Overview/Traverse Town - Postcards/Activate Clock in Gizmo Shop"
-                        
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "TT",
-                         "x": 760,
-                         "y": 198
-                    }
-                ]
-            },
-
-            {
-                "name": "3rd District - Balcony",
-                "sections": [
-                    {
-                        "name": "Corner on Balcony",
-                        "ref": "Overview/Traverse Town - Postcards/3rd District Balcony"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "TT",
-                         "x": 898,
-                         "y": 420
-                    }
-                ]
-            },
             {
                 "name": "Mailbox - Postcards",
                 "sections": [

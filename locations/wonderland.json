@@ -110,8 +110,8 @@
                 "name": "Lotus Forest - Corner Platform Above Pond",
                 "sections": [
                     {
-                        "name": "Southwest Corner Chest",
-                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Southwest Corner Chest"
+                        "name": "Southwest Corner Glide Chest",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Southwest Corner Glide Chest"
                     }
                 ],
                 "map_locations": [
@@ -255,7 +255,7 @@
                 "sections": [
                     {
                         "name": "Bear and Clock Puzzle Chest",
-                        "ref": "Overview/Wonderland - After Footprints/Tea Party Garden - Bear and Clock Puzzle Chest"
+                        "ref": "Overview/Wonderland - Before Footprints/Tea Party Garden - Bear and Clock Puzzle Chest"
                     }
                 ],
                 "map_locations": [

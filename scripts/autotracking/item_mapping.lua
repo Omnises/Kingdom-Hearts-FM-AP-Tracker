@@ -1,7 +1,6 @@
 ITEM_MAPPING = {
     [2641009] = {"torn_page", "consumable"},
-    --TODO: confirm if required in tracker
-    --[2641010] = {"final_door_key", "toggle"},
+    [2641010] = {"final_door_key", "toggle"},
     [2641011] = {"destiny_islands", "toggle"},
     [2641012] = {"raft_materials", "consumable"},
     [2641086] = {"jungle_king", "toggle"},

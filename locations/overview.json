@@ -14,11 +14,14 @@
                     },
                     {
                         "name": "1st District - Accessory Shop Roof Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":[
+                            "$access_chest_for|traverse_town, high_jump",
+                            "$access_chest_for|traverse_town, [$logic_difficulty_at_least_normal]"
+                        ]
                     },
                     {
                         "name": "Accessory Shop Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "Open Safe in 1st District",
@@ -27,15 +30,15 @@
                     },
                     {
                         "name": "2nd District - Boots and Shoes Awning Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "2nd District - Rooftop Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "2nd District - Gizmo Shop Facade Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "3rd District Balcony",
@@ -44,31 +47,31 @@
                     },
                     {
                         "name": "Alleyway - Balcony Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "Alleyway - Blue Room Awning Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "Alleyway - Corner Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "Green Room - Clock Puzzle Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "Green Room - Table Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "Red Room Chest",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "Secret Waterway - Chest Near Stairs",
-                        "access_rules":["$tt_chests"]
+                        "access_rules":["$access_chest_for|traverse_town"]
                     },
                     {
                         "name": "Secret Waterway - Leon",
@@ -83,12 +86,14 @@
                     },
                     {
                         "name": "Donald Starting Accessories",
+                        "visibility_rules":["random_accessories_on"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
                     },
                     {
                         "name": "Goofy Starting Accessories",
+                        "visibility_rules":["random_accessories_on"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
@@ -107,11 +112,11 @@
                 "sections":[
                     {
                         "name": "1st District - Candle Puzzle Chest",
-                        "access_rules":["$tt_chests, blizzard:1"]
+                        "access_rules":["$access_chest_for|traverse_town, blizzard:1"]
                     },
                     {
                         "name": "1st District - Blue Trinity Balcony Chest",
-                        "access_rules":["$tt_chests, ^$tt_balcony_access"]
+                        "access_rules":["$access_chest_for|traverse_town, ^$tt_balcony_access"]
                     },
                     {
                         "name": "1st District - Blue Trinity by Exit Door",
@@ -134,15 +139,15 @@
                     },
                     {
                         "name": "Alleyway - Chest Behind Crates",
-                        "access_rules":["$tt_chests, red_trinity"]
+                        "access_rules":["$access_chest_for|traverse_town, red_trinity"]
                     },
                     {
                         "name": "Secret Waterway - White Trinity Chest",
-                        "access_rules":["$tt_chests, white_trinity"]
+                        "access_rules":["$access_chest_for|traverse_town, white_trinity"]
                     },
                     {
                         "name": "Secret Waterway - Kairi",
-                        "access_rules": ["hollow_bastion, [$world_count:5], $has_emblems"],
+                        "access_rules": ["hollow_bastion, [$world_count:6], $has_emblems"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
@@ -162,11 +167,11 @@
                     },
                     {
                         "name": "Mystical House - Yellow Trinity Chest",
-                        "access_rules":["$tt_chests, fire:1, ^$tt_mythical_house_trinity_chest_access"]
+                        "access_rules":["$access_chest_for|traverse_town, fire:1, ^$tt_mystical_house_trinity_chest_access"]
                     },
                     {
                         "name": "Mystical House - Glide Chest",
-                        "access_rules":["$tt_chests, fire:1, ^$tt_mystical_house_glide_access"]
+                        "access_rules":["$access_chest_for|traverse_town, fire:1, ^$tt_mystical_house_glide_access"]
                     },
                     {
                         "name": "Merlin - All LV1 Magic",
@@ -182,7 +187,7 @@
                     },
                     {
                         "name": "Merlin - All Arts Items",
-                        "access_rules": ["fire:1, $has_all_arts,[$$has_lv_magic|1],[$world_count:7]"],
+                        "access_rules": ["$has_lv_magic|1, $has_all_arts, [$world_count:8]"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     }
@@ -199,17 +204,20 @@
                 "name": "Traverse Town - Moogle Workshop",
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
-                "access_rules": ["green_trinity", "high_jump:3"],
+                "access_rules": [
+                    "green_trinity",
+                    "high_jump:2, [$logic_difficulty_at_least_proud]"
+                ],
                 "sections": [
                     {
                         "name": "Left Chest",
-                        "access_rules":["$tt_chests"],
+                        "access_rules":["$access_chest_for|traverse_town"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Right Chest",
-                        "access_rules":["$tt_chests"],
+                        "access_rules":["$access_chest_for|traverse_town"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
@@ -218,12 +226,15 @@
                     },
                     {
                         "name": "Synth Items",
-                        "access_rules":["orichalcum:17, mythril:16"],
+                        "access_rules":[
+                            "orichalcum:1, [orichalcum:17], [mythril:16]",
+                            "mythril:1, [orichalcum:17], [mythril:16]"
+                        ],
                         "item_count": 33
                     },
                     {
                         "name": "Synth 15 Items",
-                        "access_rules":["orichalcum:9, mythril:9"]
+                        "access_rules":["$tt_can_synth_15"]
                     }
                 ],
                 "map_locations": [
@@ -238,7 +249,7 @@
                 "name": "Traverse Town - Gepetto's House",
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
-                "access_rules": ["monstro, [$world_count:2], ^$mon_parasite_ii_access"],
+                "access_rules": ["^$mon_parasite_ii_access, [$world_count:3]"],
                 "sections": [
                     {
                         "name": "Gepetto's Rewards",
@@ -246,14 +257,14 @@
                     },
                     {
                         "name": "All Summons Rewards",
-                        "access_rules": ["bambi, dumbo, mushu, simba, tinkerbell, genie"]
+                        "access_rules": ["$has_all_summons"]
                     },
                     {
                         "name": "Talk to Pinocchio"
                     },
                     {
                         "name": "Chest",
-                        "access_rules":["$tt_chests"],
+                        "access_rules":["$access_chest_for|traverse_town"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
@@ -330,44 +341,44 @@
                 "sections": [
                     {
                         "name": "Return 10 Puppies",
-                        "access_rules": ["$puppy_count:10"]
+                        "access_rules": ["puppy:10"]
                     },
                     {
                         "name": "Return 20 Puppies",
-                        "access_rules": ["$puppy_count:20"]
+                        "access_rules": ["puppy:20"]
                     },
                     {
                         "name": "Return 30 Puppies",
-                        "access_rules": ["$puppy_count:30"]
+                        "access_rules": ["puppy:30"]
                     },
                     {
                         "name": "Return 40 Puppies",
-                        "access_rules": ["$puppy_count:40"]
+                        "access_rules": ["puppy:40"]
                     },
                     {
                         "name": "Return 50 Puppies",
-                        "access_rules": ["$puppy_count:50"],
+                        "access_rules": ["puppy:50"],
                         "item_count": 2
                     },
                     {
                         "name": "Return 60 Puppies",
-                        "access_rules": ["$puppy_count:60"]
+                        "access_rules": ["puppy:60"]
                     },
                     {
                         "name": "Return 70 Puppies",
-                        "access_rules": ["$puppy_count:70"]
+                        "access_rules": ["puppy:70"]
                     },
                     {
                         "name": "Return 80 Puppies",
-                        "access_rules": ["$puppy_count:80"]
+                        "access_rules": ["puppy:80"]
                     },
                     {
                         "name": "Return 90 Puppies",
-                        "access_rules": ["$puppy_count:90"]
+                        "access_rules": ["puppy:90"]
                     },
                     {
                         "name": "Return 99 Puppies",
-                        "access_rules": ["$puppy_count:99"],
+                        "access_rules": ["puppy:99"],
                         "item_count": 2
                     }
                 ],
@@ -381,48 +392,54 @@
             },
             {
                 "name": "Wonderland - Before Footprints",
-                "access_rules":["wonderland, $access_chests|1, [$world_count:2]"],
+                "access_rules":["wonderland, [$world_count:3]"],
                 "sections": [
                     {
                         "name": "Rabbit Hole - Green Trinity Chest",
-                        "access_rules":["green_trinity"]
+                        "access_rules":["$access_chest_for|wonderland, green_trinity"]
                     },
                     {
-                        "name": "Rabbit Hole - Defeat Heartless 1"
+                        "name": "Rabbit Hole - Defeat Heartless 1",
+                        "access_rules":["$access_chest_for|wonderland"]
                     },
                     {
-                        "name": "Rabbit Hole - Defeat Heartless 2"
+                        "name": "Rabbit Hole - Defeat Heartless 2",
+                        "access_rules":["$access_chest_for|wonderland"]
                     },
                     {
                         "name": "Rabbit Hole - Defeat Heartless 3",
-                        "access_rules":["[$world_count:5]"]
+                        "access_rules":[
+                            "$access_chest_for|wonderland, [$world_count:6]",
+                            "$access_chest_for|wonderland, [$logic_difficulty_at_least_proud], [$world_count:3]"
+                        ]
                     },
                     {
                         "name": "Bizarre Room - Green Trinity Chest",
-                        "access_rules": ["green_trinity"]
+                        "access_rules": ["$access_chest_for|wonderland, green_trinity"]
                     },
                     {
                         "name": "Queen's Castle - Left Hedge Chest",
-                        "access_rules":["footprints", "high_jump", "glide"]
+                        "access_rules":["$access_chest_for|wonderland, ^$wl_queens_castle_hedge_access"]
                     },
                     {
                         "name": "Queen's Castle - Right Hedge Blue Chest",
-                        "access_rules":["footprints", "high_jump", "glide"]
+                        "access_rules":["$access_chest_for|wonderland, ^$wl_queens_castle_hedge_access"]
                     },
                     {
                         "name": "Queen's Castle - Right Hedge Red Chest",
-                        "access_rules":["footprints", "high_jump", "glide"]
+                        "access_rules":["$access_chest_for|wonderland, ^$wl_queens_castle_hedge_access"]
                     },
                     {
-                        "name": "Lotus Forest - Southwest Corner Chest",
-                        "access_rules": ["^$wl_lotus_forest_southwest_access"]
+                        "name": "Lotus Forest - Southwest Corner Glide Chest",
+                        "access_rules": ["$access_chest_for|wonderland, ^$wl_lotus_forest_southwest_access"]
                     },
                     {
-                        "name": "Lotus Forest - Chest Near Nut"
+                        "name": "Lotus Forest - Chest Near Nut",
+                        "access_rules":["$access_chest_for|wonderland"]
                     },
                     {
                         "name": "Lotus Forest - Northeast Corner Chest",
-                        "access_rules":["[$jump_or_glide_access]"]
+                        "access_rules":["$access_chest_for|wonderland, ^$wl_jump_and_glide_access"]
                     },
                     {
                         "name": "Lotus Forest - Ether Red Flowers",
@@ -442,43 +459,47 @@
                     },
                     {
                         "name": "Tea Party Garden - 1st Chest Above Lotus Forest Entrance",
-                        "access_rules":["^$wl_tea_party_entrance_access"]
+                        "access_rules":["$access_chest_for|wonderland, ^$wl_tea_party_entrance_hedge_access"]
                     },
                     {
                         "name": "Tea Party Garden - 2nd Chest Above Lotus Forest Entrance",
-                        "access_rules":["^$wl_tea_party_entrance_access"]
+                        "access_rules":["$access_chest_for|wonderland, ^$wl_tea_party_entrance_hedge_access"]
+                    },
+                    {
+                        "name": "Tea Party Garden - Bear and Clock Puzzle Chest",
+                        "access_rules":["$access_chest_for|wonderland, ^$wl_tea_party_access"]
                     },
                     {
                         "name": "Tea Party Garden - Chest Across Bizarre Room Entrance",
-                        "access_rules":["^$wl_tea_party_high_hedge_access"]
+                        "access_rules":["$access_chest_for|wonderland, ^$wl_tea_party_high_hedge_access"]
                     },
                     {
                         "name": "Tea Party Garden - Left Cushioned Chair",
-                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "access_rules":["^$wl_tea_party_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Tea Party Garden - Left Pink Chair",
-                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "access_rules":["^$wl_tea_party_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Tea Party Garden - Left Gray Chair",
-                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "access_rules":["^$wl_tea_party_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Tea Party Garden - Right Yellow Chair",
-                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "access_rules":["^$wl_tea_party_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Tea Party Garden - Right Brown Chair",
-                        "access_rules":["^$wl_tea_party_high_hedge_access"],
+                        "access_rules":["^$wl_tea_party_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     }
@@ -493,19 +514,19 @@
             },
             {
                 "name": "Wonderland - After Footprints",
-                "access_rules":["wonderland, [$world_count:2], footprints"],
+                "access_rules":["$wl_after_footprints, [$world_count:3]"],
                 "sections": [
                     {
                         "name": "Lotus Forest - Thunder Plant Chest 1",
-                        "access_rules":["$access_chests|1, thunder:1"]
+                        "access_rules":["$access_chest_for|wonderland, thunder:1"]
                     },
                     {
                         "name": "Lotus Forest - Thunder Plant Chest 2",
-                        "access_rules":["$access_chests|1, thunder:1"]
+                        "access_rules":["$access_chest_for|wonderland, thunder:1"]
                     },
                     {
                         "name": "Lotus Forest - White Trinity Chest",
-                        "access_rules":["$access_chests|1, white_trinity"]
+                        "access_rules":["$access_chest_for|wonderland, white_trinity"]
                     },
                     {
                         "name": "Lotus Forest - Blue Trinity by Moving Boulder",
@@ -522,10 +543,6 @@
                         "name": "Lotus Forest - Hi-Potion Red Flower",
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
-                    },
-                    {
-                        "name": "Tea Party Garden - Bear and Clock Puzzle Chest",
-                        "access_rules":["$access_chests|1, ^$wl_tea_party_bear_access"]
                     },
                     {
                         "name": "Bizarre Room - Read Book",
@@ -545,7 +562,7 @@
                     },
                     {
                         "name": "Bizarre Room - Lamp Chest",
-                        "access_rules":["$access_chests|1"]
+                        "access_rules":["$access_chest_for|wonderland"]
                     },
                     {
                         "name": "Bizarre Room - Flower Pot",
@@ -563,56 +580,63 @@
             },
             {
                 "name": "Deep Jungle - Before Slides",
-                "access_rules": ["deep_jungle, [$world_count:2]"],
+                "access_rules": ["deep_jungle, [$world_count:3]"],
                 "sections": [
                     {
                         "name": "Tarzan Starting Accessory",
+                        "visibility_rules":["random_accessories_on"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Tree House - Chest Beneath Tree House",
-                        "access_rules":["$access_chests|3"]
+                        "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Tree House - Rooftop Chest",
-                        "access_rules":["$access_chests|3"]
+                        "access_rules":[
+                            "$access_chest_for|deep_jungle, high_jump",
+                            "$access_chest_for|deep_jungle, [$logic_difficulty_at_least_proud]"
+                        ]
                     },
                     {
                         "name": "Tree House - Suspended Boat Chest",
-                        "access_rules":["[$glide_access], $access_chests|3"]
+                        "access_rules":[
+                            "$access_chest_for|deep_jungle, glide",
+                            "$access_chest_for|deep_jungle, [$logic_difficulty_at_least_proud]"
+                        ]
                     },
                     {
-                        "name": "Hippo's Lagoon - Center Chest",
-                        "access_rules":["$access_chests|3"]
+                        "name": "andppo's Lagoon - Center Chest",
+                        "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Hippo's Lagoon - Left Chest",
-                        "access_rules":["$access_chests|3"]
+                        "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Hippo's Lagoon - Right Chest",
-                        "access_rules":["[$jump_or_glide_access], $access_chests|3"]
+                        "access_rules":["$access_chest_for|deep_jungle, ^$dj_jump_and_glide_access"]
                     },
                     {
                         "name": "Vines - Chest",
-                        "access_rules":["$access_chests|3"]
+                        "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Vines 2 - Chest",
-                        "access_rules":["$access_chests|3"]
+                        "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Climbing Trees - Blue Trinity Chest",
-                        "access_rules":["blue_trinity, $access_chests|3"]
+                        "access_rules":["blue_trinity, $access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Tunnel - Chest",
-                        "access_rules":["$access_chests|3"]
+                        "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Camp - Blue Trinity Chest",
-                        "access_rules":["blue_trinity, $access_chests|3"]
+                        "access_rules":["blue_trinity, $access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Camp - Research Table Experiment",
@@ -634,15 +658,15 @@
                     },
                     {
                         "name": "Tent - Chest",
-                        "access_rules":["$access_chests|3"]
+                        "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Cliff - Left Chest",
-                        "access_rules":["$access_chests|3"]
+                        "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Cliff - Right Chest",
-                        "access_rules":["$access_chests|3"]
+                        "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
                         "name": "Treetop - Green Trinity",
@@ -661,7 +685,7 @@
             },
             {
                 "name": "Deep Jungle - After Slides",
-                "access_rules":["deep_jungle, [$world_count:2], slides"],
+                "access_rules":["$dj_after_slides, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -688,25 +712,25 @@
                     },
                     {
                         "name": "Waterfall Cavern - Lower Chest",
-                        "access_rules":["$access_chests|3"],
+                        "access_rules":["$access_chest_for|deep_jungle"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Waterfall Cavern - Middle Chest",
-                        "access_rules":["$access_chests|3"],
+                        "access_rules":["$access_chest_for|deep_jungle"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Waterfall Cavern - High Wall Chest",
-                        "access_rules":["$access_chests|3"],
+                        "access_rules":["$access_chest_for|deep_jungle"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Waterfall Cavern - High Middle Chest",
-                        "access_rules":["$access_chests|3"],
+                        "access_rules":["$access_chest_for|deep_jungle"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
@@ -716,7 +740,7 @@
                     },
                     {
                         "name": "Cavern of Hearts - White Trinity Chest",
-                        "access_rules":["white_trinity, $access_chests|3"],
+                        "access_rules":["white_trinity, $access_chest_for|deep_jungle"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     }
@@ -731,7 +755,8 @@
             },
             {
                 "name": "Deep Jungle - Jungle Slider",
-                "access_rules":["deep_jungle, [$world_count:2], slides"],
+                "visibility_rules":["jungle_slider_on"],
+                "access_rules":["$dj_after_slides, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -761,33 +786,33 @@
             },
             {
                 "name": "Olympus Coliseum - Before Entry Pass",
-                "access_rules":["olympus_coliseum, [$world_count:2]"],
+                "access_rules":["olympus_coliseum, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
                     {
                         "name": "Coliseum Gates - Chest Behind Left Columns",
-                        "access_rules":["$access_chests|2"]
+                        "access_rules":["$access_chest_for|olympus_coliseum"]
                     },
                     {
                         "name": "Coliseum Gates - Right Blue Trinity Chest",
-                        "access_rules":["blue_trinity, $access_chests|2"]
+                        "access_rules":["blue_trinity, $access_chest_for|olympus_coliseum"]
                     },
                     {
                         "name": "Coliseum Gates - Left Blue Trinity Chest",
-                        "access_rules":["blue_trinity, $access_chests|2"]
+                        "access_rules":["blue_trinity, $access_chest_for|olympus_coliseum"]
                     },
                     {
                         "name": "Coliseum Gates - White Trinity Chest",
-                        "access_rules":["white_trinity, $access_chests|2"]
+                        "access_rules":["white_trinity, $access_chest_for|olympus_coliseum"]
                     },
                     {
                         "name": "Coliseum Gates - Blizzara Chest",
-                        "access_rules":["blizzard:2, $access_chests|2"]
+                        "access_rules":["blizzard:2, $access_chest_for|olympus_coliseum"]
                     },
                     {
                         "name": "Coliseum Gates - Blizzaga Chest",
-                        "access_rules":["blizzard:3, $access_chests|2"]
+                        "access_rules":["blizzard:3, $access_chest_for|olympus_coliseum"]
                     },
                     {
                         "name": "Coliseum Gates - Green Trinity",
@@ -816,9 +841,9 @@
             },
             {
                 "name": "Olympus Coliseum - After Entry Pass",
+                "access_rules":["$oc_after_entry_pass, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
-                "access_rules":["olympus_coliseum, [$world_count:2], entry_pass"],
                 "sections": [
                     {
                         "name": "Coliseum Lobby - Defeat Cerberus",
@@ -838,64 +863,63 @@
             },
             {
                 "name": "Olympus Coliseum - Cups",
+                "access_rules":["$oc_after_entry_pass, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
-                "access_rules":["olympus_coliseum, [$world_count:2], entry_pass"],
                 "sections": [
                     {
                         "name": "Phil Cup",
-                        "visibility_rules":["cups_on"],
+                        "visibility_rules":["$is_cups_enabled"],
                         "access_rules":["phil_cup"],
                         "item_count": 3
                     },
                     {
                         "name": "Pegasus Cup",
-                        "visibility_rules":["cups_on"],
+                        "visibility_rules":["$is_cups_enabled"],
                         "access_rules":["pegasus_cup"],
                         "item_count": 3
                     },
                     {
                         "name": "Hercules Cup",
-                        "visibility_rules":["cups_on"],
+                        "visibility_rules":["$is_cups_enabled"],
                         "access_rules":["hercules_cup, [$world_count:4]"],
                         "item_count": 5
                     },
                     {
                         "name": "Coliseum Lobby - Olympia Chest",
-                        "access_rules":["hercules_cup"],
-                        "visibility_rules":["cups_on"],
-                        "chest_unopened_img": "/images/misc/chest.png",
-                        "chest_opened_img": "/images/misc/chest_bw.png"
+                        "visibility_rules":["$is_cups_enabled"],
+                        "access_rules":["$has_all_cups, [$world_count:4]"]
                     },
                     {
                         "name": "Hades Cup",
-                        "visibility_rules":["cups_on"],
-                        "access_rules":["phil_cup, pegasus_cup, hercules_cup, [$world_count:7], [$has_defenses]"],
+                        "visibility_rules":["cups_hades"],
+                        "access_rules":["$has_all_cups, [$world_count:8], [$has_defenses]"],
                         "item_count": 7
                     },
                     {
                         "name": "Defeat Hades",
-                        "visibility_rules":["cups_on"],
-                        "access_rules":["phil_cup, pegasus_cup, hercules_cup, [$world_count:7], [$has_defenses]"],
+                        "visibility_rules":["cups_hades"],
+                        "access_rules":["$has_all_cups, [$world_count:8], [$has_defenses]"],
                         "item_count": 2
                     },
                     {
                         "name": "Coliseum Gates - Purple Jar",
-                        "chest_unopened_img": "/images/misc/chest.png",
-                        "chest_opened_img": "/images/misc/chest_bw.png",
-                        "access_rules":["phil_cup, pegasus_cup, hercules_cup"],
-                        "visibility_rules":["cups_on"]
+                        "visibility_rules":["cups_hades"],
+                        "access_rules":["$has_all_cups, [$world_count:8], [$has_defenses]"]
                     },
                     {
                         "name": "Defeat Sephiroth",
-                        "visibility_rules":["superbosses_on", "door_superbosses", "goal_sephiroth"],
-                        "access_rules":["phil_cup, pegasus_cup, hercules_cup, [$world_count:7], [$has_defenses]"],
+                        "visibility_rules":["superbosses_on", "goal_sephiroth"],
+                        "access_rules":["$has_all_cups, [$world_count:8], [$has_defenses]"],
                         "item_count": 2
                     },
                     {
                         "name": "Defeat Ice Titan",
-                        "visibility_rules":["cups_on"],
-                        "access_rules":["phil_cup, pegasus_cup, hercules_cup, [$world_count:7], [$has_defenses], [guard]"]
+                        "visibility_rules":["cups_hades, superbosses_on"],
+                        "access_rules":[
+                            "$has_all_cups, guard, [$world_count:8], [$has_defenses]",
+                            "$has_all_cups, [$logic_difficulty_at_least_minimal], [$world_count:8], [$has_defenses]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -908,9 +932,9 @@
             },
             {
                 "name": "Agrabah - Chests",
+                "access_rules":["agrabah, $access_chest_for|agrabah, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
-                "access_rules":["$access_chests|4, [$world_count:2]"],
                 "sections": [
                     {
                         "name": "Plaza - Chest by Storage"
@@ -938,14 +962,19 @@
                     },
                     {
                         "name": "Main Street - Chest High Above Palace Entrance",
-                        "access_rules":["^$ag_main_street_access"]
+                        "access_rules":["^$ag_high_jump_access"]
                     },
                     {
-                        "name": "Palace Gates - Low Chest"
+                        "name": "Palace Gates - Low Chest",
+                        "access_rules":["^$ag_high_jump_access"]
                     },
                     {
                         "name": "Palace Gates - High Chest Opposite Palace",
-                        "access_rules":["[$jump_access]"]
+                        "access_rules":[
+                            "high_jump",
+                            "glide, [$logic_difficulty_at_least_proud]",
+                            "[$logic_difficulty_at_least_minimal]"
+                        ]
                     },
                     {
                         "name": "Palace Gates - High Chest Close to Palace",
@@ -975,9 +1004,9 @@
             },
             {
                 "name": "Cave of Wonders - Chests",
+                "access_rules":["agrabah, $access_chest_for|agrabah, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
-                "access_rules":["$access_chests|4, [$world_count:2]"],
                 "sections": [
                     {
                         "name": "Cave Entrance - Left Chest"
@@ -1001,7 +1030,11 @@
                     },
                     {
                         "name": "Bottomless Hall - Pillar Chest",
-                        "access_rules":["[$jump_or_glide_access]"]
+                        "access_rules":[
+                            "glide",
+                            "high_jump, [$logic_difficulty_at_least_normal]",
+                            "[$logic_difficulty_at_least_proud]"
+                        ]
                     },
                     {
                         "name": "Bottomless Hall - Chest Across Chasm"
@@ -1034,7 +1067,8 @@
                         "name": "Dark Chamber - Bridge Chest"
                     },
                     {
-                        "name": "Dark Chamber - Chest Near Save Point"
+                        "name": "Dark Chamber - Chest Near Save Point",
+                        "access_rules":["high_jump", "glide", "[$logic_difficulty_at_least_normal]"]
                     },
                     {
                         "name": "Silent Chamber - Blue Trinity Chest",
@@ -1059,12 +1093,13 @@
             },
             {
                 "name": "Agrabah - Events",
+                "access_rules":["agrabah, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
-                "access_rules":["agrabah, [$world_count:2]"],
                 "sections": [
                     {
                         "name": "Aladdin Starting Accessories",
+                        "visibility_rules":["random_accessories_on"],
                         "item_count": 2
                     },
                     {
@@ -1091,8 +1126,8 @@
                     },
                     {
                         "name": "Desert - Defeat Kurt Zisa",
-                        "visibility_rules":["superbosses_on", "door_superbosses"],
-                        "access_rules":["hollow_bastion, $has_emblems, [$world_count:7], [$has_defenses], [blizzard:3]"],
+                        "visibility_rules":["superbosses_on"],
+                        "access_rules":["hollow_bastion, $has_emblems, [$world_count:8], [$has_defenses], ^$ag_kurt_zisa_magic_access"],
                         "item_count": 2
                     }
                 ],
@@ -1106,13 +1141,10 @@
             },
             {
                 "name": "Monstro - Chests Before Movement",
+                "access_rules":["monstro, $access_chest_for|monstro, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
-                "access_rules":["$access_chests|5, [$world_count:2]"],
                 "sections": [
-                    {
-                        "name": "Mouth - Chest Near Ship"
-                    },
                     {
                         "name": "Mouth - Boat Deck Chest"
                     },
@@ -1121,9 +1153,6 @@
                     },
                     {
                         "name": "Chamber 2 - Ground Chest"
-                    },
-                    {
-                        "name": "Chamber 2 - Platform Chest"
                     },
                     {
                         "name": "Chamber 3 - Ground Chest"
@@ -1155,41 +1184,82 @@
             },
             {
                 "name": "Monstro - Chests After Movement",
+                "access_rules":["monstro, $access_chest_for|monstro, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
-                "access_rules":["$access_chests|5, [$world_count:2]"],
                 "sections": [
                     {
                         "name": "Mouth - Chest on High Platform Boat Side",
-                        "access_rules":["high_jump", "glide"]
+                        "access_rules":[
+                            "high_jump",
+                            "glide, [$logic_difficulty_at_least_normal]"
+                        ]
                     },
                     {
                         "name": "Mouth - Chest on High Platform Across from Boat",
-                        "access_rules":["high_jump", "glide"]
+                        "access_rules":[
+                            "high_jump",
+                            "glide, [$logic_difficulty_at_least_normal]"
+                        ]
+                    },
+                    {
+                        "name": "Mouth - Chest Near Ship",
+                        "access_rules":[
+                            "[$logic_difficulty_at_least_normal]",
+                            "high_jump",
+                            "glide",
+                            "$has_basic_tools"
+                        ]
                     },
                     {
                         "name": "Mouth - Green Trinity Chest",
-                        "access_rules":["green_trinity, high_jump", "green_trinity, glide"]
+                        "access_rules":[
+                            "green_trinity, high_jump",
+                            "green_trinity, glide, [$logic_difficulty_at_least_normal]"
+                        ]
+                    },
+                    {
+                        "name": "Chamber 2 - Platform Chest",
+                        "access_rules":[
+                            "[$logic_difficulty_at_least_normal]",
+                            "high_jump",
+                            "glide"
+                        ]
                     },
                     {
                         "name": "Chamber 3 - Chest on Platform Above Chamber 2 Entrance",
-                        "access_rules":["[$jump_access]"]
+                        "access_rules":[
+                            "high_jump",
+                            "[$logic_difficulty_at_least_normal]"
+                        ]
                     },
                     {
                         "name": "Chamber 3 - Chest on Platform Near Chamber 6 Entrance",
-                        "access_rules":["[$jump_access]"]
+                        "access_rules":[
+                            "high_jump",
+                            "[$logic_difficulty_at_least_normal]"
+                        ]
                     },
                     {
                         "name": "Chamber 5 - Platform Chest",
-                        "access_rules":["high_jump"]
+                        "access_rules":[
+                            "high_jump",
+                            "[$logic_difficulty_at_least_proud]"
+                        ]
                     },
                     {
                         "name": "Chamber 5 - Chest Atop Barrel",
-                        "access_rules":["[$jump_access]"]
+                        "access_rules":[
+                            "high_jump",
+                            "[$logic_difficulty_at_least_proud]"
+                        ]
                     },
                     {
                         "name": "Chamber 6 - Chest on Platform Near Chamber 5 Entrance",
-                        "access_rules":["[$jump_access]"]
+                        "access_rules":[
+                            "high_jump",
+                            "[$logic_difficulty_at_least_proud]"
+                        ]
                     },
                     {
                         "name": "Chamber 6 - Chest on Platform Opposite Chamber 5 Entrance",
@@ -1210,9 +1280,9 @@
             },
             {
                 "name": "Monstro - Events",
+                "access_rules":["monstro, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
-                "access_rules":["monstro, [$world_count:2]"],
                 "sections": [
                     {
                         "name": "Mouth - Blue Trinity",
@@ -1245,7 +1315,7 @@
             {
                 "name": "Atlantica - Chests",
                 "visibility_rules":["atlantica_on"],
-                "access_rules": ["atlantica, [$world_count:2]"],
+                "access_rules": ["atlantica, [$access_broken_chest_for|atlantica], [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
@@ -1272,7 +1342,7 @@
                     },
                     {
                         "name": "Ursula's Lair - Use Fire on Urchin Chest",
-                        "access_rules":["fire, trident"]
+                        "access_rules":["fire, $at_after_crystal_trident, ^$at_beginner_require_chest"]
                     },
                     {
                         "name": "Triton's Palace - White Trinity Chest",
@@ -1290,9 +1360,9 @@
             {
                 "name": "Atlantica - Clams",
                 "visibility_rules":["atlantica_on"],
-                "access_rules":["atlantica, [$world_count:2]"],
-                "chest_unopened_img": "/images/misc/chest.png",
-                "chest_opened_img": "/images/misc/chest_bw.png",
+                "access_rules":["atlantica, [$world_count:3]"],
+                "chest_unopened_img": "/images/misc/emblem.png",
+                "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
                     {
                         "name": "Undersea Valley - Pillar Clam"
@@ -1344,7 +1414,7 @@
                     },
                     {
                         "name": "Cavern Nook - Clam",
-                        "access_rules":["trident"]
+                        "access_rules":["$at_after_crystal_trident, ^$at_beginner_require_chest"]
                     }
                 ],
                 "map_locations": [
@@ -1358,12 +1428,13 @@
             {
                 "name": "Atlantica - Events",
                 "visibility_rules":["atlantica_on"],
-                "access_rules":["atlantica, [$world_count:2]"],
+                "access_rules":["atlantica, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
                     {
                         "name": "Ariel Starting Accessories",
+                        "visibility_rules":["random_accessories_on"],
                         "item_count": 3
                     },
                     {
@@ -1371,15 +1442,16 @@
                     },
                     {
                         "name": "Ursula's Lair - Defeat Ursula I",
-                        "access_rules":["$has_offensive_magic, trident"]
+                        "access_rules":["$at_after_crystal_trident, ^$at_beginner_require_chest, ^$at_offensive_magic"]
                     },
                     {
                         "name": "Ursula's Lair II - Defeat Ursula II",
-                        "access_rules":["mermaid_kick, $has_offensive_magic, trident"],
+                        "access_rules":["mermaid_kick, $at_after_crystal_trident, ^$at_beginner_require_chest, ^$at_offensive_magic"],
                         "item_count": 2
                     },
                     {
-                        "access_rules":["mermaid_kick, $has_offensive_magic, trident"]
+                        "name": "Ariel's Grotto - Seal Keyhole",
+                        "access_rules":["mermaid_kick, $at_after_crystal_trident, ^$at_beginner_require_chest, ^$at_offensive_magic"]
                     }
                 ],
                 "map_locations": [
@@ -1392,19 +1464,20 @@
             },
             {
                 "name": "Halloween Town - Before Jack-in-the-Box",
-                "access_rules":["halloween_town, [$world_count:2]"],
+                "access_rules":["halloween_town, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
                     {
                         "name": "Jack Starting Accessories",
+                        "visibility_rules":["random_accessories_on"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
                     },
                     {
                         "name": "Guillotine Square - Chest Under Jack's House",
-                        "access_rules":["$access_chests|6"]
+                        "access_rules":["$access_chest_for|halloween_town"]
                     },
                     {
                         "name": "Guillotine Square - Ring Jack's Doorbell 3 Times",
@@ -1413,15 +1486,15 @@
                     },
                     {
                         "name": "Guillotine Square - High Tower Chest",
-                        "access_rules":["$access_chests|6, ^$ht_high_tower_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_high_tower_access"]
                     },
                     {
                         "name": "Guillotine Square - Left Chest in Pumpkin Structure",
-                        "access_rules":["$access_chests|6, ^$ht_pumpkin_structure_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_pumpkin_structure_access"]
                     },
                     {
                         "name": "Guillotine Square - Right Chest in Pumpkin Structure",
-                        "access_rules":["$access_chests|6, ^$ht_pumpkin_structure_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_pumpkin_structure_access"]
                     },
                     {
                         "name": "Lab - Torn Page in Book",
@@ -1435,11 +1508,11 @@
                     },
                     {
                         "name": "Boneyard - Tombstone Puzzle Chest",
-                        "access_rules":["$access_chests|6, forget_me_not"]
+                        "access_rules":["$access_chest_for|halloween_town, $ht_after_forget_me_not"]
                     },
                     {
                         "name": "Moonlight Hill - White Trinity Chest",
-                        "access_rules":["$access_chests|6, white_trinity, forget_me_not"]
+                        "access_rules":["$access_chest_for|halloween_town, white_trinity, $ht_after_forget_me_not"]
                     }
                 ],
                 "map_locations": [
@@ -1452,75 +1525,75 @@
             },
             {
                 "name": "Halloween Town - After Jack-in-the-Box",
-                "access_rules":["halloween_town, [$world_count:2], jack_box, forget_me_not"],
+                "access_rules":["$ht_after_jack_in_the_box, [$world_count:3]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
                     {
                         "name": "Bridge - Chest Under Bridge",
-                        "access_rules":["$access_chests|6"]
+                        "access_rules":["$access_chest_for|halloween_town"]
                     },
                     {
                         "name": "Bridge - Chest Right of Gate",
-                        "access_rules":["$access_chests|6, [$glide_access]"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_bridge_right_access"]
                     },
                     {
                         "name": "Bridge - Chest Left of Gate",
-                        "access_rules":["$access_chests|6, [$jump_or_glide_access]"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_bridge_left_access"]
                     },
                     {
                         "name": "Oogie's Manor - Chest at Entrance Steps",
-                        "access_rules":["$access_chests|6"]
+                        "access_rules":["$access_chest_for|halloween_town"]
                     },
                     {
                         "name": "Oogie's Manor - Chest Inside Entrance",
-                        "access_rules":["$access_chests|6"]
+                        "access_rules":["$access_chest_for|halloween_town"]
                     },
                     {
                         "name": "Oogie's Manor - Red Trinity Chest",
-                        "access_rules":["$access_chests|6, red_trinity"]
+                        "access_rules":["$access_chest_for|halloween_town, red_trinity"]
                     },
                     {
                         "name": "Oogie's Manor - Chest in Lower Iron Cage",
-                        "access_rules":["$access_chests|6, $oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access, ^$ht_manor_lower_cage_access"]
                     },
                     {
                         "name": "Oogie's Manor - Chest in Upper Iron Cage",
-                        "access_rules":["$access_chests|6, $oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access, ^$ht_manor_upper_cage_access"]
                     },
                     {
                         "name": "Oogie's Manor - Hollow Chest",
-                        "access_rules":["$access_chests|6, $oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
                     },
                     {
                         "name": "Torture Chamber - Defeat Oogie Boogie",
-                        "access_rules":["$oogie_manor_access"],
+                        "access_rules":["^$ht_oogie_manor_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
                     },
                     {
                         "name": "Oogie's Manor - Defeat Oogie's Manor",
-                        "access_rules":["$oogie_manor_access"],
+                        "access_rules":["^$ht_oogie_manor_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
                     },
                     {
                         "name": "Cemetery - Chest Behind Grave",
-                        "access_rules":["$access_chests|6, $oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
                     },
                     {
                         "name": "Cemetery - Chest By Cat Shaped Grave",
-                        "access_rules":["$access_chests|6, $oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
                     },
                     {
                         "name": "Cemetery - Chest Between Graves",
-                        "access_rules":["$access_chests|6, $oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
                     },
                     {
                         "name": "Cemetery - Chest by Striped Grave",
-                        "access_rules":["$access_chests|6, $oogie_manor_access"]
+                        "access_rules":["$access_chest_for|halloween_town, ^$ht_oogie_manor_access"]
                     }
                 ],
                 "map_locations": [
@@ -1533,57 +1606,57 @@
             },
             {
                 "name": "Neverland - Chests",
-                "access_rules":["[$world_count:3]"],
+                "access_rules":["neverland, [$world_count:4]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
                     {
                         "name": "Hold - 1st Chest on Beam",
-                        "access_rules":["$access_chests|7, green_trinity", "$access_chests|7, glide", "$access_chests|7, high_jump:3"]
+                        "access_rules":["$access_chest_for|neverland, ^$nl_hold_beam_access"]
                     },
                     {
                         "name": "Hold - 2nd Chest on Beam",
-                        "access_rules":["$access_chests|7, yellow_trinity", "$access_chests|7, glide", "$access_chests|7, high_jump:3"]
+                        "access_rules":["$access_chest_for|neverland, ^$nl_hold_beam_access"]
                     },
                     {
                         "name": "Hold - Right Blue Chest",
-                        "access_rules":["$access_chests|7, yellow_trinity"]
+                        "access_rules":["$access_chest_for|neverland, yellow_trinity"]
                     },
                     {
                         "name": "Hold - Left Blue Chest",
-                        "access_rules":["$access_chests|7, yellow_trinity"]
+                        "access_rules":["$access_chest_for|neverland, yellow_trinity"]
                     },
                     {
                         "name": "Hold - Green Chest",
-                        "access_rules":["$access_chests|7, yellow_trinity"]
+                        "access_rules":["$access_chest_for|neverland, yellow_trinity"]
                     },
                     {
                         "name": "Hold - Red Chest",
-                        "access_rules":["neverland, yellow_trinity"]
+                        "access_rules":["yellow_trinity, [$access_broken_chest_for|neverland]"]
                     },
                     {
                         "name": "Galley - Chest",
-                        "access_rules":["$access_chests|7"]
+                        "access_rules":["$access_chest_for|neverland"]
                     },
                     {
                         "name": "Captain's Cabin - Chest",
-                        "access_rules":["$access_chests|7, green_trinity"]
+                        "access_rules":["$access_chest_for|neverland, green_trinity"]
                     },
                     {
                         "name": "Cabin - Chest",
-                        "access_rules":["$access_chests|7, green_trinity"]
+                        "access_rules":["$access_chest_for|neverland, green_trinity"]
                     },
                     {
                         "name": "Pirate Ship - Chest in Crows Nest",
-                        "access_rules":["$access_chests|7, green_trinity"]
+                        "access_rules":["$access_chest_for|neverland, green_trinity"]
                     },
                     {
                         "name": "Pirate Ship - White Trinity Chest on Deck",
-                        "access_rules":["$access_chests|7, white_trinity, green_trinity"]
+                        "access_rules":["$access_chest_for|neverland, white_trinity, green_trinity"]
                     },
                     {
                         "name": "Clock Tower - Chest",
-                        "access_rules":["$access_chests|7, green_trinity, [hollow_bastion], [$has_emblems], [$world_count:5], [$has_defenses], [$has_lv_magic|2]"]
+                        "access_rules":["$access_chest_for|neverland, green_trinity"]
                     }
                 ],
                 "map_locations": [
@@ -1596,39 +1669,46 @@
             },
             {
                 "name": "Neverland - Events",
-                "access_rules":["neverland, green_trinity, [$world_count:3]"],
+                "access_rules":["neverland, [$world_count:4]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
                     {
                         "name": "Peter Pan Starting Accessories",
+                        "visibility_rules":["random_accessories_on"],
                         "item_count": 2
                     },
                     {
-                        "name": "Captain's Cabin - Defeat Anti Sora"
+                        "name": "Captain's Cabin - Defeat Anti Sora",
+                        "access_rules":["green_trinity"]
                     },
                     {
-                        "name": "Pirate Ship - Encounter Captain Hook"
+                        "name": "Pirate Ship - Encounter Captain Hook",
+                        "access_rules":["green_trinity"]
                     },
                     {
                         "name": "Pirate Ship - Defeat Captain Hook",
+                        "access_rules":["green_trinity"],
                         "item_count": 2
                     },
                     {
                         "name": "Clock Tower - Seal Keyhole",
+                        "access_rules":["green_trinity"],
                         "item_count": 3
                     },
                     {
-                        "name": "Clock Tower - Seal Keyhole Navi-G Piece"
+                        "name": "Clock Tower - Seal Keyhole Navi-G Piece",
+                        "access_rules":["green_trinity"]
                     },
                     {
                         "name": "Clock Tower - Doors",
+                        "access_rules":["green_trinity"],
                         "item_count": 12
                     },
                     {
                         "name": "Clock Tower - Defeat Phantom",
-                        "visibility_rules":["superbosses_on", "door_superbosses"],
-                        "access_rules":["[$has_lv_magic|2], [$has_defenses], hollow_bastion, [$world_count:5], $has_emblems"]
+                        "visibility_rules":["superbosses_on"],
+                        "access_rules":["green_trinity, hollow_bastion, $has_emblems, ^$nl_phantom_magic_access, ^$nl_phantom_defense_access"]
                     }
                 ],
                 "map_locations": [
@@ -1641,70 +1721,74 @@
             },
             {
                 "name": "Hollow Bastion - Before Emblems",
-                "access_rules":["hollow_bastion, [$world_count:5]"],
+                "access_rules":["hollow_bastion, [$world_count:6]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
                     {
                         "name": "Beast Starting Accessory",
+                        "visibility_rules":["random_accessories_on"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Rising Falls - Chest on Water Surface",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion"]
                     },
                     {
                         "name": "Rising Falls - 1st Chest Under Water",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion"]
                     },
                     {
                         "name": "Rising Falls - Chest on Floating Platform Near Save Point",
-                        "access_rules":["high_jump, $access_chests|8", "glide, $access_chests|8", "blizzard:1, $access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion, ^$hb_falls_floating_platform_access"]
                     },
                     {
                         "name": "Rising Falls - Chest on Floating Platform Near Bubble",
-                        "access_rules":["high_jump, $access_chests|8", "glide, $access_chests|8", "blizzard:1, $access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion, ^$hb_falls_floating_platform_access"]
                     },
                     {
                         "name": "Rising Falls - High Platform Chest",
-                        "access_rules":["^$hb_rising_falls_access, $access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion, ^$hb_falls_high_platform_access"]
                     },
                     {
                         "name": "Rising Falls - White Trinity Chest",
-                        "access_rules":["$access_chests|8, white_trinity"]
+                        "access_rules":["$access_chest_for|hollow_bastion, white_trinity"]
                     },
                     {
                         "name": "Base Level - Use Bubble to Move Under the Wall",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion"]
                     },
                     {
                         "name": "Base Level - Chest on Platform Near Entrance",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion, ^$hb_base_platform_access"]
                     },
                     {
                         "name": "Base Level - Chest Near Crystal Switch",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion"]
                     },
                     {
                         "name": "Waterway - Chest Near Save",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion"]
                     },
                     {
                         "name": "Waterway - Chest Atop Passageway",
-                        "access_rules":["$access_chests|8, blizzard, high_jump", "$access_chests|8, high_jump:3"]
+                        "access_rules":[
+                            "$access_chest_for|hollow_bastion, blizzard, high_jump",
+                            "$access_chest_for|hollow_bastion, high_jump:3, [$logic_difficulty_at_least_normal]"
+                        ]
                     },
                     {
                         "name": "Waterway - Unlock Passage from Base Level",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion"]
                     },
                     {
                         "name": "Dungeon - Chest by Candles",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion"]
                     },
                     {
                         "name": "Dungeon - Chest in Corner",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion"]
                     },
                     {
                         "name": "Dungeon - Blue Trinity",
@@ -1714,7 +1798,7 @@
                     },
                     {
                         "name": "Library - Chest on Bookshelf",
-                        "access_rules":["$access_chests|8"]
+                        "access_rules":["$access_chest_for|hollow_bastion"]
                     },
                     {
                         "name": "Entrance Hall - Defeat Riku I",
@@ -1723,49 +1807,51 @@
                     },
                     {
                         "name": "Entrance Hall - Chest on Pillar Before Emblem Door",
-                        "access_rules":["$access_chests|8, ^$hb_entrance_hall_access"]
+                        "access_rules":["$access_chest_for|hollow_bastion, ^$hb_entrance_hall_pillar_access"]
                     },
                     {
-                        "name": "Library - Turning Carousel Chest on 1st Floor"
+                        "name": "Library - Turning Carousel Chest on 1st Floor",
+                        "access_rules":["[$access_broken_chest_for|hollow_bastion]"]
                     },
                     {
-                        "name": "Library - Turning Carousel Chest on Top of Bookshelf"
+                        "name": "Library - Turning Carousel Chest on Top of Bookshelf",
+                        "access_rules":["[$access_broken_chest_for|hollow_bastion]"]
                     },
                     {
-                        "name": "Library - 1st Turning Carousel Chest on 2nd Floor"
+                        "name": "Library - 1st Turning Carousel Chest on 2nd Floor",
+                        "access_rules":["[$access_broken_chest_for|hollow_bastion]"]
                     },
                     {
-                        "name": "Library - 2nd Turning Carousel Chest on 2nd Floor"
+                        "name": "Library - 2nd Turning Carousel Chest on 2nd Floor",
+                        "access_rules":["[$access_broken_chest_for|hollow_bastion]"]
                     },
                     {
                         "name": "Lift Stop - Gravity Chest Behind Library Bookshelf",
-                        "access_rules":["$access_chests|8, gravity"]
+                        "access_rules":["$access_chest_for|hollow_bastion, gravity"]
                     },
                     {
                         "name": "Lift Stop - Gravity Chest in Library Node",
-                        "access_rules":["$access_chests|8, gravity"]
+                        "access_rules":["$access_chest_for|hollow_bastion, gravity"]
                     },
                     {
                         "name": "Entrance Hall - Emblem Piece (Flame)",
-                        "access_rules":["$flame_emblem_access"],
+                        "access_rules":["^$hb_entrance_hall_upper_level_access, fire, ^$hb_entrance_hall_flame_emblem_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Entrance Hall - Emblem Piece (Chest)",
-                        "access_rules":["theon_6", "high_jump:3", "$has_emblems"],
-                        "chest_unopened_img": "/images/misc/emblem.png",
-                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                        "access_rules":["^$hb_entrance_hall_upper_level_access, [$access_broken_chest_for|hollow_bastion]"]
                     },
                     {
                         "name": "Entrance Hall - Emblem Piece (Statue)",
-                        "access_rules":["theon_6, red_trinity", "high_jump:3, red_trinity", "$has_emblems, red_trinity"],
+                        "access_rules":["^$hb_entrance_hall_upper_level_access, red_trinity"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Entrance Hall - Emblem Piece (Fountain)",
-                        "access_rules":["theon_6", "high_jump:3", "$has_emblems"],
+                        "access_rules":["^$hb_entrance_hall_upper_level_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     }
@@ -1780,29 +1866,29 @@
             },
             {
                 "name": "Hollow Bastion - After Emblems",
-                "access_rules":["hollow_bastion, [$world_count:5]"],
+                "access_rules":["hollow_bastion, [$world_count:6]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
                     {
                         "name": "Castle Gates - Gravity Chest",
-                        "access_rules":["$access_chests|8, gravity, ^$hb_castle_gates_gravity_access"]
+                        "access_rules":["$access_chest_for|hollow_bastion, gravity, ^$hb_castle_gates_gravity_access"]
                     },
                     {
                         "name": "Castle Gates - Chest on Freestanding Pillar",
-                        "access_rules":["$access_chests|8, ^$hb_castle_gates_pillar_access"]
+                        "access_rules":["$access_chest_for|hollow_bastion, ^$hb_castle_gates_pillar_access"]
                     },
                     {
                         "name": "Castle Gates - Chest on High Pillar",
-                        "access_rules":["$access_chests|8, ^$hb_castle_gates_pillar_access"]
+                        "access_rules":["$access_chest_for|hollow_bastion, ^$hb_castle_gates_pillar_access"]
                     },
                     {
                         "name": "Lift Stop - Gravity Chest Behind Heartless Sigil Door",
-                        "access_rules":["$access_chests|8, gravity, $has_emblems"]
+                        "access_rules":["$access_chest_for|hollow_bastion, gravity, ^$hb_castle_gates_gravity_access"]
                     },
                     {
                         "name": "Great Crest - Lower Chest",
-                        "access_rules":["$access_chests|8, $has_emblems"]
+                        "access_rules":["$access_chest_for|hollow_bastion, $has_emblems"]
                     },
                     {
                         "name": "Great Crest - Blue Trinity",
@@ -1812,33 +1898,36 @@
                     },
                     {
                         "name": "Great Crest - Chest after Battle Platform",
-                        "access_rules":["$access_chests|8, $has_emblems"]
+                        "access_rules":["$access_chest_for|hollow_bastion, $has_emblems"]
                     },
                     {
                         "name": "High Tower - 1st Gravity Chest",
-                        "access_rules":["$access_chests|8, gravity, $has_emblems"]
+                        "access_rules":["$access_chest_for|hollow_bastion, gravity, $has_emblems"]
                     },
                     {
                         "name": "High Tower - 2nd Gravity Chest",
-                        "access_rules":["$access_chests|8, gravity, $has_emblems"]
+                        "access_rules":["$access_chest_for|hollow_bastion, gravity, $has_emblems"]
                     },
                     {
                         "name": "High Tower - Chest Above Sliding Blocks",
-                        "access_rules":["$access_chests|8, $has_emblems"]
+                        "access_rules":["$access_chest_for|hollow_bastion, $has_emblems"]
                     },
                     {
                         "name": "Lift Stop - Examine Node",
-                        "access_rules":["$has_emblems"],
+                        "access_rules":["$hb_lift_stop_from_waterway_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Lift Stop - Gravity Chest in Library Node After High Tower Switch",
-                        "access_rules":["$access_chests|8, gravity, $has_emblems"]
+                        "access_rules":["$access_chest_for|hollow_bastion, gravity, $has_emblems"]
                     },
                     {
                         "name": "Lift Stop - Gravity Chest Under High Tower Sliding Blocks",
-                        "access_rules":["$access_chests|8, gravity, $has_emblems, glide"]
+                        "access_rules":[
+                            "$access_chest_for|hollow_bastion, gravity, $has_emblems, glide",
+                            "$access_chest_for|hollow_bastion, gravity, $has_emblems, [$logic_difficulty_at_least_normal]"
+                        ]
                     },
                     {
                         "name": "Castle Chapel - Defeat Maleficent",
@@ -1870,13 +1959,13 @@
             },
             {
                 "name": "Hollow Bastion - 2nd Visit",
-                "access_rules":["hollow_bastion, $has_emblems, [$world_count:5]"],
+                "access_rules":["hollow_bastion, $has_emblems, [$world_count:6]"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
                     {
                         "name": "Rising Falls - 2nd Chest Under Water",
-                        "access_rules":["$access_chests|8, $has_emblems"],
+                        "access_rules":["$access_chest_for|hollow_bastion"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
@@ -1885,19 +1974,19 @@
                     },
                     {
                         "name": "Grand Hall - Chest on Right Side Steps",
-                        "access_rules":["$access_chests|8"],
+                        "access_rules":["$access_chest_for|hollow_bastion"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Grand Hall - Oblivion Chest",
-                        "access_rules":["$access_chests|8"],
+                        "access_rules":["$access_chest_for|hollow_bastion"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Grand Hall - Chest Left of Gate",
-                        "access_rules":["$access_chests|8"],
+                        "access_rules":["$access_chest_for|hollow_bastion"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
@@ -1913,8 +2002,11 @@
                     },
                     {
                         "name": "Castle Chapel - Defeat Unknown",
-                        "visibility_rules":["superbosses_on", "door_superbosses", "goal_unknown"],
-                        "access_rules":["[$world_count:7], [$has_defenses]"],
+                        "visibility_rules":["superbosses_on", "goal_unknown"],
+                        "access_rules":[
+                            "gravity, [$world_count:8], [$has_defenses]",
+                            "[$logic_difficulty_at_least_normal], [$world_count:8], [$has_defenses]"
+                        ],
                         "item_count": 2
                     }
                 ],
@@ -1928,7 +2020,7 @@
             },
             {
                 "name": "End of the World - Final Dimension",
-                "access_rules":["$eotw_access, $eotw_chests, [$world_count:7]"],
+                "access_rules":["$eotw_access, $access_chest_for|end_of_the_world, [$world_count:8]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
@@ -1964,21 +2056,42 @@
                     },
                     {
                         "name": "Giant Crevasse - 1st Chest",
-                        "access_rules":["glide", "high_jump"]
+                        "access_rules":[
+                            "glide",
+                            "high_jump",
+                            "[$logic_difficulty_at_least_minimal]"
+                        ]
                     },
                     {
-                        "name": "Giant Crevasse - 2nd Chest"
+                        "name": "Giant Crevasse - 2nd Chest",
+                        "access_rules":[
+                            "glide",
+                            "high_jump",
+                            "[$logic_difficulty_at_least_normal]"
+                        ]
                     },
                     {
-                        "name": "Giant Crevasse - 3rd Chest"
+                        "name": "Giant Crevasse - 3rd Chest",
+                        "access_rules":[
+                            "glide",
+                            "high_jump",
+                            "[$logic_difficulty_at_least_normal]"
+                        ]
                     },
                     {
                         "name": "Giant Crevasse - 4th Chest",
-                        "access_rules":["^$eotw_giant_crevasse_access"]
+                        "access_rules":[
+                            "glide",
+                            "high_jump:2, [$logic_difficulty_at_least_proud]",
+                            "high_jump, combo_master, [$logic_difficulty_at_least_proud]"
+                        ]
                     },
                     {
                         "name": "Giant Crevasse - 5th Chest",
-                        "access_rules":["glide"]
+                        "access_rules":[
+                            "glide",
+                            "[$logic_difficulty_at_least_proud]"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1991,48 +2104,49 @@
             },
             {
                 "name": "End of the World - World Terminus",
-                "access_rules":["$eotw_access, [$world_count:7]"],
+                "access_rules":["$eotw_access, [$world_count:8]"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
                     {
                         "name": "World Terminus - Traverse Town Chest",
-                        "access_rules":["$eotw_chests"]
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "World Terminus - Wonderland Chest",
-                        "access_rules":["$eotw_chests"]
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "World Terminus - Olympus Coliseum Chest",
-                        "access_rules":["$eotw_chests"]
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "World Terminus - Deep Jungle Chest",
-                        "access_rules":["$eotw_chests"]
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "World Terminus - Agrabah Chest",
-                        "access_rules":["$eotw_chests, ^$eotw_world_terminus_access"]
+                        "access_rules":["$access_chest_for|end_of_the_world, ^$eotw_world_terminus_agrabah_access"]
                     },
                     {
-                        "name": "World Terminus - Atlantica Chest"
+                        "name": "World Terminus - Atlantica Chest",
+                        "access_rules":["[$access_broken_chest_for|end_of_the_world]"]
                     },
                     {
                         "name": "World Terminus - Halloween Town Chest",
-                        "access_rules":["$eotw_chests"]
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "World Terminus - Neverland Chest",
-                        "access_rules":["$eotw_chests"]
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "World Terminus - 100 Acre Wood Chest",
-                        "access_rules":["$eotw_chests"]
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "World Terminus - Hollow Bastion Chest",
-                        "access_rules":["$eotw_chests"]
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "World Terminus - Defeat Chernabog",
@@ -2041,7 +2155,7 @@
                     },
                     {
                         "name": "Final Rest - Chest",
-                        "access_rules":["$eotw_chests"]
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     }
                 ],
                 "map_locations": [
@@ -2061,7 +2175,7 @@
                 "sections": [
                     {
                         "name": "Meadow - Chest Inside Log",
-                        "access_rules":["$haw_chests"],
+                        "access_rules":["$access_chest_for|100_acre"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
@@ -2093,19 +2207,19 @@
                     },
                     {
                         "name": "Bouncing Spot - Turn in Rare Nut #2",
-                        "access_rules":["torn_page:4, high_jump", "torn_page:4, glide"]
+                        "access_rules":["torn_page:4, ^$haw_bouncing_spot_access"]
                     },
                     {
                         "name": "Bouncing Spot - Turn in Rare Nut #3",
-                        "access_rules":["torn_page:4, high_jump", "torn_page:4, glide"]
+                        "access_rules":["torn_page:4, ^$haw_bouncing_spot_access"]
                     },
                     {
                         "name": "Bouncing Spot - Turn in Rare Nut #4",
-                        "access_rules":["torn_page:4, high_jump", "torn_page:4, glide"]
+                        "access_rules":["torn_page:4, ^$haw_bouncing_spot_access"]
                     },
                     {
                         "name": "Bouncing Spot - Turn in Rare Nut #5",
-                        "access_rules":["torn_page:4, high_jump", "torn_page:4, glide"]
+                        "access_rules":["torn_page:4, ^$haw_bouncing_spot_access"]
                     },
                     {
                         "name": "Bouncing Spot - Break the Log",
@@ -2113,23 +2227,23 @@
                     },
                     {
                         "name": "Bouncing Spot - Use the Seesaw",
-                        "access_rules":["torn_page:4, high_jump", "torn_page:4, glide"]
+                        "access_rules":["torn_page:4, ^$haw_bouncing_spot_access"]
                     },
                     {
                         "name": "Bouncing Spot - Chest in Tree Stump",
-                        "access_rules":["torn_page:4, $haw_chests"],
+                        "access_rules":["torn_page:4, $access_chest_for|100_acre"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Bouncing Spot - Chest in Tree Alcove",
-                        "access_rules":["torn_page:4, high_jump, $haw_chests", "torn_page:4, glide, $haw_chests"],
+                        "access_rules":["torn_page:4, $access_chest_for|100_acre, ^$haw_bouncing_spot_access"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
                     {
                         "name": "Bouncing Spot - Chest on Cliff on Left Side",
-                        "access_rules":["torn_page:4, high_jump, $haw_chests", "torn_page:4, glide, $haw_chests"],
+                        "access_rules":["torn_page:4, $access_chest_for|100_acre, ^$haw_bouncing_spot_access"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     },
@@ -2185,7 +2299,7 @@
             {
                 "name": "Destiny Islands - Day 2",
                 "visibility_rules":["destiny_islands_on"],
-                "access_rules":["destiny_islands"],
+                "access_rules":["$di_day_2_access"],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -2218,6 +2332,7 @@
                     },
                     {
                         "name": "Cove - Chest",
+                        "access_rules":["$access_chest_for|destiny_islands"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
                     }
