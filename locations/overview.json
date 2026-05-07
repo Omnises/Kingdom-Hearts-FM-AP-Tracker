@@ -609,7 +609,7 @@
                         ]
                     },
                     {
-                        "name": "andppo's Lagoon - Center Chest",
+                        "name": "Hippo's Lagoon - Center Chest",
                         "access_rules":["$access_chest_for|deep_jungle"]
                     },
                     {
@@ -1927,7 +1927,7 @@
                     },
                     {
                         "name": "Lift Stop - Examine Node",
-                        "access_rules":["$hb_lift_stop_from_waterway_access"],
+                        "access_rules":["^$hb_lift_stop_from_waterway_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
