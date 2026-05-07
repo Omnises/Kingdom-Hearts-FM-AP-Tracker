@@ -547,21 +547,25 @@ LOCATION_MAPPING = {
     [2656714] = {"@Overview/Destiny Islands - Day 2/Cove - Talk to Kairi"},
     [2656715] = {"@Overview/Destiny Islands - Day 2/Cove - Drinking Water"},
 
-    [2656800] = {"@Overview/Traverse Town - 1st Visit/Donald Starting Accessories"},
-    [2656801] = {"@Overview/Traverse Town - 1st Visit/Donald Starting Accessories"},
-    [2656802] = {"@Overview/Traverse Town - 1st Visit/Goofy Starting Accessories"},
-    [2656803] = {"@Overview/Traverse Town - 1st Visit/Goofy Starting Accessories"},
-    [2656804] = {"@Overview/Deep Jungle - Before Slides/Tarzan Starting Accessory"},
-    [2656805] = {"@Overview/Agrabah - Events/Aladdin Starting Accessories"},
-    [2656806] = {"@Overview/Agrabah - Events/Aladdin Starting Accessories"},
-    [2656807] = {"@Overview/Atlantica - Events/Ariel Starting Accessories"},
-    [2656808] = {"@Overview/Atlantica - Events/Ariel Starting Accessories"},
-    [2656809] = {"@Overview/Atlantica - Events/Ariel Starting Accessories"},
-    [2656810] = {"@Overview/Halloween Town - Before Jack-in-the-Box/Jack Starting Accessories"},
-    [2656811] = {"@Overview/Halloween Town - Before Jack-in-the-Box/Jack Starting Accessories"},
-    [2656812] = {"@Overview/Neverland - Events/Peter Pan Starting Accessories"},
-    [2656813] = {"@Overview/Neverland - Events/Peter Pan Starting Accessories"},
-    [2656814] = {"@Overview/Hollow Bastion - Before Emblems/Beast Starting Accessory"},
+    -- TODO: add locations to map tracker when their locations are fixed in the
+    -- AP world. Currently it is possible for the world to not generate a subset
+    -- of these locations based on YAML settings which will cause them to show
+    -- up as green on the tracker but be uncheckable.
+    [2656800] = {}, -- {"@Overview/Traverse Town - 1st Visit/Donald Starting Accessories"},
+    [2656801] = {}, -- {"@Overview/Traverse Town - 1st Visit/Donald Starting Accessories"},
+    [2656802] = {}, -- {"@Overview/Traverse Town - 1st Visit/Goofy Starting Accessories"},
+    [2656803] = {}, -- {"@Overview/Traverse Town - 1st Visit/Goofy Starting Accessories"},
+    [2656804] = {}, -- {"@Overview/Deep Jungle - Before Slides/Tarzan Starting Accessory"},
+    [2656805] = {}, -- {"@Overview/Agrabah - Events/Aladdin Starting Accessories"},
+    [2656806] = {}, -- {"@Overview/Agrabah - Events/Aladdin Starting Accessories"},
+    [2656807] = {}, -- {"@Overview/Atlantica - Events/Ariel Starting Accessories"},
+    [2656808] = {}, -- {"@Overview/Atlantica - Events/Ariel Starting Accessories"},
+    [2656809] = {}, -- {"@Overview/Atlantica - Events/Ariel Starting Accessories"},
+    [2656810] = {}, -- {"@Overview/Halloween Town - Before Jack-in-the-Box/Jack Starting Accessories"},
+    [2656811] = {}, -- {"@Overview/Halloween Town - Before Jack-in-the-Box/Jack Starting Accessories"},
+    [2656812] = {}, -- {"@Overview/Neverland - Events/Peter Pan Starting Accessories"},
+    [2656813] = {}, -- {"@Overview/Neverland - Events/Peter Pan Starting Accessories"},
+    [2656814] = {}, -- {"@Overview/Hollow Bastion - Before Emblems/Beast Starting Accessory"},
 
     -- TODO: place these locations in overview tab?
     --[2658002] = {"@Overview/Level 002 (Slot 1)"},

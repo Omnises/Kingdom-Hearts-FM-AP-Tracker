@@ -86,14 +86,14 @@
                     },
                     {
                         "name": "Donald Starting Accessories",
-                        "visibility_rules":["random_accessories_on"],
+                        "visibility_rules":["$is_random_accessory_visible"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
                     },
                     {
                         "name": "Goofy Starting Accessories",
-                        "visibility_rules":["random_accessories_on"],
+                        "visibility_rules":["$is_random_accessory_visible"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
@@ -586,7 +586,7 @@
                 "sections": [
                     {
                         "name": "Tarzan Starting Accessory",
-                        "visibility_rules":["random_accessories_on"],
+                        "visibility_rules":["$is_random_accessory_visible"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
@@ -1104,7 +1104,7 @@
                 "sections": [
                     {
                         "name": "Aladdin Starting Accessories",
-                        "visibility_rules":["random_accessories_on"],
+                        "visibility_rules":["$is_random_accessory_visible"],
                         "item_count": 2
                     },
                     {
@@ -1446,7 +1446,7 @@
                 "sections": [
                     {
                         "name": "Ariel Starting Accessories",
-                        "visibility_rules":["random_accessories_on"],
+                        "visibility_rules":["$is_random_accessory_visible"],
                         "item_count": 3
                     },
                     {
@@ -1482,7 +1482,7 @@
                 "sections": [
                     {
                         "name": "Jack Starting Accessories",
-                        "visibility_rules":["random_accessories_on"],
+                        "visibility_rules":["$is_random_accessory_visible"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
@@ -1687,7 +1687,7 @@
                 "sections": [
                     {
                         "name": "Peter Pan Starting Accessories",
-                        "visibility_rules":["random_accessories_on"],
+                        "visibility_rules":["$is_random_accessory_visible"],
                         "item_count": 2
                     },
                     {
@@ -1739,7 +1739,7 @@
                 "sections": [
                     {
                         "name": "Beast Starting Accessory",
-                        "visibility_rules":["random_accessories_on"],
+                        "visibility_rules":["$is_random_accessory_visible"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },

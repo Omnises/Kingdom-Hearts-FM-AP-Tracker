@@ -66,6 +66,11 @@ function is_cups_enabled()
     return cups_status == 1 or cups_status == 2 -- 0 = off, 1 = on, 2 = hades
 end
 
+-- TODO: return value of setting instead when random accessories are fixed.
+function is_random_accessory_visible()
+    return false
+end
+
 -- optional rules, if not met then checks are accessible out of logic
 
 function world_count()
