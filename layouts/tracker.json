@@ -1,4 +1,4 @@
-﻿{
+{
     "settings_popup": {
         "type": "array",
         "content": [
@@ -80,7 +80,7 @@
                     ]
                 },
                 {
-                    "type": "dock",
+                    "type": "container",
                     "content": {
                         "type": "layout",
                         "key": "tabbed_maps"

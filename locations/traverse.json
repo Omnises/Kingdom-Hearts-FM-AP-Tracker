@@ -367,10 +367,6 @@
                 "name": "3rd District - Guard Armor",
                 "sections": [
                     {
-                        "name": "Defeat Guard Armor",
-                        "ref": "Overview/Traverse Town - 1st Visit/Defeat Guard Armor"
-                    },
-                    {
                         "name": "Guard Armor Rewards",
                         "ref": "Overview/Traverse Town - 1st Visit/Guard Armor Rewards"
                     }
