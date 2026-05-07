@@ -1,16 +1,10 @@
 {
     "settings_popup": {
-        "type": "array",
-        "content": [
-            {
-                "type": "group",
-                "header": "Settings",
-                "content": {
-                    "type": "layout",
-                    "key": "setting_grid"
-                }
-            }
-        ]
+        "type": "container",
+        "content": {
+            "type": "layout",
+            "key": "setting_grid"
+        }
     },
     "tracker_default": {
         "type": "container",

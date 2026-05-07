@@ -1,55 +1,54 @@
 {
   "setting_grid":
   {
-    "type": "array",
-    "orientation": "vertical",
+    "type": "dock",
+    "dock": "top",
     "margin": "0,0",
     "content":
     [
       {
-        "type": "tabbed",
-        "dock": "top",
-        "orientation": "horizontal",
-        "margin": "0,0",
+        "type": "group",
+        "header": "Locations",
         "content":
-        [
-          {
-            "title": "Locations",
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
-            "content": [
-              {
-                "type": "itemgrid",
-                "item_margin": "2,2",
-                "h_alignment": "center",
-                "rows":
-                [
-                  ["superbosses", "atlantica_checks", "cups", "100_acre_checks", "jungle_slider_checks"],
-                  ["keyblade_locks", "logic_difficulty", "stacking_world_items", "halloween_town_key_item_bundle", "random_accessories"]
-                ]
-              }
-            ]
-          },
-          {
-            "title": "Goal",
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
-            "content": [
-              {
-                "type": "itemgrid",
-                "item_margin": "2,2",
-                "h_alignment": "center",
-                "rows":
-                [
-                  ["goal", "door_req", "postcards_req", "puppies_req"],
-                  ["eotw_unlock", "eotw_req", "destiny_islands_checks", "day_2_materials_req", "homecoming_materials_req"]
-                ]
-              }
-            ]
-          }
-        ]
+        {
+          "type": "array",
+          "orientation": "horizontal",
+          "margin": "0,0",
+          "content": [
+            {
+              "type": "itemgrid",
+              "item_margin": "2,2",
+              "h_alignment": "center",
+              "rows":
+              [
+                ["superbosses", "atlantica_checks", "cups", "100_acre_checks", "jungle_slider_checks"],
+                ["keyblade_locks", "logic_difficulty", "stacking_world_items", "halloween_town_key_item_bundle", "random_accessories"]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "group",
+        "header": "Goal",
+        "content":
+        {
+          "type": "array",
+          "orientation": "horizontal",
+          "margin": "0,0",
+          "content": [
+            {
+              "type": "itemgrid",
+              "item_margin": "2,2",
+              "h_alignment": "center",
+              "rows":
+              [
+                ["goal", "door_req", "postcards_req", "puppies_req"],
+                ["eotw_unlock", "eotw_req", "destiny_islands_checks", "day_2_materials_req", "homecoming_materials_req"]
+              ]
+            }
+          ]
+        }
       }
     ]
   }
