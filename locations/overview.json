@@ -246,13 +246,13 @@
                 ]
             },
             {
-                "name": "Traverse Town - Gepetto's House",
+                "name": "Traverse Town - Geppetto's House",
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "access_rules": ["^$mon_parasite_ii_access, [$world_count:3], ^$boss_beginner_require_tools"],
                 "sections": [
                     {
-                        "name": "Gepetto's Rewards",
+                        "name": "Geppetto's Rewards",
                         "item_count": 5
                     },
                     {

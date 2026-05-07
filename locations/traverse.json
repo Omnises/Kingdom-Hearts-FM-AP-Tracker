@@ -606,18 +606,18 @@
         ]
     },
     {
-        "name": "Traverse Town Gepetto",
+        "name": "Traverse Town Geppetto",
         "children": [
             {
-                "name": "Gepetto's House - Gepetto",
+                "name": "Geppetto's House - Geppetto",
                 "sections": [
                     {
-                        "name": "Gepetto's Rewards",
-                        "ref": "Overview/Traverse Town - Gepetto's House/Gepetto's Rewards"
+                        "name": "Geppetto's Rewards",
+                        "ref": "Overview/Traverse Town - Geppetto's House/Geppetto's Rewards"
                     },
                     {
                         "name": "All Summons Reward",
-                        "ref": "Overview/Traverse Town - Gepetto's House/All Summons Rewards"
+                        "ref": "Overview/Traverse Town - Geppetto's House/All Summons Rewards"
                     }
                 ],
                 "map_locations": [
@@ -629,11 +629,11 @@
                 ]
             },
             {
-                "name": "Gepetto's House - Pinocchio",
+                "name": "Geppetto's House - Pinocchio",
                 "sections": [
                     {
                         "name": "Talk to Pinocchio",
-                        "ref": "Overview/Traverse Town - Gepetto's House/Talk to Pinocchio"
+                        "ref": "Overview/Traverse Town - Geppetto's House/Talk to Pinocchio"
                     }
                 ],
                 "map_locations": [
@@ -645,11 +645,11 @@
                 ]
             },
             {
-                "name": "Gepetto's House - Corner",
+                "name": "Geppetto's House - Corner",
                 "sections": [
                     {
                         "name": "Chest",
-                        "ref": "Overview/Traverse Town - Gepetto's House/Chest"
+                        "ref": "Overview/Traverse Town - Geppetto's House/Chest"
                     }
                 ],
                 "map_locations": [
@@ -661,11 +661,11 @@
                 ]
             },
             {
-                "name": "Gepetto's House - Bowl",
+                "name": "Geppetto's House - Bowl",
                 "sections": [
                     {
                         "name": "Postcard in Bowl",
-                        "ref": "Overview/Traverse Town - Gepetto's House/Postcard in Bowl"
+                        "ref": "Overview/Traverse Town - Geppetto's House/Postcard in Bowl"
                     }
                 ],
                 "map_locations": [
