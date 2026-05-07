@@ -143,10 +143,6 @@
                         "ref": "Overview/Olympus Coliseum - Before Entry Pass/Coliseum Lobby - Phil's Training"
                     },
                     {
-                        "name": "Obtain Entry Pass",
-                        "ref": "Overview/Olympus Coliseum - Before Entry Pass/Coliseum Gates - Obtain Entry Pass"
-                    },
-                    {
                         "name": "Phil Cup",
                         "ref": "Overview/Olympus Coliseum - Cups/Phil Cup"
                     },
@@ -180,6 +176,22 @@
                         "map": "OC",
                         "x": 63,
                         "y": 541
+                    }
+                ]
+            },
+            {
+                "name": "Coliseum Gates - Entry Pass",
+                "sections": [
+                    {
+                        "name": "Obtain Entry Pass",
+                        "ref": "Overview/Olympus Coliseum - Before Entry Pass/Coliseum Gates - Obtain Entry Pass"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "OC",
+                        "x": 201,
+                        "y": 201
                     }
                 ]
             },
