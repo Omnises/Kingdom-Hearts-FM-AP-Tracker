@@ -2,6 +2,14 @@
 
 This is a [PopTracker](https://github.com/black-sliver/PopTracker/) Pack for Kingdom Hearts Final Mix to be used for the multiworld randomizer [Archipelago](https://archipelago.gg/).
 
+## Getting Started
+
+Download the most recent .zip file from the **Releases** and either drag it to the PopTracker window or place it in your `poptracker/packs` directory. For more details and instructions on how to connect the tracker to an Archipelago server see [PopTracker](https://github.com/black-sliver/PopTracker/).
+
+## Screenshot
+
+![Screenshop](images/screenshot.png)
+
 ## Settings
 
 ### Locations
@@ -25,7 +33,7 @@ All settings are loaded automatically when connecting the tracker to the AP serv
 
 ### Goal
 
-The Goal section controls the requirements for unlocking the **End of the World**, opening the **Final Rest Door**.
+The Goal section controls the requirements for unlocking the **End of the World** and opening the **Final Rest Door**.
 
 ![Goal](images/goal.png)
 
@@ -37,12 +45,11 @@ The options for opening the **Final Rest Door** are:
 - Rescue an amount of Puppies <img src="images/misc/puppies.png" height="20">
 - Open the chest in End of the World Final Rest <img src="images/misc/Final Rest.png" height="20">
 
-
 The options for unlocking the **End of the World** are:
 - Find a certain amount of lucky emblems <img src="images/misc/lucky_emblem.png" height="20"> specified as the number overlayed on <img src="images/worlds/End of the World.png" height="20">
 - Find the world as an item <img src="images/worlds/End of the World.png" height="20">
 
-The Goal section also contains settings to control whether **Destiny Islands** <img src="images/worlds/Destiny Islands.png" height="20"> is required to reach the final bosses as well as the required amount of raft materials <img src="images/misc/Raft Materials.png" height="20">
+The Goal section also contains settings to control whether **Destiny Islands** <img src="images/worlds/Destiny Islands.png" height="20"> is required to reach the final bosses as well as the required amount of raft materials <img src="images/misc/Raft Materials.png" height="20"> to progress to Day 2 and Homecoming. This setting also controls whether **Destiny Islands** checks are included.
 
 These settings are loaded automatically when connecting the tracker to the AP server. Settings can also be changed manually to control which locations are displayed.
 
@@ -52,4 +59,5 @@ Feedback is always appreciated. If there is an issue with the tracker, either op
 
 ## Credits
 
-Icons were made by [Televo](https://github.com/Televo/kingdom-hearts-recollection) or taken from CoM rips by [GaryCXJk](https://www.spriters-resource.com/submitter/GaryCXJk/).
+- Original [Kingdom Hearts Final Mix AP Tracker](https://github.com/Lojtana/Kingdom-Hearts-FM-AP-Tracker) created by Lojtana.
+- Icons were made by [Televo](https://github.com/Televo/kingdom-hearts-recollection) or taken from CoM rips by [GaryCXJk](https://www.spriters-resource.com/submitter/GaryCXJk/).
