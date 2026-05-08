@@ -1,10 +1,10 @@
 {
     "name": "Kingdom Hearts FM AP Tracker",
     "game_name": "Kingdom Hearts Final Mix",
-    "package_version": "2.0.0",
-    "package_uid": "KHFM_Lojtana",
+    "package_version": "1.0.0",
+    "package_uid": "kh1_ap_tracker",
     "platform": "PC", 
-    "author": "Lojtana",
+    "author": "Lojtana, culk",
     "variants": {
         "map_vertical": {
             "display_name": "Map Tracker (Vertical)",
@@ -19,5 +19,5 @@
             ]
         }
     },
-    "versions_url": "https://raw.githubusercontent.com/Lojtana/Kingdom-Hearts-FM-AP-Tracker/versions/versions.json"
+    "versions_url": "https://raw.githubusercontent.com/culk/Kingdom-Hearts-FM-AP-Tracker/main/versions.json"
 }
