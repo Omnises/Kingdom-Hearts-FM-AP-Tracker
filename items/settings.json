@@ -19,7 +19,7 @@
                 "name": "Goal - Defeat Unknown"
             },
             {
-                "img": "/images/settings/postcards.png",
+                "img": "/images/misc/postcards.png",
                 "codes": "goal, goal_postcards",
                 "inherit_codes": false,
                 "name": "Goal - Send Postcards"
@@ -31,13 +31,13 @@
                 "name": "Goal - Collect Lucky Emblems"
             },
             {
-                "img": "/images/settings/puppies.png",
+                "img": "/images/misc/puppies.png",
                 "codes": "goal, goal_puppies",
                 "inherit_codes": false,
                 "name": "Goal - Return Puppies"
             },
             {
-                "img": "/images/settings/door.png",
+                "img": "/images/misc/Final Rest.png",
                 "codes": "goal, goal_final_rest",
                 "inherit_codes": false,
                 "name": "Goal - Open Chest in Final Rest"
@@ -51,7 +51,7 @@
         "loop": true,
         "stages": [
             {
-                "img": "/images/misc/chest.png",
+                "img": "/images/worlds/End of the World.png",
                 "codes": "eotw_unlock, eotw_item",
                 "inherit_codes": false,
                 "name": "End of the World - Find World Item"
@@ -66,7 +66,8 @@
     },
     {
         "name": "Final Rest Door - Lucky Emblem Requirement",
-        "img": "/images/settings/door.png",
+        "img": "/images/settings/Door Vault.png",
+        "overlay_font_size": 15,
         "codes": "door_req",
         "type": "consumable",
         "min_quantity": 0,
@@ -75,7 +76,8 @@
     },
     {
         "name": "End of the World - Lucky Emblem Requirement",
-        "img": "/images/settings/eotw.png",
+        "img": "/images/worlds/End of the World.png",
+        "overlay_font_size": 15,
         "codes": "eotw_req",
         "type": "consumable",
         "min_quantity": 0,
@@ -84,7 +86,8 @@
     },
     {
         "name": "Postcards Goal - Requirement",
-        "img": "/images/settings/postcards.png",
+        "img": "/images/misc/postcards.png",
+        "overlay_font_size": 15,
         "codes": "postcards_req",
         "type": "consumable",
         "min_quantity": 1,
@@ -93,7 +96,8 @@
     },
     {
         "name": "Puppies Goal - Requirement",
-        "img": "/images/settings/puppies.png",
+        "img": "/images/misc/puppies.png",
+        "overlay_font_size": 15,
         "codes": "puppies_req",
         "type": "consumable",
         "min_quantity": 10,
@@ -108,14 +112,14 @@
         "loop": true,
         "stages": [
             {
-                "img": "/images/settings/islands.png",
+                "img": "/images/worlds/Destiny Islands.png",
                 "img_mods": "@disabled",
                 "codes": "destiny_islands_checks, destiny_islands_off",
                 "inherit_codes": false,
                 "name": "Destiny Islands Off"
             },
             {
-                "img": "/images/settings/islands.png",
+                "img": "/images/worlds/Destiny Islands.png",
                 "codes": "destiny_islands_checks, destiny_islands_on",
                 "inherit_codes": false,
                 "name": "Destiny Islands On"
@@ -124,7 +128,8 @@
     },
     {
         "name": "Destiny Island Day 2 - Materials Requirement",
-        "img": "/images/settings/Raft Materials.png",
+        "img": "/images/misc/Raft Materials.png",
+        "overlay_font_size": 15,
         "codes": "day_2_materials_req",
         "type": "consumable",
         "min_quantity": 0,
@@ -133,7 +138,8 @@
     },
     {
         "name": "Homecoming - Materials Requirement",
-        "img": "/images/settings/Raft Materials.png",
+        "img": "/images/misc/Raft Materials.png",
+        "overlay_font_size": 15,
         "codes": "homecoming_materials_req",
         "type": "consumable",
         "min_quantity": 0,
@@ -190,14 +196,14 @@
         "loop": true,
         "stages": [
             {
-                "img": "/images/settings/cups.png",
+                "img": "/images/settings/cups_off.png",
                 "img_mods": "@disabled",
                 "codes": "cups, cups_off",
                 "inherit_codes": false,
                 "name": "Cups Off"
             },
             {
-                "img": "/images/settings/cups.png",
+                "img": "/images/settings/cups_on.png",
                 "codes": "cups, cups_on",
                 "inherit_codes": false,
                 "name": "Cups On"
@@ -314,14 +320,14 @@
         "loop": true,
         "stages": [
             {
-                "img": "/images/settings/accessories.png",
+                "img": "/images/settings/stack_world_items.png",
                 "img_mods": "@disabled",
                 "codes": "stacking_world_items, stacking_world_items_off",
                 "inherit_codes": false,
                 "name": "Stacking World Items Off"
             },
             {
-                "img": "/images/settings/accessories.png",
+                "img": "/images/settings/stack_world_items.png",
                 "codes": "stacking_world_items, stacking_world_items_on",
                 "inherit_codes": false,
                 "name": "Stacking World Items On"
@@ -335,14 +341,14 @@
         "loop": true,
         "stages": [
             {
-                "img": "/images/settings/accessories.png",
+                "img": "/images/settings/ht_key_bundle.png",
                 "img_mods": "@disabled",
                 "codes": "halloween_town_key_item_bundle, halloween_town_key_item_bundle_off",
                 "inherit_codes": false,
                 "name": "Halloween Town Key Item Bundle Off"
             },
             {
-                "img": "/images/settings/accessories.png",
+                "img": "/images/settings/ht_key_bundle.png",
                 "codes": "halloween_town_key_item_bundle, halloween_town_key_item_bundle_on",
                 "inherit_codes": false,
                 "name": "Halloween Town Key Item Bundle On"
@@ -356,14 +362,14 @@
         "loop": true,
         "stages": [
             {
-                "img": "/images/settings/accessories.png",
+                "img": "/images/settings/Accessory.png",
                 "img_mods": "@disabled",
                 "codes": "random_accessories, random_accessories_off",
                 "inherit_codes": false,
                 "name": "Randomize Party Member Starting Accessories Off"
             },
             {
-                "img": "/images/settings/accessories.png",
+                "img": "/images/settings/Accessory.png",
                 "codes": "random_accessories, random_accessories_on",
                 "inherit_codes": false,
                 "name": "Randomize Party Member Starting Accessories On"

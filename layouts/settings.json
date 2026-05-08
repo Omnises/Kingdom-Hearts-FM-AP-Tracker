@@ -18,10 +18,11 @@
             {
               "type": "itemgrid",
               "item_margin": "2,2",
+              "item_size": "40,40",
               "h_alignment": "center",
               "rows":
               [
-                ["superbosses", "atlantica_checks", "cups", "100_acre_checks", "jungle_slider_checks"],
+                ["100_acre_checks", "atlantica_checks", "jungle_slider_checks", "cups", "superbosses"],
                 ["keyblade_locks", "logic_difficulty", "stacking_world_items", "halloween_town_key_item_bundle", "random_accessories"]
               ]
             }
@@ -40,6 +41,7 @@
             {
               "type": "itemgrid",
               "item_margin": "2,2",
+              "item_size": "40,40",
               "h_alignment": "center",
               "rows":
               [
