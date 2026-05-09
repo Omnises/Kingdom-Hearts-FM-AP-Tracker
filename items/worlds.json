@@ -164,7 +164,7 @@
     {
         "name": "Final Door Key",
         "type": "toggle",
-        "img": "images/settings/Door Vault.png",
+        "img": "images/worlds/Door Vault.png",
         "codes": "final_door_key"
     }
 ]
