@@ -4,8 +4,8 @@
         "item_margin": "2,2",
         "item_size": "40,40",
         "rows": [
-            ["destiny_islands", "wonderland", "olympus_coliseum", "deep_jungle", "agrabah", "monstro"],
-            ["halloween_town", "atlantica", "neverland", "hollow_bastion", "end_of_the_world"]
+            ["destiny_islands", "wonderland", "olympus_coliseum", "deep_jungle", "agrabah", "monstro", "halloween_town"],
+            ["atlantica", "neverland", "hollow_bastion", "end_of_the_world"]
         ]
     },
     "worlds": {
@@ -13,8 +13,8 @@
         "item_margin": "2,2",
         "item_size": "40,40",
         "rows": [
-            ["footprints", "entry_pass", "slides", "phil_cup", "pegasus_cup", "hercules_cup"],
-            ["forget_me_not", "jack_box", "trident", "theon_6", "final_door_key"]
+            ["footprints", "entry_pass", "slides", "forget_me_not", "jack_box", "trident", "theon_6"],
+            ["phil_cup", "pegasus_cup", "hercules_cup", "final_door_key"]
         ]
     },
     "keyblade_unlocks": {
