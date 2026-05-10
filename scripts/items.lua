@@ -1,8 +1,6 @@
-Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/worlds.json")
 Tracker:AddItems("items/magic.json")
 Tracker:AddItems("items/abilities.json")
 Tracker:AddItems("items/keyblades.json")
-Tracker:AddItems("items/events.json")
 Tracker:AddItems("items/misc.json")
 Tracker:AddItems("items/settings.json")

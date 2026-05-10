@@ -3,7 +3,7 @@
         "name": "Agrabah - Chests",
         "children": [
             {
-                "name": "Plaza",
+                "name": "Plaza - Near Storage",
                 "sections": [
                     {
                         "name": "Chest by Storage",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "Plaza",
+                "name": "Plaza - Raised Terrace",
                 "sections": [
                     {
                         "name": "Raised Terrace Chest",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "Plaza",
+                "name": "Plaza - Top Corner",
                 "sections": [
                     {
                         "name": "Top Corner Chest",
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "name": "Bazaar",
+                "name": "Bazaar - Jump Across Windows",
                 "sections": [
                     {
                         "name": "Chest Across Windows",
@@ -83,7 +83,7 @@
                 ]
             },
             {
-                "name": "Bazaar",
+                "name": "Bazaar - High Corner",
                 "sections": [
                     {
                         "name": "High Corner Chest",
@@ -99,7 +99,7 @@
                 ]
             },
             {
-                "name": "Main Street",
+                "name": "Main Street - Near Bazaar Entrance",
                 "sections": [
                     {
                         "name": "Right Palace Entrance Chest",
@@ -115,7 +115,7 @@
                 ]
             },
             {
-                "name": "Main Street",
+                "name": "Main Street - Above Alley Entrance",
                 "sections": [
                     {
                         "name": "Chest High Above Alley Entrance",
@@ -131,7 +131,7 @@
                 ]
             },
             {
-                "name": "Main Street",
+                "name": "Main Street - Above Palace Entrance",
                 "sections": [
                     {
                         "name": "Chest High Above Palace Entrance",
@@ -147,7 +147,7 @@
                 ]
             },
             {
-                "name": "Palace Gates",
+                "name": "Palace Gates - Lower Terrace",
                 "sections": [
                     {
                         "name": "Low Chest",
@@ -163,7 +163,7 @@
                 ]
             },
             {
-                "name": "Palace Gates",
+                "name": "Palace Gates - Tall Ledge Opposite Palace",
                 "sections": [
                     {
                         "name": "High Chest Opposite Palace",
@@ -179,7 +179,7 @@
                 ]
             },
             {
-                "name": "Palace Gates",
+                "name": "Palace Gates - Tall Ledge Near Palace",
                 "sections": [
                     {
                         "name": "High Chest Close to Palace",
@@ -195,7 +195,7 @@
                 ]
             },
             {
-                "name": "Storage",
+                "name": "Storage - Green Trinity",
                 "sections": [
                     {
                         "name": "Green Trinity Chest",
@@ -211,7 +211,7 @@
                 ]
             },
             {
-                "name": "Storage",
+                "name": "Storage - Behind Barrel",
                 "sections": [
                     {
                         "name": "Chest Behind Barrel",
@@ -227,7 +227,7 @@
                 ]
             },
             {
-                "name": "Aladdin's House",
+                "name": "Aladdin's House - Near Main Street Entrance",
                 "sections": [
                     {
                         "name": "Chest at Main Street Entrance",
@@ -243,7 +243,7 @@
                 ]
             },
             {
-                "name": "Aladdin's House",
+                "name": "Aladdin's House - Near Plaza Entrance",
                 "sections": [
                     {
                         "name": "Chest at Plaza Entrance",
@@ -264,7 +264,7 @@
         "name": "Cave of Wonders - Chests",
         "children": [
             {
-                "name": "Cave Entrance",
+                "name": "Cave Entrance - Left Ledge",
                 "sections": [
                     {
                         "name": "Left Chest",
@@ -280,7 +280,7 @@
                 ]
             },
             {
-                "name": "Cave Entrance",
+                "name": "Cave Entrance - Right Pillar",
                 "sections": [
                     {
                         "name": "Tall Tower Chest",
@@ -296,7 +296,7 @@
                 ]
             },
             {
-                "name": "Hall",
+                "name": "Hall - Left Ledge",
                 "sections": [
                     {
                         "name": "High Left Chest",
@@ -312,7 +312,7 @@
                 ]
             },
             {
-                "name": "Hall",
+                "name": "Hall - Ledge Near Bottomless Hall",
                 "sections": [
                     {
                         "name": "Chest Near Bottomless Hall",
@@ -328,7 +328,7 @@
                 ]
             },
             {
-                "name": "Bottomless Hall",
+                "name": "Bottomless Hall - Ledge",
                 "sections": [
                     {
                         "name": "Raised Platform Chest",
@@ -344,7 +344,7 @@
                 ]
             },
             {
-                "name": "Bottomless Hall",
+                "name": "Bottomless Hall - Pillar",
                 "sections": [
                     {
                         "name": "Pillar Chest",
@@ -360,7 +360,7 @@
                 ]
             },
             {
-                "name": "Bottomless Hall",
+                "name": "Bottomless Hall - Across Chasm",
                 "sections": [
                     {
                         "name": "Chest Across Chasm",
@@ -376,7 +376,7 @@
                 ]
             },
             {
-                "name": "Treasure Room",
+                "name": "Treasure Room - Ledge Near Entrance",
                 "sections": [
                     {
                         "name": "Chest Across Platforms",
@@ -392,7 +392,7 @@
                 ]
             },
             {
-                "name": "Treasure Room",
+                "name": "Treasure Room - Small Treasure Pile",
                 "sections": [
                     {
                         "name": "Small Treasure Pile Chest",
@@ -408,7 +408,7 @@
                 ]
             },
             {
-                "name": "Treasure Room",
+                "name": "Treasure Room - Large Treasure Pile",
                 "sections": [
                     {
                         "name": "Large Treasure Pile Chest",
@@ -424,7 +424,7 @@
                 ]
             },
             {
-                "name": "Treasure Room",
+                "name": "Treasure Room - Above Fireplace",
                 "sections": [
                     {
                         "name": "Chest Above Fire",
@@ -440,7 +440,7 @@
                 ]
             },
             {
-                "name": "Relic Chamber",
+                "name": "Relic Chamber - Stairless Platform",
                 "sections": [
                     {
                         "name": "Jump from Stairs Chest",
@@ -456,7 +456,7 @@
                 ]
             },
             {
-                "name": "Relic Chamber",
+                "name": "Relic Chamber - Near Stairs",
                 "sections": [
                     {
                         "name": "Stairs Chest",
@@ -472,7 +472,7 @@
                 ]
             },
             {
-                "name": "Dark Chamber",
+                "name": "Dark Chamber - Lower Wall",
                 "sections": [
                     {
                         "name": "Abu Gem Chest",
@@ -488,7 +488,7 @@
                 ]
             },
             {
-                "name": "Dark Chamber",
+                "name": "Dark Chamber - Near Relic Chamber",
                 "sections": [
                     {
                         "name": "Chest Across Relic Chamber Entrance",
@@ -504,7 +504,7 @@
                 ]
             },
             {
-                "name": "Dark Chamber",
+                "name": "Dark Chamber - Bridge",
                 "sections": [
                     {
                         "name": "Bridge Chest",
@@ -520,7 +520,7 @@
                 ]
             },
             {
-                "name": "Dark Chamber",
+                "name": "Dark Chamber - Near Save",
                 "sections": [
                     {
                         "name": "Chest Near Save Point",
@@ -536,7 +536,7 @@
                 ]
             },
             {
-                "name": "Silent Chamber",
+                "name": "Silent Chamber - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity Chest",
@@ -552,24 +552,12 @@
                 ]
             },
             {
-                "name": "Hidden Room",
+                "name": "Hidden Room - Behind Door",
                 "sections": [
                     {
                         "name": "Right Chest",
                         "ref": "Overview/Cave of Wonders - Chests/Hidden Room - Right Chest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "AG_Cave",
-                        "x": 533,
-                        "y": 707
-                    }
-                ]
-            },
-            {
-                "name": "Hidden Room",
-                "sections": [
+                    },
                     {
                         "name": "Left Chest",
                         "ref": "Overview/Cave of Wonders - Chests/Hidden Room - Left Chest"
@@ -584,7 +572,7 @@
                 ]
             },
             {
-                "name": "Cave Entrance",
+                "name": "Cave Entrance - White Trinity",
                 "sections": [
                     {
                         "name": "White Trinity Chest",
@@ -605,7 +593,7 @@
         "name": "Agrabah - Events",
         "children": [
             {
-                "name": "Palace Gates",
+                "name": "Palace Gates - Pot Centipede",
                 "sections": [
                     {
                         "name": "Defeat Pot Centipede",
@@ -621,7 +609,7 @@
                 ]
             },
             {
-                "name": "Bazaar",
+                "name": "Bazaar - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity",
@@ -637,7 +625,7 @@
                 ]
             },
             {
-                "name": "Treasure Room",
+                "name": "Treasure Room - Red Trinity",
                 "sections": [
                     {
                         "name": "Red Trinity",
@@ -669,7 +657,7 @@
                 ]
             },
             {
-                "name": "Lamp Chamber",
+                "name": "Core",
                 "sections": [
                     {
                         "name": "Defeat Genie Jafar",
@@ -693,7 +681,7 @@
                 "sections": [
                     {
                         "name": "Defeat Kurt Zisa",
-                        "ref": "Overview/Agrabah - Events/Defeat Kurt Zisa"
+                        "ref": "Overview/Agrabah - Events/Desert - Defeat Kurt Zisa"
                     }
                 ],
                 "map_locations": [

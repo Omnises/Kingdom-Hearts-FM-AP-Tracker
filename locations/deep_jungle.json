@@ -3,7 +3,7 @@
         "name": "Deep Jungle Chests",
         "children": [
             {
-                "name": "Tree House",
+                "name": "Tree House - Underneath",
                 "sections": [
                     {
                         "name": "Chest Beneath Tree House",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "Tree House",
+                "name": "Tree House - Rooftop",
                 "sections": [
                     {
                         "name": "Rooftop Chest",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "Tree House",
+                "name": "Tree House - Suspended Boat",
                 "sections": [
                     {
                         "name": "Suspended Boat Chest",
@@ -51,7 +51,7 @@
                 ]
             },
             {
-                "name": "Hippo's Lagoon",
+                "name": "Hippo's Lagoon - Near Vines 2",
                 "sections": [
                     {
                         "name": "Center Chest",
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "name": "Hippo's Lagoon",
+                "name": "Hippo's Lagoon - Left Platform",
                 "sections": [
                     {
                         "name": "Left Chest",
@@ -83,7 +83,7 @@
                 ]
             },
             {
-                "name": "Hippo's Lagoon",
+                "name": "Hippo's Lagoon - Right Platform",
                 "sections": [
                     {
                         "name": "Right Chest",
@@ -131,7 +131,7 @@
                 ]
             },
             {
-                "name": "Climbing Trees",
+                "name": "Climbing Trees - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity Chest",
@@ -163,8 +163,7 @@
                 ]
             },
             {
-                "name": "Camp",
-                "access_rules":["blue_trinity"],
+                "name": "Camp - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity Chest",
@@ -196,11 +195,15 @@
                 ]
             },
             {
-                "name": "Cliff",
+                "name": "Cliff - Ledge",
                 "sections": [
                     {
                         "name": "Left Chest",
                         "ref": "Overview/Deep Jungle - Before Slides/Cliff - Left Chest"
+                    },
+                    {
+                        "name": "Right Chest",
+                        "ref": "Overview/Deep Jungle - Before Slides/Cliff - Right Chest"
                     }
                 ],
                 "map_locations": [
@@ -212,23 +215,7 @@
                 ]
             },
             {
-                "name": "Cliff",
-                "sections": [
-                    {
-                        "name": "Right Chest",
-                        "ref": "Overview/Deep Jungle - Before Slides/Cliff - Right Chest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "DJ",
-                        "x": 964,
-                        "y": 416
-                    }
-                ]
-            },
-            {
-                "name": "Waterfall Cavern",
+                "name": "Waterfall Cavern - Lower",
                 "sections": [
                     {
                         "name": "Lower Chest",
@@ -244,7 +231,7 @@
                 ]
             },
             {
-                "name": "Waterfall Cavern",
+                "name": "Waterfall Cavern - Middle",
                 "sections": [
                     {
                         "name": "Middle Chest",
@@ -260,7 +247,7 @@
                 ]
             },
             {
-                "name": "Waterfall Cavern",
+                "name": "Waterfall Cavern - Far Ledge",
                 "sections": [
                     {
                         "name": "High Wall Chest",
@@ -276,7 +263,7 @@
                 ]
             },
             {
-                "name": "Waterfall Cavern",
+                "name": "Waterfall Cavern - Middle Ledge",
                 "sections": [
                     {
                         "name": "High Middle Chest",
@@ -292,7 +279,7 @@
                 ]
             },
             {
-                "name": "Cavern of Hearts",
+                "name": "Cavern of Hearts - White Trinity",
                 "sections": [
                     {
                         "name": "White Trinity Chest",
@@ -313,27 +300,7 @@
         "name": "Deep Jungle Events",
         "children": [
             {
-                "name": "Tent",
-                "sections": [
-                    {
-                        "name": "Meet Jane",
-                        "ref": "Overview/Deep Jungle - Before Slides/Tent - Meet Jane"
-                    },
-                    {
-                        "name": "Chest",
-                        "ref": "Overview/Deep Jungle - Before Slides/Tent - Chest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "DJ",
-                        "x": 933,
-                        "y": 710
-                    }
-                ]
-            },
-            {
-                "name": "Tent",
+                "name": "Tent - Jane",
                 "sections": [
                     {
                         "name": "Meet Jane",
@@ -349,7 +316,7 @@
                 ]
             },
             {
-                "name": "Bamboo Thicket",
+                "name": "Bamboo Thicket - Sabor",
                 "sections": [
                     {
                         "name": "Defeat Sabor",
@@ -365,7 +332,7 @@
                 ]
             },
             {
-                "name": "Camp",
+                "name": "Camp - Gorilla",
                 "sections": [
                     {
                         "name": "Save Gorillas",
@@ -381,7 +348,7 @@
                 ]
             },
             {
-                "name": "Bamboo Thicket",
+                "name": "Bamboo Thicket - Gorilla",
                 "sections": [
                     {
                         "name": "Save Gorillas",
@@ -397,7 +364,7 @@
                 ]
             },
             {
-                "name": "Cliff",
+                "name": "Cliff - Gorilla",
                 "sections": [
                     {
                         "name": "Save Gorillas",
@@ -413,7 +380,7 @@
                 ]
             },
             {
-                "name": "Climbing Trees",
+                "name": "Climbing Trees - Gorilla",
                 "sections": [
                     {
                         "name": "Save Gorillas",
@@ -429,7 +396,7 @@
                 ]
             },
             {
-                "name": "Tree House",
+                "name": "Tree House - Gorilla",
                 "sections": [
                     {
                         "name": "Save Gorillas",
@@ -445,7 +412,7 @@
                 ]
             },
             {
-                "name": "Cliff",
+                "name": "Cliff - Clayton",
                 "sections": [
                     {
                         "name": "Defeat Clayton",
@@ -461,7 +428,7 @@
                 ]
             },
             {
-                "name": "Cavern of Hearts",
+                "name": "Cavern of Hearts - Keyhole",
                 "sections": [
                     {
                         "name": "Seal the Keyhole",
@@ -509,7 +476,7 @@
                 ]
             },
             {
-                "name": "Treetop",
+                "name": "Treetop Green - Trinity",
                 "sections": [
                     {
                         "name": "Green Trinity",
@@ -530,7 +497,7 @@
         "name": "Deep Jungle Experiments",
         "children": [
             {
-                "name": "Camp",
+                "name": "Camp - Table",
                 "sections": [
                     {
                         "name": "Research Table Experiment",
@@ -546,7 +513,7 @@
                 ]
             },
             {
-                "name": "Camp",
+                "name": "Camp - Oven",
                 "sections": [
                     {
                         "name": "Oven Experiment",

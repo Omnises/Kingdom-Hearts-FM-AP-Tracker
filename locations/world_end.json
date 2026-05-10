@@ -3,7 +3,7 @@
         "name": "End of the World",
         "children": [
             {
-                "name": "Final Dimension",
+                "name": "Final Dimension 1",
                 "sections": [
                     {
                         "name": "1st Chest",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "Final Dimension",
+                "name": "Final Dimension 2",
                 "sections": [
                     {
                         "name": "2nd Chest",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "Final Dimension",
+                "name": "Final Dimension 3",
                 "sections": [
                     {
                         "name": "3rd Chest",
@@ -51,7 +51,7 @@
                 ]
             },
             {
-                "name": "Final Dimension",
+                "name": "Final Dimension 4",
                 "sections": [
                     {
                         "name": "4th Chest",
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "name": "Final Dimension",
+                "name": "Final Dimension 5",
                 "sections": [
                     {
                         "name": "5th Chest",
@@ -83,7 +83,7 @@
                 ]
             },
             {
-                "name": "Final Dimension",
+                "name": "Final Dimension 6",
                 "sections": [
                     {
                         "name": "6th Chest",
@@ -99,7 +99,7 @@
                 ]
             },
             {
-                "name": "Final Dimension",
+                "name": "Final Dimension 7",
                 "sections": [
                     {
                         "name": "7th Chest",
@@ -115,43 +115,11 @@
                 ]
             },
             {
-                "name": "Final Dimension",
+                "name": "Final Dimension 8",
                 "sections": [
                     {
                         "name": "8th Chest",
                         "ref": "Overview/End of the World - Final Dimension/Final Dimension - 8th Chest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "EOTW",
-                        "x": 123,
-                        "y": 154
-                    }
-                ]
-            },
-            {
-                "name": "Final Dimension",
-                "sections": [
-                    {
-                        "name": "9th Chest",
-                        "ref": "Overview/End of the World - Final Dimension/Final Dimension - 9th Chest"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "EOTW",
-                        "x": 141,
-                        "y": 168
-                    }
-                ]
-            },
-            {
-                "name": "Final Dimension",
-                "sections": [
-                    {
-                        "name": "10th Chest",
-                        "ref": "Overview/End of the World - Final Dimension/Final Dimension - 10th Chest"
                     }
                 ],
                 "map_locations": [
@@ -163,7 +131,39 @@
                 ]
             },
             {
-                "name": "Giant Crevasse",
+                "name": "Final Dimension 9",
+                "sections": [
+                    {
+                        "name": "9th Chest",
+                        "ref": "Overview/End of the World - Final Dimension/Final Dimension - 9th Chest"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EOTW",
+                        "x": 123,
+                        "y": 154
+                    }
+                ]
+            },
+            {
+                "name": "Final Dimension 10",
+                "sections": [
+                    {
+                        "name": "10th Chest",
+                        "ref": "Overview/End of the World - Final Dimension/Final Dimension - 10th Chest"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "EOTW",
+                        "x": 141,
+                        "y": 168
+                    }
+                ]
+            },
+            {
+                "name": "Giant Crevasse - Near Top of Ladder",
                 "sections": [
                     {
                         "name": "1st Chest",
@@ -179,7 +179,7 @@
                 ]
             },
             {
-                "name": "Giant Crevasse",
+                "name": "Giant Crevasse - Middle",
                 "sections": [
                     {
                         "name": "2nd Chest",
@@ -195,7 +195,7 @@
                 ]
             },
             {
-                "name": "Giant Crevasse",
+                "name": "Giant Crevasse - Under Ledge Near Save",
                 "sections": [
                     {
                         "name": "3rd Chest",
@@ -211,7 +211,7 @@
                 ]
             },
             {
-                "name": "Giant Crevasse",
+                "name": "Giant Crevasse - Upper Behind Gummi Spikes",
                 "sections": [
                     {
                         "name": "4th Chest",
@@ -227,7 +227,7 @@
                 ]
             },
             {
-                "name": "Giant Crevasse",
+                "name": "Giant Crevasse - Near Large Ramp",
                 "sections": [
                     {
                         "name": "5th Chest",
@@ -243,7 +243,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - Traverse Town",
                 "sections": [
                     {
                         "name": "Traverse Town Chest",
@@ -259,7 +259,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - Wonderland",
                 "sections": [
                     {
                         "name": "Wonderland Chest",
@@ -275,7 +275,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - Olympus Coliseum",
                 "sections": [
                     {
                         "name": "Olympus Coliseum Chest",
@@ -291,7 +291,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - Deep Jungle",
                 "sections": [
                     {
                         "name": "Deep Jungle Chest",
@@ -307,7 +307,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - Agrabah",
                 "sections": [
                     {
                         "name": "Agrabah Chest",
@@ -323,7 +323,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - Atlantica",
                 "sections": [
                     {
                         "name": "Atlantica Chest",
@@ -339,7 +339,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - Halloween Town",
                 "sections": [
                     {
                         "name": "Halloween Town Chest",
@@ -355,7 +355,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - Neverland",
                 "sections": [
                     {
                         "name": "Neverland Chest",
@@ -371,7 +371,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - 100 Acre Wood",
                 "sections": [
                     {
                         "name": "100 Acre Wood Chest",
@@ -387,11 +387,11 @@
                 ]
             },
             {
-                "name": "World Terminus - Hollow Bastion Chest",
-                "visibility_rules":["missables_on"],
+                "name": "World Terminus - Hollow Bastion",
                 "sections": [
                     {
-                        "name": ""
+                        "name": "Hollow Bastion Chest",
+                        "ref": "Overview/End of the World - World Terminus/World Terminus - Hollow Bastion Chest"
                     }
                 ],
                 "map_locations": [
@@ -419,7 +419,7 @@
                 ]
             },
             {
-                "name": "World Terminus",
+                "name": "World Terminus - Chernabog",
                 "sections": [
                     {
                         "name": "Defeat Chernabog",

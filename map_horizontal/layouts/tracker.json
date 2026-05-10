@@ -1,16 +1,10 @@
 {
     "settings_popup": {
-        "type": "array",
-        "content": [
-            {
-                "type": "group",
-                "header": "Settings",
-                "content": {
-                    "type": "layout",
-                    "key": "setting_grid"
-                }
-            }
-        ]
+        "type": "container",
+        "content": {
+            "type": "layout",
+            "key": "setting_grid"
+        }
     },
     "tracker_default": {
         "type": "container",
@@ -52,6 +46,15 @@
                         },
                         {
                             "type": "group",
+                            "header": "Magic & Trinities",
+                            "dock": "left",
+                            "content": {
+                                "type": "layout",
+                                "key": "magic_trinities"
+                            }
+                        },
+                        {
+                            "type": "group",
                             "header": "Abilities",
                             "dock": "left",
                             "content": {
@@ -71,7 +74,7 @@
                     ]
                 },
                 {
-                    "type": "dock",
+                    "type": "container",
                     "content": {
                         "type": "layout",
                         "key": "tabbed_maps"

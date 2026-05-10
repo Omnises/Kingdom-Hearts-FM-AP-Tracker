@@ -3,7 +3,7 @@
         "name": "Hollow Bastion Chests",
         "children": [
             {
-                "name": "Rising Falls",
+                "name": "Rising Falls - Water Surface",
                 "sections": [
                     {
                         "name": "Chest on Water Surface",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "Rising Falls",
+                "name": "Rising Falls - Under Water",
                 "sections": [
                     {
                         "name": "1st Chest Under Water",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "Rising Falls",
+                "name": "Rising Falls - Under Water 2nd Level",
                 "sections": [
                     {
                         "name": "2nd Chest Under Water",
@@ -51,7 +51,7 @@
                 ]
             },
             {
-                "name": "Rising Falls",
+                "name": "Rising Falls - Platform Near Save",
                 "sections": [
                     {
                         "name": "Chest on Floating Platform Near Save Point",
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "name": "Rising Falls",
+                "name": "Rising Falls - Platform Near Bubble",
                 "sections": [
                     {
                         "name": "Chest on Floating Platform Near Bubble",
@@ -83,7 +83,7 @@
                 ]
             },
             {
-                "name": "Rising Falls",
+                "name": "Rising Falls - High Platform",
                 "sections": [
                     {
                         "name": "High Platform Chest",
@@ -99,7 +99,7 @@
                 ]
             },
             {
-                "name": "Castle Gates",
+                "name": "Castle Gates - Far Left Platform",
                 "sections": [
                     {
                         "name": "Gravity Chest",
@@ -115,7 +115,7 @@
                 ]
             },
             {
-                "name": "Castle Gates",
+                "name": "Castle Gates - Freestanding Pillar",
                 "sections": [
                     {
                         "name": "Chest on Freestanding Pillar",
@@ -131,11 +131,11 @@
                 ]
             },
             {
-                "name": "Caste Gates",
+                "name": "Castle Gates - High Pillar",
                 "sections": [
                     {
                         "name": "Chest on High Pillar",
-                        "ref": "Overview/Hollow Bastion - After Emblems/Caste Gates - Chest on High Pillar"
+                        "ref": "Overview/Hollow Bastion - After Emblems/Castle Gates - Chest on High Pillar"
                     }
                 ],
                 "map_locations": [
@@ -147,7 +147,7 @@
                 ]
             },
             {
-                "name": "Great Crest",
+                "name": "Great Crest - Near Rubble",
                 "sections": [
                     {
                         "name": "Lower Chest",
@@ -163,7 +163,7 @@
                 ]
             },
             {
-                "name": "Great Crest",
+                "name": "Great Crest - After Battle Platform",
                 "sections": [
                     {
                         "name": "Chest after Battle Platform",
@@ -179,7 +179,7 @@
                 ]
             },
             {
-                "name": "High Tower",
+                "name": "High Tower - Far Side",
                 "sections": [
                     {
                         "name": "2nd Gravity Chest",
@@ -195,7 +195,7 @@
                 ]
             },
             {
-                "name": "High Tower",
+                "name": "High Tower - Near Side",
                 "sections": [
                     {
                         "name": "1st Gravity Chest",
@@ -211,7 +211,7 @@
                 ]
             },
             {
-                "name": "High Tower",
+                "name": "High Tower - Above Sliding Blocks",
                 "sections": [
                     {
                         "name": "Chest Above Sliding Blocks",
@@ -227,7 +227,7 @@
                 ]
             },
             {
-                "name": "Library",
+                "name": "Library - On Bookshelf",
                 "sections": [
                     {
                         "name": "Chest on Bookshelf",
@@ -243,7 +243,7 @@
                 ]
             },
             {
-                "name": "Lift Stop",
+                "name": "Lift Stop - Library Node After High Tower Switch",
                 "sections": [
                     {
                         "name": "Gravity Chest in Library Node After High Tower Switch",
@@ -259,11 +259,11 @@
                 ]
             },
             {
-                "name": "Lift Stop",
+                "name": "Lift Stop - Library Node",
                 "sections": [
                     {
                         "name": "Gravity Chest in Library Node",
-                        "ref": "Overview/Hollow Bastion - After Emblems/Lift Stop - Gravity Chest in Library Node"
+                        "ref": "Overview/Hollow Bastion - Before Emblems/Lift Stop - Gravity Chest in Library Node"
                     }
                 ],
                 "map_locations": [
@@ -275,7 +275,7 @@
                 ]
             },
             {
-                "name": "Lift Stop",
+                "name": "Lift Stop - Enter Under Sliding Blocks",
                 "sections": [
                     {
                         "name": "Gravity Chest Under High Tower Sliding Blocks",
@@ -296,7 +296,7 @@
                 ]
             },
             {
-                "name": "Lift Stop",
+                "name": "Lift Stop - Behind Library Bookshelf",
                 "sections": [
                     {
                         "name": "Gravity Chest Behind Library Bookshelf",
@@ -312,7 +312,7 @@
                 ]
             },
             {
-                "name": "Lift Stop",
+                "name": "Lift Stop - Behind Heartless Sigil Door",
                 "sections": [
                     {
                         "name": "Gravity Chest Behind Heartless Sigil Door",
@@ -328,7 +328,7 @@
                 ]
             },
             {
-                "name": "Base Level",
+                "name": "Base Level - Behind Left Wall",
                 "sections": [
                     {
                         "name": "Use Bubble to Move Under the Wall",
@@ -344,7 +344,7 @@
                 ]
             },
             {
-                "name": "Base Level",
+                "name": "Base Level - Platform Near Entrance",
                 "sections": [
                     {
                         "name": "Chest on Platform Near Entrance",
@@ -360,7 +360,7 @@
                 ]
             },
             {
-                "name": "Base Level",
+                "name": "Base Level - Near Crystal Switch",
                 "sections": [
                     {
                         "name": "Chest Near Crystal Switch",
@@ -376,7 +376,7 @@
                 ]
             },
             {
-                "name": "Waterway",
+                "name": "Waterway - Near Save",
                 "sections": [
                     {
                         "name": "Chest Near Save",
@@ -392,8 +392,7 @@
                 ]
             },
             {
-                "name": "Waterway",
-                "access_rules":["blizzard, high_jump", "high_jump:3"],
+                "name": "Waterway - Above Passageway",
                 "sections": [
                     {
                         "name": "Chest Atop Passageway",
@@ -409,7 +408,7 @@
                 ]
             },
             {
-                "name": "Waterway",
+                "name": "Waterway - Dead End From Base Level",
                 "sections": [
                     {
                         "name": "Unlock Passage from Base Level",
@@ -425,7 +424,7 @@
                 ]
             },
             {
-                "name": "Dungeon",
+                "name": "Dungeon - Near Candles",
                 "sections": [
                     {
                         "name": "Chest by Candles",
@@ -441,7 +440,7 @@
                 ]
             },
             {
-                "name": "Dungeon",
+                "name": "Dungeon - Corner",
                 "sections": [
                     {
                         "name": "Chest in Corner",
@@ -457,7 +456,7 @@
                 ]
             },
             {
-                "name": "Grand Hall",
+                "name": "Grand Hall - Right Steps",
                 "sections": [
                     {
                         "name": "Chest on Right Side Steps",
@@ -473,7 +472,7 @@
                 ]
             },
             {
-                "name": "Grand Hall",
+                "name": "Grand Hall - Upper Ledge",
                 "sections": [
                     {
                         "name": "Oblivion Chest",
@@ -489,7 +488,7 @@
                 ]
             },
             {
-                "name": "Grand Hall",
+                "name": "Grand Hall - Left Corner",
                 "sections": [
                     {
                         "name": "Chest Left of Gate",
@@ -505,7 +504,7 @@
                 ]
             },
             {
-                "name": "Entrance Hall",
+                "name": "Entrance Hall - Pillar Near Emblem Door",
                 "sections": [
                     {
                         "name": "Chest on Pillar Before Emblem Door",
@@ -521,7 +520,7 @@
                 ]
             },
             {
-                "name": "Rising Falls",
+                "name": "Rising Falls - White Trinity",
                 "sections": [
                     {
                         "name": "White Trinity Chest",
@@ -540,12 +539,11 @@
     },
     {
         "name": "Hollow Bastion Carousel Chests",
-        "access_rules":["hollow_bastion, [$world_count:5]"],
         "chest_unopened_img": "/images/misc/chest.png",
         "chest_opened_img": "/images/misc/chest_bw.png",
         "children": [
             {
-                "name": "Library",
+                "name": "Library - 1st Floor Carousel",
                 "sections": [
                     {
                         "name": "Turning Carousel Chest on 1st Floor",
@@ -561,7 +559,7 @@
                 ]
             },
             {
-                "name": "Library",
+                "name": "Library - Top of Bookshelf Carousel",
                 "sections": [
                     {
                         "name": "Turning Carousel Chest on Top of Bookshelf",
@@ -577,7 +575,7 @@
                 ]
             },
             {
-                "name": "Library",
+                "name": "Library - 2nd Floor Left Carousel",
                 "sections": [
                     {
                         "name": "1st Turning Carousel Chest on 2nd Floor",
@@ -593,7 +591,7 @@
                 ]
             },
             {
-                "name": "Library",
+                "name": "Library - 2nd Floor Right Carousel",
                 "sections": [
                     {
                         "name": "2nd Turning Carousel Chest on 2nd Floor",
@@ -612,12 +610,11 @@
     }, 
     {
         "name": "Hollow Bastion Events",
-        "access_rules":["hollow_bastion, [$world_count:5]"],
         "chest_unopened_img": "/images/misc/emblem.png",
         "chest_opened_img": "/images/misc/emblem_bw.png",
         "children": [
             {
-                "name": "Entrance Hall",
+                "name": "Entrance Hall - Riku",
                 "sections": [
                     {
                         "name": "Defeat Riku I",
@@ -633,7 +630,7 @@
                 ]
             },
             {
-                "name": "Castle Chapel",
+                "name": "Castle Chapel - Maleficent",
                 "sections": [
                     {
                         "name": "Defeat Maleficent",
@@ -649,23 +646,27 @@
                 ]
             },
             {
-                "name": "Castle Chapel",
+                "name": "Castle Chapel 2",
                 "sections": [
                     {
                         "name": "Defeat Dragon Maleficent",
                         "ref": "Overview/Hollow Bastion - After Emblems/Castle Chapel - Defeat Dragon Maleficent"
+                    },
+                    {
+                        "name": "Defeat Unknown",
+                        "ref": "Overview/Hollow Bastion - 2nd Visit/Castle Chapel - Defeat Unknown"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "HB",
-                        "x": 727,
-                        "y": 240
+                        "x": 730,
+                        "y": 230
                     }
                 ]
             },
             {
-                "name": "Grand Hall",
+                "name": "Grand Hall - Riku II",
                 "sections": [
                     {
                         "name": "Defeat Riku II",
@@ -681,7 +682,7 @@
                 ]
             },
             {
-                "name": "Grand Hall",
+                "name": "Grand Hall - Behemoth",
                 "sections": [
                     {
                         "name": "Defeat Behemoth",
@@ -697,11 +698,11 @@
                 ]
             },
             {
-                "name": "Castle Chapel",
+                "name": "Castle Chapel - Princesses",
                 "sections": [
                     {
                         "name": "Talk to the Princesses",
-                        "ref": "Overview/Hollow Bastion - 2nd Visit/Castle Chapel - Talk To Princesses"
+                        "ref": "Overview/Hollow Bastion - 2nd Visit/Castle Chapel - Talk to the Princesses"
                     }
                 ],
                 "map_locations": [
@@ -713,23 +714,7 @@
                 ]
             },
             {
-                "name": "Castle Chapel",
-                "sections": [
-                    {
-                        "name": "Defeat Unknown",
-                        "ref": "Overview/Hollow Bastion - 2nd Visit/Castle Chapel - Defeat Unknown"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "HB",
-                        "x": 730,
-                        "y": 230
-                    }
-                ]
-            },
-            {
-                "name": "Entrance Hall",
+                "name": "Entrance Hall - After Lighting Candles",
                 "sections": [
                     {
                         "name": "Emblem Piece (Flame) - Light the Candles",
@@ -745,7 +730,7 @@
                 ]
             },
             {
-                "name": "Entrance Hall",
+                "name": "Entrance Hall - After Pushing Statue",
                 "sections": [
                     {
                         "name": "Emblem Piece (Chest) - Push the Statue",
@@ -761,7 +746,7 @@
                 ]
             },
             {
-                "name": "Entrance Hall",
+                "name": "Entrance Hall - Red Trinity",
                 "sections": [
                     {
                         "name": "Emblem Piece (Statue) - Drop Statue with Red Trinity",
@@ -777,7 +762,7 @@
                 ]
             },
             {
-                "name": "Entrance Hall",
+                "name": "Entrance Hall - After Breaking Pots",
                 "sections": [
                     {
                         "name": "Emblem Piece (Fountain) - Break the Pots",
@@ -793,7 +778,7 @@
                 ]
             },
             {
-                "name": "Library",
+                "name": "Library - Belle",
                 "sections": [
                     {
                         "name": "Talk to Belle",
@@ -809,7 +794,7 @@
                 ]
             },
             {
-                "name": "Library",
+                "name": "Library - Aerith",
                 "sections": [
                     {
                         "name": "Talk to Aerith",
@@ -825,7 +810,7 @@
                 ]
             },
             {
-                "name": "Dungeon",
+                "name": "Dungeon - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity",
@@ -841,7 +826,7 @@
                 ]
             },
             {
-                "name": "Great Crest",
+                "name": "Great Crest - Blue Trinity",
                 "sections": [
                     {
                         "name": "Blue Trinity",
@@ -857,7 +842,7 @@
                 ]
             },
             {
-                "name": "Lift Stop",
+                "name": "Lift Stop - Node From Waterway Lift",
                 "sections": [
                     {
                         "name": "Examine Node",
