@@ -660,13 +660,26 @@ end
 
 -- 100 Acre Wood Bouncing Spot Left Cliff Chest
 -- 100 Acre Wood Bouncing Spot Right Tree Alcove Chest
--- 100 Acre Wood Bouncing Spot Right Turn in Rare Nut 2, 3, 4, 5
+-- 100 Acre Wood Bouncing Spot Turn in Rare Nut 2, 3, 4
 function haw_bouncing_spot_access()
    if has("high_jump") and has("glide") then
       return AccessibilityLevel.Normal
    elseif logic_difficulty_at_least_normal() and (has("high_jump") or has("glide")) then
       return AccessibilityLevel.Normal
    elseif logic_difficulty_at_least_proud() then
+      return AccessibilityLevel.Normal
+   end
+
+   return AccessibilityLevel.SequenceBreak
+end
+
+-- 100 Acre Wood Bouncing Spot Turn in Rare Nut 5
+function haw_final_nut_access()
+   if has("high_jump") and has("glide") then
+      return AccessibilityLevel.Normal
+   elseif logic_difficulty_at_least_normal() and (has("high_jump") or has("glide")) then
+      return AccessibilityLevel.Normal
+   elseif logic_difficulty_at_least_minimal() and has("combo_master") then
       return AccessibilityLevel.Normal
    end
 

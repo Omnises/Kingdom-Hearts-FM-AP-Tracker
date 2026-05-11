@@ -2232,7 +2232,7 @@
                     },
                     {
                         "name": "Bouncing Spot - Turn in Rare Nut #5",
-                        "access_rules":["torn_page:4, ^$haw_bouncing_spot_access"]
+                        "access_rules":["torn_page:4, ^$haw_final_nut_access"]
                     },
                     {
                         "name": "Bouncing Spot - Break the Log",
