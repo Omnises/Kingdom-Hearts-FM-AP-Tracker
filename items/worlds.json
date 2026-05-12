@@ -5,6 +5,7 @@
         "max_quantity": 2,
         "codes": "wonderland",
         "img": "images/worlds/Wonderland.png",
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {
@@ -19,6 +20,7 @@
         "max_quantity": 2,
         "codes": "deep_jungle",
         "img": "images/worlds/Deep Jungle.png",
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {
@@ -32,6 +34,7 @@
         "type": "consumable",
         "max_quantity": 2,
         "img": "images/worlds/Olympus Coliseum KH1.png",
+        "overlay_background": "#000000",
         "overlay_font_size": 20,
         "codes": "olympus_coliseum"
     },
@@ -71,6 +74,7 @@
         "max_quantity": 2,
         "codes": "halloween_town",
         "img": "images/worlds/Halloween Town.png",
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {
@@ -90,6 +94,7 @@
         "type": "consumable",
         "max_quantity": 2,
         "img": "images/worlds/Atlantica KH1.png",
+        "overlay_background": "#000000",
         "overlay_font_size": 20,
         "codes": "atlantica"
     },
@@ -111,6 +116,7 @@
         "max_quantity": 2,
         "codes": "hollow_bastion",
         "img": "images/worlds/Hollow Bastion.png",
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {

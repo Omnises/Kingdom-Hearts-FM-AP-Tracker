@@ -40,6 +40,7 @@
         "codes": "postcard",
         "img": "images/misc/postcards.png",
         "max_quantity": 10,
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {
@@ -48,6 +49,7 @@
         "img": "images/misc/mythril.png",
         "max_quantity": 16,
         "codes": "mythril",
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {
@@ -56,6 +58,7 @@
         "img": "images/misc/orichalcum.png",
         "max_quantity": 17,
         "codes": "orichalcum",
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {
@@ -64,6 +67,7 @@
         "img": "images/misc/pages.png",
         "codes": "torn_page",
         "max_quantity": 5,
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {
@@ -73,6 +77,7 @@
         "max_quantity": 99,
         "increment": 1,
         "codes": "puppy",
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {
@@ -81,6 +86,7 @@
         "img": "images/misc/lucky_emblem.png",
         "max_quantity": 20,
         "codes": "lucky_emblem",
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     },
     {
@@ -89,6 +95,7 @@
         "img": "images/misc/Raft Materials.png",
         "max_quantity": 20,
         "codes": "raft_materials",
+        "overlay_background": "#000000",
         "overlay_font_size": 20
     }
 ]
