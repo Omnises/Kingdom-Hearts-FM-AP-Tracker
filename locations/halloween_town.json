@@ -3,7 +3,7 @@
         "name": "Halloween Town - Chests",
         "children": [
             {
-                "name": "Moonlight Hill",
+                "name": "Moonlight Hill - White Trinity",
                 "sections": [
                     {
                         "name": "White Trinity Chest",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "Guillotine Square",
+                "name": "Guillotine Square - High Tower",
                 "sections": [
                     {
                         "name": "High Tower Chest",
@@ -51,23 +51,7 @@
                 ]
             },
             {
-                "name": "Guillotine Square",
-                "sections": [
-                    {
-                        "name": "Left Chest in Pumpkin Structure",
-                        "ref": "Overview/Halloween Town - Before Jack-in-the-Box/Guillotine Square - Left Chest in Pumpkin Structure"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "HT",
-                        "x": 227,
-                        "y": 855
-                    }
-                ]
-            },
-            {
-                "name": "Guillotine Square",
+                "name": "Guillotine Square - Under Jack's House",
                 "sections": [
                     {
                         "name": "Chest Under Jack's House",
@@ -83,8 +67,12 @@
                 ]
             },
             {
-                "name": "Guillotine Square",
+                "name": "Guillotine Square - Pumpkin Structure",
                 "sections": [
+                    {
+                        "name": "Left Chest in Pumpkin Structure",
+                        "ref": "Overview/Halloween Town - Before Jack-in-the-Box/Guillotine Square - Left Chest in Pumpkin Structure"
+                    },
                     {
                         "name": "Right Chest in Pumpkin Structure",
                         "ref": "Overview/Halloween Town - Before Jack-in-the-Box/Guillotine Square - Right Chest in Pumpkin Structure"
@@ -104,7 +92,7 @@
         "name": "Halloween Town - Chests - 2nd Visit",
         "children": [
             {
-                "name": "Bridge",
+                "name": "Bridge - Under Bridge",
                 "sections": [
                     {
                         "name": "Chest Under Bridge",
@@ -120,7 +108,7 @@
                 ]
             },
             {
-                "name": "Bridge",
+                "name": "Bridge - Right of Gate",
                 "sections": [
                     {
                         "name": "Chest Right of Gate",
@@ -136,7 +124,7 @@
                 ]
             },
             {
-                "name": "Cemetery",
+                "name": "Cemetery - Behind Grave",
                 "sections": [
                     {
                         "name": "Chest Behind Grave",
@@ -152,7 +140,7 @@
                 ]
             },
             {
-                "name": "Cemetery",
+                "name": "Cemetery - Cat Shaped Grave",
                 "sections": [
                     {
                         "name": "Chest By Cat Shaped Grave",
@@ -168,7 +156,7 @@
                 ]
             },
             {
-                "name": "Cemetery",
+                "name": "Cemetery - Between Graves",
                 "sections": [
                     {
                         "name": "Chest Between Graves",
@@ -184,7 +172,7 @@
                 ]
             },
             {
-                "name": "Oogie's Manor",
+                "name": "Oogie's Manor - Lower Cage",
                 "sections": [
                     {
                         "name": "Chest in Lower Iron Cage",
@@ -200,7 +188,7 @@
                 ]
             },
             {
-                "name": "Oogie's Manor",
+                "name": "Oogie's Manor - Upper Cage",
                 "sections": [
                     {
                         "name": "Chest in Upper Iron Cage",
@@ -216,7 +204,7 @@
                 ]
             },
             {
-                "name": "Oogie's Manor",
+                "name": "Oogie's Manor - Hollow",
                 "sections": [
                     {
                         "name": "Hollow Chest",
@@ -232,7 +220,7 @@
                 ]
             },
             {
-                "name": "Oogie's Manor",
+                "name": "Oogie's Manor - Red Trinity",
                 "sections": [
                     {
                         "name": "Red Trinity Chest",
@@ -253,7 +241,7 @@
                 ]
             },
             {
-                "name": "Oogie's Manor",
+                "name": "Oogie's Manor - Entrance Steps",
                 "sections": [
                     {
                         "name": "Chest at Entrance Steps",
@@ -269,7 +257,7 @@
                 ]
             },
             {
-                "name": "Oogie's Manor",
+                "name": "Oogie's Manor - Inside Entrance",
                 "sections": [
                     {
                         "name": "Chest Inside Entrance",
@@ -285,7 +273,7 @@
                 ]
             },
             {
-                "name": "Oogie's Manor - Chests in Remains",
+                "name": "Oogie's Manor - Chests in Manor Remains",
                 "sections": [
                     {
                         "name": "Oogie's Manor - Chest in Lower Iron Cage",
@@ -317,7 +305,7 @@
                 ]
             },
             {
-                "name": "Bridge",
+                "name": "Bridge - Left of Gate",
                 "sections": [
                     {
                         "name": "Chest Left of Gate",
@@ -333,7 +321,7 @@
                 ]
             },
             {
-                "name": "Cemetery",
+                "name": "Cemetery - Striped Grave",
                 "sections": [
                     {
                         "name": "Chest by Striped Grave",
@@ -354,10 +342,10 @@
         "name": "Halloween Town - Events",
         "children": [
             {
-                "name": "Guillotine Square",
+                "name": "Guillotine Square - Jack's House",
                 "sections": [
                     {
-                        "name": "",
+                        "name": "Ring Doorbell 3 Times",
                         "ref": "Overview/Halloween Town - Before Jack-in-the-Box/Guillotine Square - Ring Jack's Doorbell 3 Times"
                     }
                 ],

@@ -3,7 +3,7 @@
         "name": "Destiny Islands - Day 1",
         "children": [
             {
-                "name": "Seashore",
+                "name": "Seashore - Near Bridge",
                 "sections": [
                     {
                         "name": "Log under Bridge",
@@ -13,13 +13,13 @@
                 "map_locations": [
                     {
                         "map": "DI",
-                        "x": 949,
-                        "y": 311
+                        "x": 407,
+                        "y": 559
                     }
                 ]
             },
             {
-                "name": "Seashore",
+                "name": "Seashore - Riku's Island",
                 "sections": [
                     {
                         "name": "Log on Riku's Island",
@@ -29,13 +29,13 @@
                 "map_locations": [
                     {
                         "map": "DI",
-                        "x": 1122,
-                        "y": 514
+                        "x": 505,
+                        "y": 643
                     }
                 ]
             },
             {
-                "name": "Seashore",
+                "name": "Seashore - Near Tidus",
                 "sections": [
                     {
                         "name": "Rope",
@@ -45,13 +45,13 @@
                 "map_locations": [
                     {
                         "map": "DI",
-                        "x": 141,
-                        "y": 161
+                        "x": 123,
+                        "y": 477
                     }
                 ]
             },
             {
-                "name": "Seashore",
+                "name": "Cloth Room",
                 "sections": [
                     {
                         "name": "Cloth",
@@ -61,8 +61,154 @@
                 "map_locations": [
                     {
                         "map": "DI",
-                        "x": 462,
-                        "y": 54
+                        "x": 181,
+                        "y": 871
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Destiny Islands - Day 2",
+        "children": [
+            {
+                "name": "Cove - Cliff Cave",
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "ref": "Overview/Destiny Islands - Day 2/Cove - Chest"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 324,
+                        "y": 128
+                    }
+                ]
+            },
+            {
+                "name": "Cove - Beach Cave",
+                "sections": [
+                    {
+                        "name": "Mushroom",
+                        "ref": "Overview/Destiny Islands - Day 2/Cove - Mushroom in Small Cave"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 425,
+                        "y": 243
+                    }
+                ]
+            },
+            {
+                "name": "Cove - Near Bottom of Zipline",
+                "sections": [
+                    {
+                        "name": "Mushroom",
+                        "ref": "Overview/Destiny Islands - Day 2/Cove - Mushroom Near Zip Line"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 349,
+                        "y": 196
+                    }
+                ]
+            },
+            {
+                "name": "Cove - Kairi",
+                "sections": [
+                    {
+                        "name": "Talk to Kairi",
+                        "ref": "Overview/Destiny Islands - Day 2/Cove - Talk to Kairi"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 502,
+                        "y": 211
+                    }
+                ]
+            },
+            {
+                "name": "Cove - Fresh Water After Kairi",
+                "sections": [
+                    {
+                        "name": "Drinking Water",
+                        "ref": "Overview/Destiny Islands - Day 2/Cove - Drinking Water"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 231,
+                        "y": 169
+                    },
+                    {
+                        "map": "DI",
+                        "x": 346,
+                        "y": 519
+                    }
+                ]
+            },
+            {
+                "name": "Seashore - Fishing",
+                "sections": [
+                    {
+                        "name": "Catch Fish 1",
+                        "ref": "Overview/Destiny Islands - Day 2/Seashore - Fish 1"
+                    },
+                    {
+                        "name": "Catch Fish 2",
+                        "ref": "Overview/Destiny Islands - Day 2/Seashore - Fish 2"
+                    },
+                    {
+                        "name": "Catch Fish 3",
+                        "ref": "Overview/Destiny Islands - Day 2/Seashore - Fish 3"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 231,
+                        "y": 574
+                    }
+                ]
+            },
+            {
+                "name": "Seashore - Tree Near Seaside Shack Upper Entrance",
+                "sections": [
+                    {
+                        "name": "Seagull Egg",
+                        "ref": "Overview/Destiny Islands - Day 2/Seashore - Seagull Egg"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 412,
+                        "y": 488
+                    }
+                ]
+            },
+            {
+                "name": "Secret Place",
+                "sections": [
+                    {
+                        "name": "Mushroom",
+                        "ref": "Overview/Destiny Islands - Day 2/Secret Place - Mushroom"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DI",
+                        "x": 116,
+                        "y": 746
                     }
                 ]
             }

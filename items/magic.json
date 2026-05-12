@@ -41,7 +41,7 @@
         "type": "consumable",
         "codes": "fire",
         "max_quantity": 3,
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Progressive Blizzard",
@@ -49,7 +49,7 @@
         "type": "consumable",
         "codes": "blizzard",
         "max_quantity": 3,
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Progressive Thunder",
@@ -57,7 +57,7 @@
         "type": "consumable",
         "codes": "thunder",
         "max_quantity": 3,
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Progressive Cure",
@@ -65,7 +65,7 @@
         "type": "consumable",
         "codes": "cure",
         "max_quantity": 3,
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Progressive Gravity",
@@ -73,7 +73,7 @@
         "type": "consumable",
         "codes": "gravity",
         "max_quantity": 3,
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Progressive Stop",
@@ -81,7 +81,7 @@
         "type": "consumable",
         "codes": "stop",
         "max_quantity": 3,
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Progressive Aero",
@@ -89,6 +89,6 @@
         "type": "consumable",
         "codes": "aero",
         "max_quantity": 3,
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     }
 ]

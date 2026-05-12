@@ -1,56 +1,25 @@
 {
-  "setting_grid":
-  {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content":
-    [
-      {
-        "type": "tabbed",
-        "dock": "top",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content":
-        [
-          {
-            "title": "Settings",
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
-            "content": [
-              {
-                "type": "itemgrid",
-                "item_margin": "2,2",
-                "h_alignment": "center",
-                "rows":
-                [
-                  ["100_acre_checks", "atlantica_checks", "keyblade_locks", "logic_difficulty"],
-                  ["cups", "superbosses"]
-                ]
-              }
-            ]
-          },
-          {
-            "title": "Goal",
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
-            "content": [
-              {
-                "type": "itemgrid",
-                "item_margin": "2,2",
-                "h_alignment": "center",
-                "rows":
-                [
-                  ["goal", "puppies_req", "postcards_req"],
-                  ["eotw_req", "door_unlock", "door_req"]
-                ]
-              }
-            ]
-          }
-        ]
-      }
+  "setting_grid": {
+    "type": "itemgrid",
+    "background":  "#000000",
+    "h_alignment": "left",
+    "item_margin": "16,2",
+    "item_size": "550,32",
+    "rows": [
+      ["title_settings", "title_goal"],
+      ["logic_difficulty", "eotw_unlock"],
+      ["keyblade_locks", "goal"],
+      ["stacking_world_items", ""],
+      ["halloween_town_key_item_bundle", "title_collectible_requirements"],
+      ["random_accessories", "eotw_req"],
+      ["", "door_req"],
+      ["title_locations", "postcards_req"],
+      ["destiny_islands_checks", "puppies_req"],
+      ["100_acre_checks", "day_2_materials_req"],
+      ["atlantica_checks", "homecoming_materials_req"],
+      ["jungle_slider_checks"],
+      ["cups"],
+      ["superbosses"]
     ]
   }
 }

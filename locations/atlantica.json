@@ -3,7 +3,7 @@
         "name": "Atlantica - Chests",
         "children": [
             {
-                "name": "Sunken Ship",
+                "name": "Sunken Ship - Flipped Boat",
                 "sections": [
                     {
                         "name": "Chest in Flipped Boat",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "Sunken Ship",
+                "name": "Sunken Ship - Seabed",
                 "sections": [
                     {
                         "name": "Seabed Chest",
@@ -35,7 +35,7 @@
                 ]
             },
             {
-                "name": "Sunken Ship",
+                "name": "Sunken Ship - Behind Stairs",
                 "sections": [
                     {
                         "name": "Chest Inside Ship",
@@ -51,7 +51,7 @@
                 ]
             },
             {
-                "name": "Ariel's Grotto",
+                "name": "Ariel's Grotto - Upper",
                 "sections": [
                     {
                         "name": "High Chest",
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "name": "Ariel's Grotto",
+                "name": "Ariel's Grotto - Middle",
                 "sections": [
                     {
                         "name": "Middle Chest",
@@ -83,7 +83,7 @@
                 ]
             },
             {
-                "name": "Ariel's Grotto",
+                "name": "Ariel's Grotto - Lower",
                 "sections": [
                     {
                         "name": "Low Chest",
@@ -99,7 +99,7 @@
                 ]
             },
             {
-                "name": "Ursula's Lair",
+                "name": "Ursula's Lair - After Fight",
                 "sections": [
                     {
                         "name": "Use Fire on Urchin Chest",
@@ -115,7 +115,7 @@
                 ]
             },
             {
-                "name": "Undersea Gorge",
+                "name": "Undersea Gorge - Near Ariel's Grotto",
                 "sections": [
                     {
                         "name": "Jammed Chest by Ariel's Grotto",
@@ -131,7 +131,7 @@
                 ]
             },
             {
-                "name": "Triton's Palace",
+                "name": "Triton's Palace - White Trinity",
                 "sections": [
                     {
                         "name": "White Trinity Chest",
@@ -152,7 +152,7 @@
         "name": "Atlantica - Clams",
         "children": [
             {
-                "name": "Undersea Gorge",
+                "name": "Undersea Gorge - Near Undersea Cave",
                 "sections": [
                     {
                         "name": "Blizzard Clam",
@@ -168,7 +168,7 @@
                 ]
             },
             {
-                "name": "Undersea Gorge",
+                "name": "Undersea Gorge - Center",
                 "sections": [
                     {
                         "name": "Ocean Floor Clam",
@@ -184,7 +184,7 @@
                 ]
             },
             {
-                "name": "Undersea Valley",
+                "name": "Undersea Valley - Higher Cave",
                 "sections": [
                     {
                         "name": "Higher Cave Clam",
@@ -200,7 +200,7 @@
                 ]
             },
             {
-                "name": "Undersea Valley",
+                "name": "Undersea Valley - Lower Cave",
                 "sections": [
                     {
                         "name": "Lower Cave Clam",
@@ -216,7 +216,7 @@
                 ]
             },
             {
-                "name": "Undersea Valley",
+                "name": "Undersea Valley - Red Clam",
                 "sections": [
                     {
                         "name": "Fire Clam",
@@ -232,7 +232,7 @@
                 ]
             },
             {
-                "name": "Undersea Valley",
+                "name": "Undersea Valley - Back Wall",
                 "sections": [
                     {
                         "name": "Wall Clam",
@@ -248,7 +248,7 @@
                 ]
             },
             {
-                "name": "Undersea Valley",
+                "name": "Undersea Valley - Pillar",
                 "sections": [
                     {
                         "name": "Pillar Clam",
@@ -264,7 +264,7 @@
                 ]
             },
             {
-                "name": "Undersea Valley",
+                "name": "Undersea Valley - Ocean Floor",
                 "sections": [
                     {
                         "name": "Ocean Floor Clam",
@@ -280,7 +280,7 @@
                 ]
             },
             {
-                "name": "Triton's Palace",
+                "name": "Triton's Palace - Yellow Clam",
                 "sections": [
                     {
                         "name": "Thunder Clam",
@@ -296,7 +296,7 @@
                 ]
             },
             {
-                "name": "Triton's Palace",
+                "name": "Triton's Palace - Right Wall",
                 "sections": [
                     {
                         "name": "Right Wall Clam",
@@ -312,7 +312,7 @@
                 ]
             },
             {
-                "name": "Triton's Palace",
+                "name": "Triton's Palace - Near Path",
                 "sections": [
                     {
                         "name": "Clam Near Path",
@@ -328,7 +328,7 @@
                 ]
             },
             {
-                "name": "Triton's Palace",
+                "name": "Triton's Palace - Left Wall",
                 "sections": [
                     {
                         "name": "Left Wall Clam",
@@ -360,7 +360,7 @@
                 ]
             },
             {
-                "name": "Sunken Ship",
+                "name": "Sunken Ship - Below Deck",
                 "sections": [
                     {
                         "name": "Clam Below Deck",
@@ -429,10 +429,10 @@
                 ]
             },
             {
-                "name": "Ursula's Lair - Defeat Ursula I",
+                "name": "Ursula's Lair",
                 "sections": [
                     {
-                        "name": "",
+                        "name": "Defeat Ursula I",
                         "ref": "Overview/Atlantica - Events/Ursula's Lair - Defeat Ursula I"
                     }
                 ],
@@ -445,10 +445,10 @@
                 ]
             },
             {
-                "name": "Ursula's Lair II - Defeat Ursula II",
+                "name": "Ursula's Lair II",
                 "sections": [
                     {
-                        "name": "",
+                        "name": "Defeat Ursula II",
                         "ref": "Overview/Atlantica - Events/Ursula's Lair II - Defeat Ursula II"
                     }
                 ],
@@ -461,11 +461,11 @@
                 ]
             },
             {
-                "name": "Ariel's Grotto",
+                "name": "Ariel's Grotto - Keyhole",
                 "sections": [
                     {
-                        "name": "Seal Atlantica - Keyhole",
-                        "ref": "Overview/Atlantica - Events/Ariel's Grotto - Seal Atlantica - Keyhole"
+                        "name": "Seal Keyhole",
+                        "ref": "Overview/Atlantica - Events/Ariel's Grotto - Seal Keyhole"
                     }
                 ],
                 "map_locations": [

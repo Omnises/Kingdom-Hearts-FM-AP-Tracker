@@ -35,20 +35,12 @@
         "codes": "aero_arts"
     },
     {
-        "name": "Postcard",
+        "name": "Postcards",
         "type": "consumable",
         "codes": "postcard",
         "img": "images/misc/postcards.png",
         "max_quantity": 10,
-        "overlay_font_size": 15
-    },
-    {
-        "name": "Empty Bottle",
-        "type": "consumable",
-        "img": "images/misc/bottle.png",
-        "max_quantity": 6,
-        "codes": "bottle",
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Mythril",
@@ -56,15 +48,15 @@
         "img": "images/misc/mythril.png",
         "max_quantity": 16,
         "codes": "mythril",
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Orichalcum",
         "type": "consumable",
-        "img": "images/misc/bottle.png",
+        "img": "images/misc/orichalcum.png",
         "max_quantity": 17,
         "codes": "orichalcum",
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Torn Pages",
@@ -72,49 +64,31 @@
         "img": "images/misc/pages.png",
         "codes": "torn_page",
         "max_quantity": 5,
-        "overlay_font_size": 15
-    },
-    {
-        "name": "Lucky Emblems",
-        "type": "consumable",
-        "img": "images/misc/lucky_emblem.png",
-        "codes": "report",
-        "max_quantity": 13,
-        "overlay_font_size": 15
+        "overlay_font_size": 20
     },
     {
         "name": "Puppies",
         "type": "consumable",
         "img": "images/misc/puppies.png",
         "max_quantity": 99,
-        "codes": "puppies"
+        "increment": 1,
+        "codes": "puppy",
+        "overlay_font_size": 20
     },
     {
-        "name": "Lucky Emblem",
+        "name": "Lucky Emblems",
         "type": "consumable",
         "img": "images/misc/lucky_emblem.png",
-        "max_quantity": 99,
-        "codes": "lucky_emblem"
+        "max_quantity": 20,
+        "codes": "lucky_emblem",
+        "overlay_font_size": 20
     },
     {
         "name": "Raft Materials",
         "type": "consumable",
-        "img": "images/misc/Raft Supplies.png",
-        "max_quantity": 99,
-        "codes": "raft_materials"
-    },
-    {
-        "name": "Mythril",
-        "type": "consumable",
-        "img": "images/misc/mythril.png",
-        "max_quantity": 99,
-        "codes": "mythril"
-    },
-    {
-        "name": "Orichalcum",
-        "type": "consumable",
-        "img": "images/misc/orichalcum.png",
-        "max_quantity": 99,
-        "codes": "orichalcum"
+        "img": "images/misc/Raft Materials.png",
+        "max_quantity": 20,
+        "codes": "raft_materials",
+        "overlay_font_size": 20
     }
 ]
