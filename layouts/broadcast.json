@@ -16,6 +16,10 @@
                     {
                         "type": "layout",
                         "key": "abilities"
+                    },
+                    {
+                        "type": "layout",
+                        "key": "collectibles"
                     }
                 ]
             }
