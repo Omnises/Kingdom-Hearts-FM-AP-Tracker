@@ -191,7 +191,6 @@ function dj_jump_and_glide_access()
 end
 
 -- Agrabah Main Street High Above Palace Gates Entrance Chest
--- Agrabah Palace Gates Low Chest
 function ag_high_jump_access()
    if has("high_jump") then
       return AccessibilityLevel.Normal
@@ -242,6 +241,15 @@ function ag_cow_entrance_access()
    end
 
    return AccessibilityLevel.SequenceBreak
+end
+
+-- Agrabah Cave of Wonders Dark Chamber Near Save Chest
+function ag_cow_near_save_access()
+   if logic_difficulty_at_least_normal() or has("high_jump", 1) or has("glide", 1) then
+      return AccessibilityLevel.Normal
+   end
+
+   return AccessibilityLevel.None
 end
 
 -- Agrabah Cave of Wonders Hidden Room Right Chest
