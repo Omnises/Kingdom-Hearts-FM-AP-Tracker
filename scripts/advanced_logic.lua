@@ -645,6 +645,34 @@ function hb_entrance_hall_flame_emblem_access()
    return AccessibilityLevel.None
 end
 
+-- End of the World Final Dimension Giant Crevasse - 1st Chest
+-- End of the World Final Dimension Giant Crevasse - 2nd Chest
+-- End of the World Final Dimension Giant Crevasse - 3rd Chest
+function eotw_giant_crevasse_lower()
+   if has("glide") or has("high_jump") then
+      return AccessibilityLevel.Normal
+   elseif logic_difficulty_at_least_normal() then
+      return AccessibilityLevel.Normal
+   end
+
+   return AccessibilityLevel.SequenceBreak
+end
+
+-- End of the World Final Dimension Giant Crevasse - 4th Chest
+function eotw_giant_crevasse_upper()
+   if has("glide") then
+      return AccessibilityLevel.Normal
+   elseif logic_difficulty_at_least_proud() and has("high_jump", 2) then
+      return AccessibilityLevel.Normal
+   elseif logic_difficulty_at_least_proud() and has("high_jump") and has("combo_master") then
+      return AccessibilityLevel.Normal
+   elseif has("high_jump", 2) or (has("high_jump") and has("combo_master")) then
+      return AccessibilityLevel.SequenceBreak
+   end
+
+   return AccessibilityLevel.None
+end
+
 -- End of the World World Terminus Agrabah Chest
 function eotw_world_terminus_agrabah_access()
    if has("high_jump") then

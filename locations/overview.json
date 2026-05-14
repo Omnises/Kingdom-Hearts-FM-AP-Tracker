@@ -2033,77 +2033,71 @@
             },
             {
                 "name": "End of the World - Final Dimension",
-                "access_rules":["$eotw_access, $access_chest_for|end_of_the_world, [$world_count:8], ^$boss_beginner_require_tools"],
+                "access_rules":["$eotw_access, [$world_count:8], ^$boss_beginner_require_tools"],
                 "chest_unopened_img": "/images/misc/chest.png",
                 "chest_opened_img": "/images/misc/chest_bw.png",
                 "sections": [
                     {
-                        "name": "Final Dimension - 1st Chest"
+                        "name": "Final Dimension - 1st Chest",
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
-                        "name": "Final Dimension - 2nd Chest"
+                        "name": "Final Dimension - 2nd Chest",
+                        "access_rules":["[$access_broken_chest_for|end_of_the_world]"]
                     },
                     {
-                        "name": "Final Dimension - 3rd Chest"
+                        "name": "Final Dimension - 3rd Chest",
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
-                        "name": "Final Dimension - 4th Chest"
+                        "name": "Final Dimension - 4th Chest",
+                        "access_rules":["[$access_broken_chest_for|end_of_the_world]"]
                     },
                     {
-                        "name": "Final Dimension - 5th Chest"
+                        "name": "Final Dimension - 5th Chest",
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
-                        "name": "Final Dimension - 6th Chest"
+                        "name": "Final Dimension - 6th Chest",
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
-                        "name": "Final Dimension - 7th Chest"
+                        "name": "Final Dimension - 7th Chest",
+                        "access_rules":["[$access_broken_chest_for|end_of_the_world]"]
                     },
                     {
-                        "name": "Final Dimension - 8th Chest"
+                        "name": "Final Dimension - 8th Chest",
+                        "access_rules":["[$access_broken_chest_for|end_of_the_world]"]
                     },
                     {
-                        "name": "Final Dimension - 9th Chest"
+                        "name": "Final Dimension - 9th Chest",
+                        "access_rules":["$access_chest_for|end_of_the_world"]
                     },
                     {
-                        "name": "Final Dimension - 10th Chest"
+                        "name": "Final Dimension - 10th Chest",
+                        "access_rules":["[$access_broken_chest_for|end_of_the_world]"]
                     },
                     {
                         "name": "Giant Crevasse - 1st Chest",
-                        "access_rules":[
-                            "glide",
-                            "high_jump",
-                            "[$logic_difficulty_at_least_minimal]"
-                        ]
+                        "access_rules":["^$eotw_giant_crevasse_lower, $access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "Giant Crevasse - 2nd Chest",
-                        "access_rules":[
-                            "glide",
-                            "high_jump",
-                            "[$logic_difficulty_at_least_normal]"
-                        ]
+                        "access_rules":["^$eotw_giant_crevasse_lower, $access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "Giant Crevasse - 3rd Chest",
-                        "access_rules":[
-                            "glide",
-                            "high_jump",
-                            "[$logic_difficulty_at_least_normal]"
-                        ]
+                        "access_rules":["^$eotw_giant_crevasse_lower, $access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "Giant Crevasse - 4th Chest",
-                        "access_rules":[
-                            "glide",
-                            "high_jump:2, [$logic_difficulty_at_least_proud]",
-                            "high_jump, combo_master, [$logic_difficulty_at_least_proud]"
-                        ]
+                        "access_rules":["^$eotw_giant_crevasse_upper, $access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "Giant Crevasse - 5th Chest",
                         "access_rules":[
-                            "glide",
-                            "[$logic_difficulty_at_least_proud]"
+                            "glide, $access_chest_for|end_of_the_world",
+                            "$access_chest_for|end_of_the_world, [$logic_difficulty_at_least_proud]"
                         ]
                     }
                 ],
