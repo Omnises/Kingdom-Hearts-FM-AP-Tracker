@@ -8,7 +8,7 @@ Download the most recent .zip file from the **Releases** and either drag it to t
 
 ## Screenshot
 
-![Screenshop](images/screenshot.png)
+![Screenshot](images/screenshot.png)
 
 ## Pack Settings
 
@@ -45,7 +45,7 @@ The Goal section controls the requirements for unlocking the **End of the World*
 
 ### Collectible Requirements
 
-The Collectible Requirements section controls how many of a collectible are required for their respective goal. Note that a collectbile is only required if their respective goal is set or if Destiny Islands checks are enabled.
+The Collectible Requirements section controls how many of a collectible are required for their respective goal. Note that a collectable is only required if their respective goal is set or if Destiny Islands checks are enabled.
 
 ![Collectible Requirements](images/ui_collectible_requirements.png)
 
