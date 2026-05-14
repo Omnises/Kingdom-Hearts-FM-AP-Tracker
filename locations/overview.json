@@ -971,7 +971,7 @@
                     },
                     {
                         "name": "Palace Gates - Low Chest",
-                        "access_rules":["^$ag_high_jump_access, ^$boss_beginner_require_tools"]
+                        "access_rules":["^$boss_beginner_require_tools"]
                     },
                     {
                         "name": "Palace Gates - High Chest Opposite Palace",
@@ -1073,7 +1073,7 @@
                     },
                     {
                         "name": "Dark Chamber - Chest Near Save Point",
-                        "access_rules":["high_jump", "glide", "[$logic_difficulty_at_least_normal]"]
+                        "access_rules":["^$ag_cow_near_save_access"]
                     },
                     {
                         "name": "Silent Chamber - Blue Trinity Chest",
