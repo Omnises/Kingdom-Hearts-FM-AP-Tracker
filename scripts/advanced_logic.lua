@@ -90,14 +90,11 @@ end
 function wl_lotus_forest_southwest_access()
    if has("glide") then
       return AccessibilityLevel.Normal
-   elseif (
-      logic_difficulty_at_least_proud()
-      and has("footprints") and (has("high_jump") or can_dumbo_skip())
-   ) then
+   elseif logic_difficulty_at_least_proud() and wl_after_footprints() and (has("high_jump") or can_dumbo_skip()) then
       return AccessibilityLevel.Normal
    elseif logic_difficulty_at_least_minimal() and can_minimal_air_combo_jump() then
       return AccessibilityLevel.Normal
-   elseif has("footprints") and (has("high_jump") or can_dumbo_skip()) then
+   elseif wl_after_footprints() and (has("high_jump") or can_dumbo_skip()) then
       return AccessibilityLevel.SequenceBreak
    elseif can_minimal_air_combo_jump() then
       return AccessibilityLevel.SequenceBreak
@@ -124,12 +121,10 @@ end
 function wl_tea_party_entrance_hedge_access()
    if has("glide") then
       return AccessibilityLevel.Normal
-   elseif wl_after_footprints() then
-      if logic_difficulty_at_least_normal() and has("high_jump", 2) then
-         return AccessibilityLevel.Normal
-      elseif logic_difficulty_at_least_proud() and (has("high_jump", 1) or can_dumbo_skip()) then
-         return AccessibilityLevel.Normal
-      end
+   elseif logic_difficulty_at_least_normal() and wl_after_footprints() and has("high_jump", 2) then
+      return AccessibilityLevel.Normal
+   elseif logic_difficulty_at_least_proud() and wl_after_footprints() and (has("high_jump", 1) or can_dumbo_skip()) then
+      return AccessibilityLevel.Normal
    elseif logic_difficulty_at_least_minimal() and can_minimal_air_combo_jump() then
       return AccessibilityLevel.Normal
    elseif wl_after_footprints() and (has("high_jump", 1) or can_dumbo_skip()) then
