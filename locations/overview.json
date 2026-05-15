@@ -915,14 +915,14 @@
                     {
                         "name": "Defeat Sephiroth",
                         "visibility_rules":["superbosses_on", "goal_sephiroth"],
-                        "access_rules":["$has_all_cups, [$world_count:8], [$has_defenses]"],
+                        "access_rules":["$has_all_cups, [$world_count:8], [$has_defenses], [$boss_beginner_require_tools]"], 
                         "item_count": 2
                     },
                     {
                         "name": "Defeat Ice Titan",
                         "visibility_rules":["cups_hades, superbosses_on"],
                         "access_rules":[
-                            "$has_all_cups, guard, [$world_count:8], [$has_defenses]",
+                            "$has_all_cups, guard, [$world_count:8], [$has_defenses], [$boss_beginner_require_tools]",
                             "$has_all_cups, [$logic_difficulty_at_least_minimal], [$world_count:8], [$has_defenses]"
                         ]
                     }
@@ -1219,7 +1219,7 @@
                             "[$logic_difficulty_at_least_normal]",
                             "high_jump",
                             "glide",
-                            "$has_basic_tools"
+                            "$boss_beginner_require_tools"
                         ]
                     },
                     {
@@ -2017,7 +2017,7 @@
                         "name": "Castle Chapel - Defeat Unknown",
                         "visibility_rules":["superbosses_on", "goal_unknown"],
                         "access_rules":[
-                            "gravity, [$world_count:8], [$has_defenses]",
+                            "gravity, [$world_count:8], [$has_defenses], [$boss_beginner_require_tools]",
                             "[$logic_difficulty_at_least_normal], [$world_count:8], [$has_defenses]"
                         ],
                         "item_count": 2
