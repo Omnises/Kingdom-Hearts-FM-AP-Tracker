@@ -245,11 +245,13 @@ end
 
 -- Agrabah Cave of Wonders Dark Chamber Near Save Chest
 function ag_cow_near_save_access()
-   if logic_difficulty_at_least_normal() or has("high_jump", 1) or has("glide", 1) then
+   if has("high_jump", 1) or has("glide", 1) then
+      return AccessibilityLevel.Normal
+   elseif logic_difficulty_at_least_normal() then
       return AccessibilityLevel.Normal
    end
 
-   return AccessibilityLevel.None
+   return AccessibilityLevel.SequenceBreak
 end
 
 -- Agrabah Cave of Wonders Hidden Room Right Chest

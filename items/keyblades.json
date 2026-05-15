@@ -1,7 +1,7 @@
 [
     {
         "name": "Deep Jungle - Jungle King",
-        "img": "images/keyblades/metal_chocobo.png",
+        "img": "images/keyblades/jungle_king.png",
         "type": "toggle",
         "codes": "jungle_king"
     },
