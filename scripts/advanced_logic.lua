@@ -649,6 +649,16 @@ function hb_entrance_hall_flame_emblem_access()
 end
 
 -- End of the World Final Dimension Giant Crevasse - 1st Chest
+function eotw_giant_crevasse_first()
+   if has("glide") or has("high_jump") then
+      return AccessibilityLevel.Normal
+   elseif logic_difficulty_at_least_minimal() then
+      return AccessibilityLevel.Normal
+   end
+
+   return AccessibilityLevel.SequenceBreak
+end
+
 -- End of the World Final Dimension Giant Crevasse - 2nd Chest
 -- End of the World Final Dimension Giant Crevasse - 3rd Chest
 function eotw_giant_crevasse_lower()

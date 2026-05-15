@@ -2079,7 +2079,7 @@
                     },
                     {
                         "name": "Giant Crevasse - 1st Chest",
-                        "access_rules":["^$eotw_giant_crevasse_lower, $access_chest_for|end_of_the_world"]
+                        "access_rules":["^$eotw_giant_crevasse_first, $access_chest_for|end_of_the_world"]
                     },
                     {
                         "name": "Giant Crevasse - 2nd Chest",
