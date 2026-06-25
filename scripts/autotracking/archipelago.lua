@@ -12,7 +12,15 @@ if IS_ENABLE_HIGHLIGHT then
         [10] = Highlight.NoPriority,
         [20] = Highlight.Avoid,
         [30] = Highlight.Priority,
-        [40] = Highlight.None -- Hint Found
+        [40] = Highlight.None,
+        [100] = Highlight.Unspecified, -- Filler
+        [101] = Highlight.Priority,    -- Progression
+        [102] = Highlight.NoPriority,  -- Useful
+        [103] = Highlight.Priority,    -- Prog + Useful
+        [104] = Highlight.Avoid,       -- Trap
+        [105] = Highlight.Priority,    -- Prog + Trap
+        [106] = Highlight.NoPriority,  -- Useful + Trap
+        [107] = Highlight.Priority,    -- Prog + Useful + Trap
     }
 end
 
