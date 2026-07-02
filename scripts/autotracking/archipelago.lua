@@ -133,7 +133,9 @@ function onClear(slot_data)
     if not randomize_puppies then
         puppy_value = 3
     end
-    Tracker:FindObjectForCode("puppy").Increment = puppy_value
+    puppy_obj = Tracker:FindObjectForCode("puppy")
+    puppy_obj.Increment = puppy_value
+    puppy_obj.Decrement = puppy_value
 
     -- Set the correct number of available level location checks based on slot data.
     for location_id = 2658002,(2658000 + MAX_LEVEL_WITH_CHECK) do
