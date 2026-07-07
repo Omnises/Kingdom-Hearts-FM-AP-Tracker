@@ -1,7 +1,7 @@
 {
     "name": "Kingdom Hearts FM AP Tracker",
     "game_name": "Kingdom Hearts Final Mix",
-    "package_version": "1.4.0",
+    "package_version": "1.4.1",
     "package_uid": "kh1_ap_tracker",
     "platform": "PC", 
     "author": "Lojtana, culk",
