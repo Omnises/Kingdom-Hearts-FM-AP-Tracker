@@ -28,6 +28,7 @@ LOGIC_PROUD = 2
 LOGIC_MINIMAL = 3
 
 -- Beta AP world version logic setting stages.
+VERSION_OLDER = 0
 VERSION_0_11_0 = 1
 VERSION_1_1_0 = 2
 
@@ -358,11 +359,16 @@ function has_offensive_magic()
 end
 
 function has_basic_tools()
+    -- Core version logic also allows for thunder or gravity as beginner offensive magic.
+    local beta_logic = Tracker:FindObjectForCode("beta_logic").CurrentStage
     return (
         has("dodge_roll") and has("cure")
         and (has("combo_master") or has("strike_raid") or has("sonic_blade") or has("counterattack"))
         and (has("leaf_bracer") or has("second_chance") or has("guard"))
-        and has_offensive_magic()
+        and (
+            has_offensive_magic()
+            or (beta_logic == VERSION_OLDER and (has("thunder") or has("gravity")))
+        )
     )
 end
 
