@@ -10,7 +10,8 @@ SLOT_CODES =
             postcards = 2,
             lucky_emblems = 3,
             puppies = 4,
-            final_rest = 5
+            final_rest = 5,
+            anywhere = 6
         }
     },
     end_of_the_world_unlock =

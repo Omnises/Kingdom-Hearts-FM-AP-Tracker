@@ -92,6 +92,12 @@
                 "codes": "goal, goal_final_rest",
                 "inherit_codes": false,
                 "name": "Goal - Open Chest in Final Rest"
+            },
+            {
+                "img": "/images/settings/final_rest_door_anywhere.png",
+                "codes": "goal, goal_anywhere",
+                "inherit_codes": false,
+                "name": "Goal - Final Rest Door Key can be Anywhere"
             }
         ]
     },

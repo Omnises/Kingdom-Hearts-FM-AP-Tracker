@@ -293,7 +293,7 @@ function di_day_2_access()
 end
 
 function can_open_final_door()
-    local goal_status = Tracker:FindObjectForCode("goal").CurrentStage -- 0 = world item, 1 = lucky emblems
+    local goal_status = Tracker:FindObjectForCode("goal").CurrentStage -- 3 = lucky emblems, 5 = final rest chest
     local lucky_emblems_required = Tracker:FindObjectForCode("door_req").AcquiredCount
     if goal_status == 3 and has("lucky_emblem", lucky_emblems_required) then
         return true
