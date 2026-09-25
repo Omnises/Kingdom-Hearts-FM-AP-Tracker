@@ -35,6 +35,35 @@
         "codes": "aero_arts"
     },
     {
+        "name": "Watergleam",
+        "type": "toggle",
+        "codes": "watergleam"
+    },
+    {
+        "name": "Naturespark",
+        "type": "toggle",
+        "codes": "naturespark"
+    },
+    {
+        "name": "Fireglow",
+        "type": "toggle",
+        "codes": "fireglow"
+    },
+    {
+        "name": "Earthshine",
+        "type": "toggle",
+        "codes": "earthshine"
+    },
+    {
+        "name": "Summon Gems",
+        "type": "consumable",
+        "codes": "summon_gem",
+        "img": "images/misc/summon_gems.png",
+        "max_quantity": 10,
+        "overlay_background": "#000000",
+        "overlay_font_size": 20
+    },
+    {
         "name": "Postcards",
         "type": "consumable",
         "codes": "postcard",

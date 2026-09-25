@@ -1,0 +1,10 @@
+{
+    "collectibles_empty_bottle": {
+        "type": "itemgrid",
+        "item_margin": "2,2",
+        "item_size": "40,40",
+        "rows": [
+            ["empty_bottle"]
+        ]
+    }
+}

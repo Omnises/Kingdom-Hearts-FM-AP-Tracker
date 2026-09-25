@@ -21,7 +21,10 @@
       ["cups", "title_beta_only_settings"],
       ["superbosses", "auto_tab_map"],
       ["", "beta_logic"],
-      ["", "accessory_augments"]
+      ["", "accessory_augments"],
+      ["", "evidence_bundle"],
+      ["", "slides_bundle"],
+      ["", "100_acre_wood_minigames"]
     ]
   }
 }

@@ -34,9 +34,6 @@ function onClear(slot_data)
     for location_id, v in pairs(LOCATION_MAPPING) do
         local location_name = v[1]
         if location_name then
-            if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: clearing location %s", location_name))
-            end
             local obj = Tracker:FindObjectForCode(location_name)
             if obj then
                 if location_name:sub(1, 1) == "@" then
@@ -58,10 +55,10 @@ function onClear(slot_data)
     end
 
     -- reset items
-    for _, v in pairs(ITEM_MAPPING) do
-        local item_name = v[1]
-        local item_type = v[2]
-        if item_name and item_type then
+    for _, item_array in pairs(ITEM_MAPPING) do
+        for _, item_pair in ipairs(item_array) do
+            local item_name = item_pair[1]
+            local item_type = item_pair[2]
             local obj = Tracker:FindObjectForCode(item_name)
             if obj then
                 if item_type == "toggle" then
@@ -151,18 +148,32 @@ function onClear(slot_data)
     -- Check if slot data is from beta version of AP world.
     local beta_logic_stage = 0 -- v0.10.0 or older
     if slot_data["world_version"] ~= nil then
-        beta_logic_stage = 2 -- v1.1.0 or newer
-        -- Default auto map tab tracking to "on" if the feature is available (requires v1.1.0+).
-        Tracker:FindObjectForCode("auto_tab_map").CurrentStage = 1
+        local world_version = slot_data["world_version"]
+        if world_version[1] == 1 and world_version[2] >= 2 then
+            beta_logic_stage = 3 -- v1.2.0 or newer
+        elseif world_version[1] == 1 and world_version[2] == 1 then
+            beta_logic_stage = 2 -- v1.1.0
+        end
     elseif slot_data["accessory_augments"] ~= nil then
         beta_logic_stage = 1 -- v0.11.0
-    else
-        -- Clear beta only settings if not present in slot data.
+    end
+    -- Clear beta only settings if not present in slot data.
+    if beta_logic_stage < 3 then
+        -- Following settings only available in v1.2.0+
+        Tracker:FindObjectForCode("evidence_bundle").CurrentStage = 0
+        Tracker:FindObjectForCode("slides_bundle").CurrentStage = 0
+        Tracker:FindObjectForCode("100_acre_wood_minigames").CurrentStage = 0
+    end
+    if beta_logic_stage < 1 then
+        -- Following setting only available in v0.11.0+
         Tracker:FindObjectForCode("accessory_augments").CurrentStage = 0
+    end
+    -- Default auto map tab tracking to "on" if the feature is available (requires v1.1.0+).
+    if beta_logic_stage >= 2 then
+        Tracker:FindObjectForCode("auto_tab_map").CurrentStage = 1
     end
     local beta_logic_obj = Tracker:FindObjectForCode("beta_logic")
     if beta_logic_obj then
-        -- Using the beta AP world, enable beta logic.
         beta_logic_obj.CurrentStage = beta_logic_stage
     end
 
@@ -185,34 +196,32 @@ function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
     end
-    local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index;
-    local v = ITEM_MAPPING[item_id]
-    if not v then
+    local item_array = ITEM_MAPPING[item_id]
+    if not item_array then
         return
     end
-    local item_name = v[1]
-    local item_type = v[2]
-    if not item_name then
-        return
-    end
-    local obj = Tracker:FindObjectForCode(item_name)
-    if obj then
-        if item_type == "toggle" then
-            obj.Active = true
-        elseif item_type == "progressive" then
-            if obj.Active then
-                obj.CurrentStage = obj.CurrentStage + 1
-            else
+    for _, item_pair in ipairs(item_array) do
+        local item_name = item_pair[1]
+        local item_type = item_pair[2]
+        local obj = Tracker:FindObjectForCode(item_name)
+        if obj then
+            if item_type == "toggle" then
                 obj.Active = true
+            elseif item_type == "progressive" then
+                if obj.Active then
+                    obj.CurrentStage = obj.CurrentStage + 1
+                else
+                    obj.Active = true
+                end
+            elseif item_type == "consumable" then
+                obj.AcquiredCount = obj.AcquiredCount + obj.Increment
+            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onItem: unknown item type %s for code %s", item_type, item_name))
             end
-        elseif item_type == "consumable" then
-            obj.AcquiredCount = obj.AcquiredCount + obj.Increment
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("onItem: unknown item type %s for code %s", item_type, item_name))
+            print(string.format("onItem: could not find object for code %s", item_name))
         end
-    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onItem: could not find object for code %s", item_name))
     end
 end
 

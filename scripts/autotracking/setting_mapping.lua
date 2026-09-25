@@ -70,6 +70,15 @@ SLOT_CODES =
             [true] = 1  -- 100 Acre On
         }
     },
+    skip_hundred_acre_wood_minigames =
+    {
+        code = "100_acre_wood_minigames",
+        mapping =
+        {
+            [true] = 0, -- 100 Acre Minigames Off
+            [false] = 1  -- 100 Acre Minigames On
+        }
+    },
     jungle_slider =
     {
         code = "jungle_slider_checks",
@@ -102,6 +111,24 @@ SLOT_CODES =
     stacking_world_items =
     {
         code = "stacking_world_items",
+        mapping =
+        {
+            [false] = 0,
+            [true] = 1
+        }
+    },
+    evidence_bundle =
+    {
+        code = "evidence_bundle",
+        mapping =
+        {
+            [false] = 0,
+            [true] = 1
+        }
+    },
+    slides_bundle =
+    {
+        code = "slides_bundle",
         mapping =
         {
             [false] = 0,

@@ -276,16 +276,36 @@
         "loop": true,
         "stages": [
             {
-                "img": "/images/settings/100_acre_woods_off.png",
+                "img": "/images/settings/100_acre_wood_off.png",
                 "codes": "100_acre_checks, 100_acre_off",
                 "inherit_codes": false,
                 "name": "100 Acre Wood Off"
             },
             {
-                "img": "/images/settings/100_acre_woods_on.png",
+                "img": "/images/settings/100_acre_wood_on.png",
                 "codes": "100_acre_checks, 100_acre_on",
                 "inherit_codes": false,
                 "name": "100 Acre Wood On"
+            }
+        ]
+    },
+    {
+        "name": "100 Acre Wood Minigames",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/100_acre_wood_minigames_off.png",
+                "codes": "100_acre_wood_minigames, 100_acre_wood_minigames_off",
+                "inherit_codes": false,
+                "name": "100 Acre Wood Minigames Off"
+            },
+            {
+                "img": "/images/settings/100_acre_wood_minigames_on.png",
+                "codes": "100_acre_wood_minigames, 100_acre_wood_minigames_on",
+                "inherit_codes": false,
+                "name": "100 Acre Wood Minigames On"
             }
         ]
     },
@@ -383,6 +403,46 @@
         ]
     },
     {
+        "name": "Evidence Bundle",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/evidence_bundled_off.png",
+                "codes": "evidence_bundle, evidence_bundle_off",
+                "inherit_codes": false,
+                "name": "Evidence Bundle Off"
+            },
+            {
+                "img": "/images/settings/evidence_bundled_on.png",
+                "codes": "evidence_bundle, evidence_bundle_on",
+                "inherit_codes": false,
+                "name": "Evidence Bundle On"
+            }
+        ]
+    },
+    {
+        "name": "Slides Bundle",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/slides_bundled_off.png",
+                "codes": "slides_bundle, slides_bundle_off",
+                "inherit_codes": false,
+                "name": "Slides Bundle Off"
+            },
+            {
+                "img": "/images/settings/slides_bundled_on.png",
+                "codes": "slides_bundle, slides_bundle_on",
+                "inherit_codes": false,
+                "name": "Slides Bundle On"
+            }
+        ]
+    },
+    {
         "name": "Halloween Town Key Item Bundle",
         "type": "progressive",
         "allow_disabled": false,
@@ -444,7 +504,13 @@
                 "img": "/images/settings/beta_logic_v1.1.0.png",
                 "codes": "beta_logic",
                 "inherit_codes": false,
-                "name": "Beta Logic On - v1.1.0+"
+                "name": "Beta Logic On - v1.1.0"
+            },
+            {
+                "img": "/images/settings/beta_logic_v1.2.0.png",
+                "codes": "beta_logic",
+                "inherit_codes": false,
+                "name": "Beta Logic On - v1.2.0+"
             }
         ]
     },

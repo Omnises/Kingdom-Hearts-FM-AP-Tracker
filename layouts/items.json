@@ -44,6 +44,11 @@
                             {
                                 "type": "layout",
                                 "dock": "left",
+                                "key": "worlds_100_acre_wood"
+                            },
+                            {
+                                "type": "layout",
+                                "dock": "left",
                                 "key": "worlds_atlantica"
                             },
                             {
@@ -104,12 +109,31 @@
                                 "key": "world_keys_row_1_pad"
                             },
                             {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "world_keys_evidence"
+                            },
+                            {
                                 "type": "itemgrid",
                                 "dock": "left",
                                 "item_margin": "2,2",
                                 "item_size": "40,40",
                                 "rows": [
-                                    ["footprints", "entry_pass", "slides", "forget_me_not"]
+                                    ["entry_pass"]
+                                ]
+                            },
+                            {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "world_keys_slides"
+                            },
+                            {
+                                "type": "itemgrid",
+                                "dock": "left",
+                                "item_margin": "2,2",
+                                "item_size": "40,40",
+                                "rows": [
+                                    ["forget_me_not"]
                                 ]
                             },
                             {
@@ -300,9 +324,19 @@
                         "dock": "top",
                         "content": [
                             {
-                                "type": "canvas",
+                                "type": "layout",
                                 "dock": "left",
-                                "width": 66
+                                "key": "collectibles_row_2_pad"
+                            },
+                            {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "collectibles_empty_bottle"
+                            },
+                            {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "collectibles_summon_gems"
                             },
                             {
                                 "type": "itemgrid",

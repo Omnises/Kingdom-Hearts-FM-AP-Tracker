@@ -67,6 +67,11 @@
                                 "key": "worlds_row_3_pad"
                             },
                             {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "worlds_100_acre_wood"
+                            },
+                            {
                                 "type": "itemgrid",
                                 "dock": "left",
                                 "item_margin": "2,2",
@@ -124,13 +129,23 @@
                                 "key": "world_keys_row_1_pad"
                             },
                             {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "world_keys_evidence"
+                            },
+                            {
                                 "type": "itemgrid",
                                 "dock": "left",
                                 "item_margin": "2,2",
                                 "item_size": "40,40",
                                 "rows": [
-                                    ["footprints", "entry_pass", "slides"]
+                                    ["entry_pass"]
                                 ]
+                            },
+                            {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "world_keys_slides"
                             }
                         ]
                     },
@@ -311,12 +326,23 @@
                         ]
                     },
                     {
-                        "type": "itemgrid",
+                        "type": "dock",
                         "dock": "top",
-                        "item_margin": "2,2",
-                        "item_size": "40,40",
-                        "rows": [
-                            ["emblem_fountain", "emblem_flame", "emblem_chest", "emblem_statue"]
+                        "content": [
+                            {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "collectibles_row_2_pad"
+                            },
+                            {
+                                "type": "itemgrid",
+                                "dock": "top",
+                                "item_margin": "2,2",
+                                "item_size": "40,40",
+                                "rows": [
+                                    ["emblem_fountain", "emblem_flame", "emblem_chest", "emblem_statue"]
+                                ]
+                            }
                         ]
                     },
                     {
@@ -332,6 +358,16 @@
                                 "type": "layout",
                                 "dock": "left",
                                 "key": "collectibles_torn_pages"
+                            },
+                            {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "collectibles_empty_bottle"
+                            },
+                            {
+                                "type": "layout",
+                                "dock": "left",
+                                "key": "collectibles_summon_gems"
                             },
                             {
                                 "type": "itemgrid",
