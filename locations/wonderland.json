@@ -336,25 +336,24 @@
                 "map_locations": [
                     {
                         "map": "WL",
-                        "x": 764,
-                        "y": 543
+                        "x": 732,
+                        "y": 558
                     }
                 ]
             },
             {
-                "name": "Lotus Forest - Red Flowers",
+                "name": "Lotus Forest - Ether Red Flower Along Wall",
                 "sections": [
                     {
                         "name": "Ether Red Flowers",
                         "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Ether Red Flowers"
+                    },
+                    {
+                        "name": "Ether Red Flower",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Ether Red Flower Along Wall"
                     }
                 ],
                 "map_locations": [
-                    {
-                        "map": "WL",
-                        "x": 298,
-                        "y": 226
-                    },
                     {
                         "map": "WL",
                         "x": 155,
@@ -363,19 +362,38 @@
                 ]
             },
             {
-                "name": "Lotus Forest - Yellow Flowers",
+                "name": "Lotus Forest - Ether Red Flower by Queen's Castle",
                 "sections": [
                     {
-                        "name": "Potion Yellow Flowers",
-                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Potion Yellow Flowers"
+                        "name": "Ether Red Flowers",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Ether Red Flowers"
+                    },
+                    {
+                        "name": "Ether Red Flower",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Ether Red Flower by Queen's Castle"
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "WL",
-                        "x": 296,
-                        "y": 155
+                        "x": 298,
+                        "y": 226
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest - Potion Yellow Flower Through Painting",
+                "sections": [
+                    {
+                        "name": "Potion Yellow Flowers",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Potion Yellow Flowers"
                     },
+                    {
+                        "name": "Potion Yellow Flower",
+                        "ref": "Overview/Wonderland - After Footprints/Lotus Forest - Potion Yellow Flower Through Painting"
+                    }
+                ],
+                "map_locations": [
                     {
                         "map": "WL",
                         "x": 322,
@@ -384,11 +402,31 @@
                 ]
             },
             {
-                "name": "Lotus Forest - Yellow Flower Through Painting",
+                "name": "Lotus Forest - Potion Yellow Flower in Alcove",
+                "sections": [
+                    {
+                        "name": "Potion Yellow Flowers",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Potion Yellow Flowers"
+                    },
+                    {
+                        "name": "Potion Yellow Flower",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Potion Yellow Flower in Alcove"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 296,
+                        "y": 155
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest - Elixir Yellow Flower Through Painting",
                 "sections": [
                     {
                         "name": "Elixir Yellow Flower",
-                        "ref": "Overview/Wonderland - After Footprints/Lotus Forest - Elixir Yellow Flower"
+                        "ref": "Overview/Wonderland - After Footprints/Lotus Forest - Elixir Yellow Flower Through Painting"
                     }
                 ],
                 "map_locations": [
@@ -444,6 +482,70 @@
                         "map": "WL",
                         "x": 117,
                         "y": 388
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest - Footprints",
+                "sections": [
+                    {
+                        "name": "Evidence - Footprints",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Footprints"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 289,
+                        "y": 178
+                    }
+                ]
+            },
+            {
+                "name": "Lotus Forest - Antenna",
+                "sections": [
+                    {
+                        "name": "Evidence - Antenna",
+                        "ref": "Overview/Wonderland - Before Footprints/Lotus Forest - Antenna"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 112,
+                        "y": 169
+                    }
+                ]
+            },
+            {
+                "name": "Bizarre Room - Claw Marks",
+                "sections": [
+                    {
+                        "name": "Evidence - Claw Marks",
+                        "ref": "Overview/Wonderland - Before Footprints/Bizarre Room - Claw Marks"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 725,
+                        "y": 515
+                    }
+                ]
+            },
+            {
+                "name": "Bizarre Room - Stench",
+                "sections": [
+                    {
+                        "name": "Evidence - Stench",
+                        "ref": "Overview/Wonderland - Before Footprints/Bizarre Room - Stench"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "WL",
+                        "x": 765,
+                        "y": 545
                     }
                 ]
             },

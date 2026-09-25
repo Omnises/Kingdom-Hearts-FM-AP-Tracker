@@ -328,6 +328,22 @@
                 ]
             },
             {
+                "name": "1st District - Aerith",
+                "sections": [
+                    {
+                        "name": "Aerith Gift",
+                        "ref": "Overview/Traverse Town - 1st Visit/1st District - Aerith"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                        "x": 507,
+                        "y": 635
+                    }
+                ]
+            },
+            {
                 "name": "3rd District - Balcony",
                 "sections": [
                     {
@@ -369,6 +385,10 @@
                     {
                         "name": "Guard Armor Rewards",
                         "ref": "Overview/Traverse Town - 1st Visit/Guard Armor Rewards"
+                    },
+                    {
+                        "name": "Guard Armor Munny Reward",
+                        "ref": "Overview/Traverse Town - 1st Visit/Guard Armor Munny Reward"
                     }
                 ],
                 "map_locations": [
@@ -465,6 +485,38 @@
                         "map": "TT",
                         "x": 754,
                         "y": 726
+                    }
+                ]
+            },
+            {
+                "name": "Magician's Study - Fairy Godmother",
+                "sections": [
+                    {
+                        "name": "Earthshine Event",
+                        "ref": "Overview/Traverse Town - Further Visits/Magician's Study - Earthshine Event"
+                    },
+                    {
+                        "name": "Naturespark Event",
+                        "ref": "Overview/Traverse Town - Further Visits/Magician's Study - Naturespark Event"
+                    },
+                    {
+                        "name": "Watergleam Event",
+                        "ref": "Overview/Traverse Town - Further Visits/Magician's Study - Watergleam Event"
+                    },
+                    {
+                        "name": "Fireglow Event",
+                        "ref": "Overview/Traverse Town - Further Visits/Magician's Study - Fireglow Event"
+                    },
+                    {
+                        "name": "Lord Fortune Event",
+                        "ref": "Overview/Traverse Town - Further Visits/Magician's Study - Lord Fortune Event"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                        "x": 795,
+                        "y": 747
                     }
                 ]
             },
@@ -613,7 +665,15 @@
                     },
                     {
                         "name": "All Summons Reward",
-                        "ref": "Overview/Traverse Town - Geppetto's House/All Summons Rewards"
+                        "ref": "Overview/Traverse Town - Geppetto's House/All Summons Reward"
+                    },
+                    {
+                        "name": "Geppetto's Blueprint Rewards",
+                        "ref": "Overview/Traverse Town - Geppetto's House/Geppetto's Blueprint Rewards"
+                    },
+                    {
+                        "name": "All Summon Gems Blueprint",
+                        "ref": "Overview/Traverse Town - Geppetto's House/All Summon Gems Blueprint"
                     }
                 ],
                 "map_locations": [

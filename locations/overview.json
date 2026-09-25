@@ -29,6 +29,12 @@
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
+                        "name": "1st District - Aerith",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
                         "name": "2nd District - Boots and Shoes Awning Chest",
                         "access_rules":["$access_chest_for|traverse_town"]
                     },
@@ -71,10 +77,11 @@
                     },
                     {
                         "name": "Secret Waterway - Chest Near Stairs",
-                        "access_rules":["$access_chest_for|traverse_town"]
+                        "access_rules":["$access_chest_for|traverse_town, $tt_secret_waterway_access"]
                     },
                     {
                         "name": "Secret Waterway - Leon",
+                        "access_rules":["$tt_secret_waterway_access"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
@@ -83,6 +90,12 @@
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 5
+                    },
+                    {
+                        "name": "Guard Armor Munny Reward",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Donald Starting Accessories",
@@ -143,11 +156,14 @@
                     },
                     {
                         "name": "Secret Waterway - White Trinity Chest",
-                        "access_rules":["$access_chest_for|traverse_town, white_trinity"]
+                        "access_rules":["$access_chest_for|traverse_town, $tt_secret_waterway_access, white_trinity"]
                     },
                     {
                         "name": "Secret Waterway - Kairi",
-                        "access_rules": ["hollow_bastion, [$world_count:6], $has_emblems, ^$boss_beginner_require_tools"],
+                        "access_rules": [
+                            "$beta_version_at_most_1_1_0, hollow_bastion, [$world_count:6], $has_emblems, ^$boss_beginner_require_tools",
+                            "$beta_version_at_least_1_2_0, $tt_secret_waterway_access"
+                        ],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png",
                         "item_count": 2
@@ -188,6 +204,41 @@
                     {
                         "name": "Merlin - All Arts Items",
                         "access_rules": ["$has_lv_magic|1, $has_all_arts, [$world_count:8]"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Magician's Study - Earthshine Event",
+                        "access_rules":["earthshine, fire:1"],
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Magician's Study - Naturespark Event",
+                        "access_rules":["naturespark, fire:1"],
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Magician's Study - Watergleam Event",
+                        "access_rules":["watergleam, fire:1"],
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Magician's Study - Fireglow Event",
+                        "access_rules":["fireglow, fire:1"],
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Magician's Study - Lord Fortune Event",
+                        "access_rules":["summon_gem:4, fire:1"],
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     }
@@ -250,11 +301,23 @@
                 "sections": [
                     {
                         "name": "Geppetto's Rewards",
+                        "visibility_rules": ["$beta_version_at_most_1_1_0"],
                         "item_count": 5
                     },
                     {
-                        "name": "All Summons Rewards",
+                        "name": "All Summons Reward",
+                        "visibility_rules": ["$beta_version_at_most_1_1_0"],
                         "access_rules": ["$has_all_summons"]
+                    },
+                    {
+                        "name": "Geppetto's Blueprint Rewards",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "item_count": 6
+                    },
+                    {
+                        "name": "All Summon Gems Blueprint",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "access_rules": ["fire:1, summon_gem:4"]
                     },
                     {
                         "name": "Talk to Pinocchio"
@@ -440,11 +503,31 @@
                     },
                     {
                         "name": "Lotus Forest - Ether Red Flowers",
+                        "visibility_rules": ["$beta_version_at_most_1_1_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Lotus Forest - Ether Red Flower Along Wall",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Lotus Forest - Ether Red Flower by Queen's Castle",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
                         "name": "Lotus Forest - Potion Yellow Flowers",
+                        "visibility_rules": ["$beta_version_at_most_1_1_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Lotus Forest - Potion Yellow Flower in Alcove",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
@@ -453,6 +536,29 @@
                         "access_rules":["blue_trinity"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Lotus Forest - Footprints",
+                        "access_rules":["$access_chest_for|wonderland"],
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"]
+                    },
+                    {
+                        "name": "Lotus Forest - Antenna",
+                        "access_rules":["$access_chest_for|wonderland"],
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"]
+                    },
+                    {
+                        "name": "Bizarre Room - Claw Marks",
+                        "access_rules":["$access_chest_for|wonderland"],
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"]
+                    },
+                    {
+                        "name": "Bizarre Room - Stench",
+                        "access_rules":[
+                            "$access_chest_for|wonderland, high_jump",
+                            "$access_chest_for|wonderland, glide"
+                        ],
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"]
                     },
                     {
                         "name": "Tea Party Garden - 1st Chest Above Lotus Forest Entrance",
@@ -532,7 +638,13 @@
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
-                        "name": "Lotus Forest - Elixir Yellow Flower",
+                        "name": "Lotus Forest - Elixir Yellow Flower Through Painting",
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Lotus Forest - Potion Yellow Flower Through Painting",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
@@ -647,6 +759,42 @@
                     {
                         "name": "Camp - Oven Experiment",
                         "access_rules":["fire:1"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Camp - Slide 1",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Camp - Slide 2",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Camp - Slide 3",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Camp - Slide 4",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Camp - Slide 5",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
+                        "name": "Camp - Slide 6",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
                         "chest_unopened_img": "/images/misc/emblem.png",
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
@@ -894,19 +1042,19 @@
                     },
                     {
                         "name": "Hades Cup",
-                        "visibility_rules":["cups_hades"],
+                        "visibility_rules":["$is_cups_hades_enabled"],
                         "access_rules":["$has_all_cups, [$world_count:8], [$has_defenses]"],
                         "item_count": 7
                     },
                     {
                         "name": "Defeat Hades",
-                        "visibility_rules":["cups_hades"],
+                        "visibility_rules":["$is_cups_hades_enabled"],
                         "access_rules":["$has_all_cups, [$world_count:8], [$has_defenses]"],
                         "item_count": 2
                     },
                     {
                         "name": "Coliseum Gates - Purple Jar",
-                        "visibility_rules":["cups_hades"],
+                        "visibility_rules":["$is_cups_hades_enabled"],
                         "access_rules":["$has_all_cups, [$world_count:8], [$has_defenses]"]
                     },
                     {
@@ -917,7 +1065,7 @@
                     },
                     {
                         "name": "Defeat Ice Titan",
-                        "visibility_rules":["cups_hades, superbosses_on"],
+                        "visibility_rules":["$is_cups_hades_enabled, superbosses_on"],
                         "access_rules":[
                             "$has_all_cups, guard, [$world_count:8], [$has_defenses]",
                             "$has_all_cups, [$logic_difficulty_at_least_minimal], [$world_count:8], [$has_defenses]"
@@ -2185,7 +2333,10 @@
             {
                 "name": "Hundred Acre Wood",
                 "visibility_rules":["100_acre_on"],
-                "access_rules":["fire:1"],
+                "access_rules":[
+                    "$beta_version_at_most_1_1_0, fire:1",
+                    "$beta_version_at_least_1_2_0, fire:1, old_book"
+                ],
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
@@ -2302,6 +2453,19 @@
                     },
                     {
                         "name": "Seashore - Rope"
+                    },
+                    {
+                        "name": "Seashore - Defeat Riku",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"]
+                    },
+                    {
+                        "name": "Seashore - Defeat Trio",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"]
+                    },
+                    {
+                        "name": "Seashore - Kairi Rewards",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "item_count": 2
                     }
                 ],
                 "map_locations": [
@@ -2319,6 +2483,10 @@
                 "chest_unopened_img": "/images/misc/emblem.png",
                 "chest_opened_img": "/images/misc/emblem_bw.png",
                 "sections": [
+                    {
+                        "name": "Coconut",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"]
+                    },
                     {
                         "name": "Seashore - Fish 1"
                     },
@@ -2344,13 +2512,26 @@
                         "name": "Cove - Talk to Kairi"
                     },
                     {
-                        "name": "Cove - Drinking Water"
+                        "name": "Cove - Drinking Water",
+                        "access_rules": [
+                            "$beta_version_at_most_1_1_0",
+                            "$beta_version_at_least_1_2_0, empty_bottle"
+                        ]
                     },
                     {
                         "name": "Cove - Chest",
-                        "access_rules":["$access_chest_for|destiny_islands"],
+                        "access_rules": ["$access_chest_for|destiny_islands"],
                         "chest_unopened_img": "/images/misc/chest.png",
                         "chest_opened_img": "/images/misc/chest_bw.png"
+                    },
+                    {
+                        "name": "Cove - Race Riku",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"]
+                    },
+                    {
+                        "name": "Cove - Kairi Rewards",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "item_count": 2
                     }
                 ],
                 "map_locations": [

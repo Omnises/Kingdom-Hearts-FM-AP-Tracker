@@ -300,6 +300,102 @@
         "name": "Deep Jungle Events",
         "children": [
             {
+                "name": "Camp - Slide 1",
+                "sections": [
+                    {
+                        "name": "Slide 1",
+                        "ref": "Overview/Deep Jungle - Before Slides/Camp - Slide 1"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DJ",
+                        "x": 948,
+                        "y": 691
+                    }
+                ]
+            },
+            {
+                "name": "Camp - Slide 2",
+                "sections": [
+                    {
+                        "name": "Slide 2",
+                        "ref": "Overview/Deep Jungle - Before Slides/Camp - Slide 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DJ",
+                        "x": 905,
+                        "y": 642
+                    }
+                ]
+            },
+            {
+                "name": "Camp - Slide 3",
+                "sections": [
+                    {
+                        "name": "Slide 3",
+                        "ref": "Overview/Deep Jungle - Before Slides/Camp - Slide 3"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DJ",
+                        "x": 951,
+                        "y": 748
+                    }
+                ]
+            },
+            {
+                "name": "Camp - Slide 4",
+                "sections": [
+                    {
+                        "name": "Slide 4",
+                        "ref": "Overview/Deep Jungle - Before Slides/Camp - Slide 4"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DJ",
+                        "x": 880,
+                        "y": 722
+                    }
+                ]
+            },
+            {
+                "name": "Camp - Slide 5",
+                "sections": [
+                    {
+                        "name": "Slide 5",
+                        "ref": "Overview/Deep Jungle - Before Slides/Camp - Slide 5"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DJ",
+                        "x": 890,
+                        "y": 629
+                    }
+                ]
+            },
+            {
+                "name": "Camp - Slide 6",
+                "sections": [
+                    {
+                        "name": "Slide 6",
+                        "ref": "Overview/Deep Jungle - Before Slides/Camp - Slide 6"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "DJ",
+                        "x": 945,
+                        "y": 715
+                    }
+                ]
+            },
+            {
                 "name": "Tent - Jane",
                 "sections": [
                     {

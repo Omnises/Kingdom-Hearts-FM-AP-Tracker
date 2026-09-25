@@ -59,7 +59,7 @@
         "type": "consumable",
         "codes": "summon_gem",
         "img": "images/misc/summon_gems.png",
-        "max_quantity": 10,
+        "max_quantity": 4,
         "overlay_background": "#000000",
         "overlay_font_size": 20
     },

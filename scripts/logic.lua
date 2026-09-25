@@ -30,6 +30,7 @@ LOGIC_MINIMAL = 3
 -- Beta AP world version logic setting stages.
 VERSION_0_11_0 = 1
 VERSION_1_1_0 = 2
+VERSION_1_2_0 = 3
 
 -- Values updated based on slot data.
 MAX_LEVEL_WITH_CHECK = 100
@@ -64,9 +65,17 @@ function beta_version_at_least(version_stage)
     return beta_logic >= version_stage
 end
 
+function beta_version_at_least_1_2_0()
+    return beta_version_at_least(VERSION_1_2_0)
+end
+
 function beta_version_at_most(version_stage)
     local beta_logic = Tracker:FindObjectForCode("beta_logic").CurrentStage
     return beta_logic <= version_stage
+end
+
+function beta_version_at_most_1_1_0()
+    return beta_version_at_most(VERSION_1_1_0)
 end
 
 function is_stacking_worlds()
@@ -79,9 +88,30 @@ function is_halloween_town_bundled()
     return bundled_status == 1
 end
 
+function is_evidence_bundled()
+    local bundled_status = Tracker:FindObjectForCode("evidence_bundle").CurrentStage
+    return bundled_status == 1
+end
+
+function is_slides_bundled()
+    local bundled_status = Tracker:FindObjectForCode("slides_bundle").CurrentStage
+    return bundled_status == 1
+end
+
 function is_cups_enabled()
+    if beta_version_at_least_1_2_0() then
+        return true
+    end
     local cups_status = Tracker:FindObjectForCode("cups").CurrentStage
     return cups_status == 1 or cups_status == 2 -- 0 = off, 1 = on, 2 = hades
+end
+
+function is_cups_hades_enabled()
+    if beta_version_at_least_1_2_0() then
+        return true
+    end
+    local cups_status = Tracker:FindObjectForCode("cups").CurrentStage
+    return cups_status == 2 -- 0 = off, 1 = on, 2 = hades
 end
 
 -- TODO: return value of setting instead when random accessories are fixed.
@@ -221,10 +251,21 @@ function access_broken_chest_for(world_name)
 end
 
 function wl_after_footprints()
-    if has("wonderland") and has("footprints") then
-        return true
+    if beta_version_at_least_1_2_0() then
+        if has("wonderland") and not is_evidence_bundled() and has("evidence", 1) then
+            return true
+        elseif has("wonderland") and is_evidence_bundled() and has("footprints") then
+            return true
+        else
+            return is_stacking_worlds() and has("deep_jungle", 2)
+        end
+    else
+        if has("wonderland") and has("footprints") then
+            return true
+        else
+            return is_stacking_worlds() and has("wonderland", 2)
+        end
     end
-    return is_stacking_worlds() and has("wonderland", 2)
 end
 
 function oc_after_entry_pass()
@@ -235,10 +276,21 @@ function oc_after_entry_pass()
 end
 
 function dj_after_slides()
-    if has("deep_jungle") and has("slides") then
-        return true
+    if beta_version_at_least_1_2_0() then
+        if has("deep_jungle") and has("slides", 6) then
+            return true
+        elseif has("deep_jungle") and is_slides_bundled() and has("slide_1") then
+            return true
+        else
+            return is_stacking_worlds() and has("deep_jungle", 2)
+        end
+    else
+        if has("deep_jungle") and has("slide_1") then
+            return true
+        else
+            return is_stacking_worlds() and has("deep_jungle", 2)
+        end
     end
-    return is_stacking_worlds() and has("deep_jungle", 2)
 end
 
 function ht_after_forget_me_not()
@@ -267,6 +319,14 @@ function hb_after_theon_6()
         return true
     end
     return is_stacking_worlds() and has("hollow_bastion", 2)
+end
+
+function tt_secret_waterway_access()
+    if beta_version_at_least_1_2_0() then
+        return has("red_trinity")
+    else
+        return true
+    end
 end
 
 function haw_access()
