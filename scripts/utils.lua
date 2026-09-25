@@ -265,6 +265,7 @@ end
 
 function tracker_layout_update()
     if update_layout then
+        local beta_logic_stage = Tracker:FindObjectForCode("beta_logic").CurrentStage
         local show_keyblades = Tracker:FindObjectForCode("keyblade_locks").CurrentStage == 1
         local show_world_keys = Tracker:FindObjectForCode("stacking_world_items").CurrentStage == 0
         local show_jack_box = Tracker:FindObjectForCode("halloween_town_key_item_bundle").CurrentStage == 0
@@ -273,10 +274,9 @@ function tracker_layout_update()
         local show_atlantica = Tracker:FindObjectForCode("atlantica_checks").CurrentStage == 1
         local show_eotw = Tracker:FindObjectForCode("eotw_unlock").CurrentStage == 0
         local goal_status = Tracker:FindObjectForCode("goal").CurrentStage
-        local show_cups = Tracker:FindObjectForCode("cups").CurrentStage ~= 0 or Tracker:FindObjectForCode("superbosses").CurrentStage == 1 or goal_status == 0
+        local show_cups = Tracker:FindObjectForCode("cups").CurrentStage ~= 0 or Tracker:FindObjectForCode("superbosses").CurrentStage == 1 or goal_status == 0 or beta_logic_stage >= 3
         local show_lucky_emblems = goal_status == 3 or not show_eotw
         local show_final_door_key = goal_status ~= 3
-        local beta_logic_stage = Tracker:FindObjectForCode("beta_logic").CurrentStage
         local show_accessory_augments = beta_logic_stage >= 1 and Tracker:FindObjectForCode("accessory_augments").CurrentStage == 1
         local show_summon_gems = beta_logic_stage >= 3
         local show_empty_bottle = beta_logic_stage >= 3 and show_destiny_islands
