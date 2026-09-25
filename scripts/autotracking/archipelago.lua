@@ -31,25 +31,26 @@ function onClear(slot_data)
     CUR_INDEX = -1
 
     -- reset locations
-    for location_id, v in pairs(LOCATION_MAPPING) do
-        local location_name = v[1]
-        if location_name then
-            local obj = Tracker:FindObjectForCode(location_name)
-            if obj then
-                if location_name:sub(1, 1) == "@" then
-                    if is_level_up_location(location_id) then
-                        obj.AvailableChestCount = 0
+    for location_id, location_array in pairs(LOCATION_MAPPING) do
+        for _, location_name in ipairs(location_array) do
+            if location_name then
+                local obj = Tracker:FindObjectForCode(location_name)
+                if obj then
+                    if location_name:sub(1, 1) == "@" then
+                        if is_level_up_location(location_id) then
+                            obj.AvailableChestCount = 0
+                        else
+                            obj.AvailableChestCount = obj.ChestCount
+                        end
+                        if IS_ENABLE_HIGHLIGHT then
+                            obj.Highlight = Highlight.None
+                        end
                     else
-                        obj.AvailableChestCount = obj.ChestCount
+                        obj.Active = false
                     end
-                    if IS_ENABLE_HIGHLIGHT then
-                        obj.Highlight = Highlight.None
-                    end
-                else
-                    obj.Active = false
+                elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                    print(string.format("onClear: could not find object for code %s", location_name))
                 end
-            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: could not find object for code %s", location_name))
             end
         end
     end
@@ -233,25 +234,25 @@ function onLocation(location_id, location_name)
     if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
         return
     end
-    local v = LOCATION_MAPPING[location_id]
-    if not v and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onLocation: could not find location mapping for id %s", location_id))
-    end
     if IGNORE_SLOT_2_LEVELS and is_slot_2_level(location_id) then
         return
     end
-    if not v[1] then
-        return
+    local location_array = LOCATION_MAPPING[location_id]
+    if not location_array and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("onLocation: could not find location mapping for id %s", location_id))
     end
-    local obj = Tracker:FindObjectForCode(v[1])
-    if obj then
-        if v[1]:sub(1, 1) == "@" then
-            obj.AvailableChestCount = obj.AvailableChestCount - 1
-        else
-            obj.Active = true
+
+    for _, location in ipairs(location_array) do
+        local obj = Tracker:FindObjectForCode(location)
+        if obj then
+            if location_array[1]:sub(1, 1) == "@" then
+                obj.AvailableChestCount = obj.AvailableChestCount - 1
+            else
+                obj.Active = true
+            end
+        elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onLocation: could not find object for id %s code %s", location_id, location))
         end
-    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onLocation: could not find object for code %s", v[1]))
     end
 end
 
