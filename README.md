@@ -15,10 +15,12 @@ Download the most recent .zip file from the **Releases** and either drag it to t
 
 ## Compatibility
 
-| AP World Version | AP Version | PopTracker Pack Version |
-|------------------|------------|-------------------------|
-| v0.11.0+ (BETA)  | non-core   | v1.3.1+                 |
-| v0.9.0+          | v0.6.4+    | v1.0.0+                 |
+The most recent release of this PopTracker pack is compatible with the following versions of the AP world in addition to the core version that comes with the AP launcher. Locations and logic available only in non-core versions are shown by changing the "Beta Logic" setting to the correct world version.
+
+| Non-AP Core World Version | Supported since pack version |
+|---------------------------|------------------------------|
+| v1.1.0 (main website)     | v1.3.1+                      |
+| v1.2.0 (dev website)      | v1.5.0+                      |
 
 ## Screenshot
 
@@ -28,7 +30,7 @@ Download the most recent .zip file from the **Releases** and either drag it to t
 
 All settings are loaded automatically when connecting the tracker to the AP server. Settings can also be changed manually to update which locations are displayed as available checks.
 
-Settings are divided into five sections: settings, locations, goal, collectible requirements, and beta only logic.
+Settings are divided into five sections: settings, locations, goal, collectible requirements, and beta only settings.
 
 ### Settings
 
@@ -65,13 +67,15 @@ The Collectible Requirements section controls how many of a collectible are requ
 
 ### Beta Only Settings
 
-These settings require the beta version of the AP world and KH1 randomizer mod (v0.11.0-v1.1.0, non-core).These settings are not available in the core version packaged with the AP launcher.
+These settings require the beta version of the AP world and KH1 randomizer mod (v0.11.0-v1.2.0, non-core). These settings are not available in the core version packaged with the AP launcher.
 
 ![Beta Only Settings](images/ui_beta_only_settings.png)
 
 - **Auto-Tab Map** - Requires KH1 randomizer mod beta v1.1.0 or newer. You must also connect to the AP server using the in-game client that is only available in the beta version of the KH1 randomizer mod. Connecting with the KH1 text client from the AP launcher will not work. Enables or disables the map tab auto updating based on the players current world.
-- **Beta Logic** - Changes the access logic for some locations to match the beta versions of the AP world. This value is automatically detected when connecting to the AP server and should only be manually changed if you are playing a beta version offline with manual tracking.
-- **Accessory Augments** - Player option only available in the beta version of the AP world. This value is automatically detected when connecting to the AP server and should only be manually changed if you are playing a beta version offline with manual tracking.
+- **Beta Logic** - Changes the items, locations, and access logic to match the non-AP core versions of the AP world. This value is automatically detected when connecting to the AP server and should only be manually changed if you are playing a beta version offline with manual tracking.
+- **Accessory Augments** - Requires beta world version v1.1.0 or newer. Enables tracking of accessory augment items and advanced logic that requires accessory augments.
+- **Evidence Bundled** - Requires beta world version v1.2.0 or newer. Tracks evidence key items as a single bundled item.
+- **Slides Bundled** - Requires beta world version v1.2.0 or newer. Tracks slides key items as a single bundled item.
 
 ## Feedback
 
