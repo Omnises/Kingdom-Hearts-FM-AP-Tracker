@@ -35,6 +35,12 @@
                         "chest_opened_img": "/images/misc/emblem_bw.png"
                     },
                     {
+                        "name": "1st District - Cid",
+                        "visibility_rules": ["$beta_version_at_least_1_2_0"],
+                        "chest_unopened_img": "/images/misc/emblem.png",
+                        "chest_opened_img": "/images/misc/emblem_bw.png"
+                    },
+                    {
                         "name": "2nd District - Boots and Shoes Awning Chest",
                         "access_rules":["$access_chest_for|traverse_town"]
                     },

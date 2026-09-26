@@ -344,6 +344,22 @@
                 ]
             },
             {
+                "name": "1st District - Cid",
+                "sections": [
+                    {
+                        "name": "Cid",
+                        "ref": "Overview/Traverse Town - 1st Visit/1st District - Cid"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "TT",
+                        "x": 494,
+                        "y": 589
+                    }
+                ]
+            },
+            {
                 "name": "3rd District - Balcony",
                 "sections": [
                     {

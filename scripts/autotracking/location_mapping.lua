@@ -166,7 +166,7 @@ LOCATION_MAPPING = {
     [2656620] = {"@Overview/Wonderland - Before Footprints/Tea Party Garden - Right Yellow Chair"},
     [2656621] = {"@Overview/Wonderland - Before Footprints/Tea Party Garden - Left Gray Chair"},
     [2656622] = {"@Overview/Wonderland - Before Footprints/Tea Party Garden - Right Brown Chair"},
-    [2656624] = {"@Overview/Wonderland - Before Footprints/Lotus Forest - Potion Yellow Flower Through Painting"},
+    [2656624] = {"@Overview/Wonderland - After Footprints/Lotus Forest - Potion Yellow Flower Through Painting"},
     [2656625] = {"@Overview/Wonderland - Before Footprints/Lotus Forest - Ether Red Flower Along Wall"},
 
     [2651213] = {"@Overview/Deep Jungle - Before Slides/Tree House - Chest Beneath Tree House"},
@@ -212,6 +212,8 @@ LOCATION_MAPPING = {
     [2656372] = {"@Overview/Deep Jungle - Jungle Slider/Jungle Slider - Jade Spiral"},
     [2656373] = {"@Overview/Deep Jungle - Jungle Slider/Jungle Slider - Panic Fall"},
     [2656374] = {"@Overview/Deep Jungle - Jungle Slider/Jungle Slider - Shadow Cavern"},
+
+    [2656375] = {"@Overview/Traverse Town - 1st Visit/1st District - Cid"},
 
     [2656387] = {"@Overview/Deep Jungle - Before Slides/Camp - Slide 1"},
     [2656388] = {"@Overview/Deep Jungle - Before Slides/Camp - Slide 2"},
