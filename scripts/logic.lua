@@ -352,6 +352,11 @@ function di_day_2_access()
     return has("destiny_islands") and has("raft_materials", materials_required)
 end
 
+function di_homecoming_materials()
+    local materials_required = Tracker:FindObjectForCode("homecoming_materials_req").AcquiredCount
+    return has("destiny_islands") and has("raft_materials", materials_required)
+end
+
 function can_open_final_door()
     local goal_status = Tracker:FindObjectForCode("goal").CurrentStage -- 3 = lucky emblems, 5 = final rest chest
     local lucky_emblems_required = Tracker:FindObjectForCode("door_req").AcquiredCount
@@ -366,8 +371,7 @@ function can_open_final_door()
 end
 
 function homecoming_access()
-    local materials_required = Tracker:FindObjectForCode("homecoming_materials_req").AcquiredCount
-    if has("destiny_islands") and has("raft_materials", materials_required) then
+    if di_homecoming_materials() then
         return true
     elseif eotw_access() and can_open_final_door() then
         return true

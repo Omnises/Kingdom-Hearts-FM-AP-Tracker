@@ -2470,6 +2470,7 @@
                     },
                     {
                         "name": "Seashore - Kairi Rewards",
+                        "access_rules":["$di_day_2_access"],
                         "visibility_rules": ["$beta_version_at_least_1_2_0"],
                         "item_count": 2
                     }
@@ -2536,6 +2537,7 @@
                     },
                     {
                         "name": "Cove - Kairi Rewards",
+                        "access_rules": ["$di_homecoming_materials"],
                         "visibility_rules": ["$beta_version_at_least_1_2_0"],
                         "item_count": 2
                     }
