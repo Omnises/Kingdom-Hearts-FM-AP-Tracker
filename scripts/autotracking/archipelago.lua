@@ -163,7 +163,6 @@ function onClear(slot_data)
         -- Following settings only available in v1.2.0+
         Tracker:FindObjectForCode("evidence_bundle").CurrentStage = 0
         Tracker:FindObjectForCode("slides_bundle").CurrentStage = 0
-        Tracker:FindObjectForCode("100_acre_wood_minigames").CurrentStage = 0
     end
     if beta_logic_stage < 1 then
         -- Following setting only available in v0.11.0+

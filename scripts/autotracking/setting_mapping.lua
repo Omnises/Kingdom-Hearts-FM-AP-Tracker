@@ -70,15 +70,6 @@ SLOT_CODES =
             [true] = 1  -- 100 Acre On
         }
     },
-    skip_hundred_acre_wood_minigames =
-    {
-        code = "100_acre_wood_minigames",
-        mapping =
-        {
-            [true] = 0, -- 100 Acre Minigames Off
-            [false] = 1  -- 100 Acre Minigames On
-        }
-    },
     jungle_slider =
     {
         code = "jungle_slider_checks",
