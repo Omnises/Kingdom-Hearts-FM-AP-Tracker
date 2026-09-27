@@ -67,7 +67,7 @@ The Collectible Requirements section controls how many of a collectible are requ
 
 ### Beta Only Settings
 
-These settings require the beta version of the AP world and KH1 randomizer mod (v0.11.0-v1.2.0, non-core). These settings are not available in the core version packaged with the AP launcher.
+These settings require the beta version of the AP world and KH1 randomizer mod (v1.1.0-v1.2.0, non-core). These settings are not available in the core version packaged with the AP launcher.
 
 ![Beta Only Settings](images/ui_beta_only_settings.png)
 

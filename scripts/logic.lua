@@ -28,9 +28,9 @@ LOGIC_PROUD = 2
 LOGIC_MINIMAL = 3
 
 -- Beta AP world version logic setting stages.
-VERSION_0_11_0 = 1
-VERSION_1_1_0 = 2
-VERSION_1_2_0 = 3
+VERSION_CORE = 0
+VERSION_1_1_0 = 1
+VERSION_1_2_0 = 2
 
 -- Values updated based on slot data.
 MAX_LEVEL_WITH_CHECK = 100
@@ -434,7 +434,7 @@ function has_basic_tools()
         and (
             has_offensive_magic()
             -- Older versions also allowed for thunder or gravity as beginner offensive magic.
-            or (beta_version_at_most(VERSION_0_11_0) and (has("thunder") or has("gravity")))
+            or (beta_version_at_most(VERSION_CORE) and (has("thunder") or has("gravity")))
         )
     )
 end

@@ -151,32 +151,29 @@ function onClear(slot_data)
     if slot_data["world_version"] ~= nil then
         local world_version = slot_data["world_version"]
         if world_version[1] == 1 and world_version[2] >= 2 then
-            beta_logic_stage = 3 -- v1.2.0 or newer
+            beta_logic_stage = 2 -- v1.2.0 or newer
         elseif world_version[1] == 1 and world_version[2] == 1 then
-            beta_logic_stage = 2 -- v1.1.0
+            beta_logic_stage = 1 -- v1.1.0
         end
-    elseif slot_data["accessory_augments"] ~= nil then
-        beta_logic_stage = 1 -- v0.11.0
-    end
-    -- Clear beta only settings if not present in slot data.
-    if beta_logic_stage < 3 then
-        -- Following settings only available in v1.2.0+
-        Tracker:FindObjectForCode("evidence_bundle").CurrentStage = 0
-        Tracker:FindObjectForCode("slides_bundle").CurrentStage = 0
-    end
-    if beta_logic_stage < 1 then
-        -- Following setting only available in v0.11.0+
-        Tracker:FindObjectForCode("accessory_augments").CurrentStage = 0
-    end
-    -- Default auto map tab tracking to "on" if the feature is available (requires v1.1.0+).
-    if beta_logic_stage >= 2 then
-        Tracker:FindObjectForCode("auto_tab_map").CurrentStage = 1
     end
     local beta_logic_obj = Tracker:FindObjectForCode("beta_logic")
     if beta_logic_obj then
         beta_logic_obj.CurrentStage = beta_logic_stage
     end
+    -- Clear beta only settings if not present in slot data.
+    for _, setting_key in ipairs({"accessory_augments", "evidence_bundle", "slides_bundle"}) do
+        if slot_data[setting_key] == nil then
+            Tracker:FindObjectForCode(setting_key).CurrentStage = 0
+        end
+    end
+    -- Default auto map tab tracking to "on" if the feature is available (requires v1.1.0+).
+    if beta_logic_stage >= 1 then
+        Tracker:FindObjectForCode("auto_tab_map").CurrentStage = 1
+    else
+        Tracker:FindObjectForCode("auto_tab_map").CurrentStage = 0
+    end
 
+    -- Subscribe to hint and goal information in data storage.
     if IS_ENABLE_HIGHLIGHT and Archipelago.PlayerNumber ~= -1 then
         HINT_ID = "_read_hints_" .. Archipelago.TeamNumber .. "_" .. Archipelago.PlayerNumber
         CLIENT_STATUS_ID = "_read_client_status_" .. Archipelago.TeamNumber .. "_" .. Archipelago.PlayerNumber

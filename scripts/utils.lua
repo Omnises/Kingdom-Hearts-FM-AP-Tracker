@@ -274,15 +274,15 @@ function tracker_layout_update()
         local show_atlantica = Tracker:FindObjectForCode("atlantica_checks").CurrentStage == 1
         local show_eotw = Tracker:FindObjectForCode("eotw_unlock").CurrentStage == 0
         local goal_status = Tracker:FindObjectForCode("goal").CurrentStage
-        local show_cups = Tracker:FindObjectForCode("cups").CurrentStage ~= 0 or Tracker:FindObjectForCode("superbosses").CurrentStage == 1 or goal_status == 0 or beta_logic_stage >= 3
+        local show_cups = Tracker:FindObjectForCode("cups").CurrentStage ~= 0 or Tracker:FindObjectForCode("superbosses").CurrentStage == 1 or goal_status == 0 or beta_logic_stage >= 2
         local show_lucky_emblems = goal_status == 3 or not show_eotw
         local show_final_door_key = goal_status ~= 3
         local show_accessory_augments = beta_logic_stage >= 1 and Tracker:FindObjectForCode("accessory_augments").CurrentStage == 1
-        local show_summon_gems = beta_logic_stage >= 3
-        local show_empty_bottle = beta_logic_stage >= 3 and show_destiny_islands
-        local show_evidence_bundled = beta_logic_stage < 3 or Tracker:FindObjectForCode("evidence_bundle").CurrentStage == 1
-        local show_slides_bundled = beta_logic_stage < 3 or Tracker:FindObjectForCode("slides_bundle").CurrentStage == 1
-        local show_100_acre_world = beta_logic_stage >= 3 and show_100_acre
+        local show_summon_gems = beta_logic_stage >= 2
+        local show_empty_bottle = beta_logic_stage >= 2 and show_destiny_islands
+        local show_evidence_bundled = beta_logic_stage < 2 or Tracker:FindObjectForCode("evidence_bundle").CurrentStage == 1
+        local show_slides_bundled = beta_logic_stage < 2 or Tracker:FindObjectForCode("slides_bundle").CurrentStage == 1
+        local show_100_acre_world = beta_logic_stage >= 2 and show_100_acre
 
         layout_update_worlds(show_destiny_islands, show_atlantica, show_eotw, show_100_acre_world)
         layout_update_world_keys(show_world_keys, show_jack_box, show_atlantica, show_cups, show_final_door_key, show_evidence_bundled, show_slides_bundled)

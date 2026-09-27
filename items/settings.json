@@ -475,12 +475,6 @@
                 "name": "Beta Logic Off"
             },
             {
-                "img": "/images/settings/beta_logic_v0.11.0.png",
-                "codes": "beta_logic",
-                "inherit_codes": false,
-                "name": "Beta Logic On - v0.11.0"
-            },
-            {
                 "img": "/images/settings/beta_logic_v1.1.0.png",
                 "codes": "beta_logic",
                 "inherit_codes": false,
