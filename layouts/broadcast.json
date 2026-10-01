@@ -11,15 +11,15 @@
                 "content": [
                     {
                         "type": "layout",
-                        "key": "visits"
+                        "key": "worlds_rows"
                     },
                     {
                         "type": "layout",
-                        "key": "abilities"
+                        "key": "abilities_rows"
                     },
                     {
                         "type": "layout",
-                        "key": "collectibles"
+                        "key": "collectibles_rows"
                     }
                 ]
             }

@@ -17,9 +17,13 @@
       ["destiny_islands_checks", "puppies_req"],
       ["100_acre_checks", "day_2_materials_req"],
       ["atlantica_checks", "homecoming_materials_req"],
-      ["jungle_slider_checks"],
-      ["cups"],
-      ["superbosses"]
+      ["jungle_slider_checks", ""],
+      ["cups", "title_beta_only_settings"],
+      ["superbosses", "auto_tab_map"],
+      ["", "beta_logic"],
+      ["", "accessory_augments"],
+      ["", "evidence_bundle"],
+      ["", "slides_bundle"]
     ]
   }
 }

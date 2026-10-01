@@ -19,30 +19,22 @@
                     "content": [
                         {
                             "type": "group",
-                            "header": "Visit Locks",
+                            "header": "Worlds",
                             "dock": "left",
                             "content": {
                                 "type": "layout",
-                                "key": "visits"
+                                "key": "worlds_rows"
                             }
                         },
                         {
-                            "type": "group",
-                            "header": "World Items",
+                            "type": "layout",
                             "dock": "left",
-                            "content": {
-                                "type": "layout",
-                                "key": "worlds"
-                            }
+                            "key": "world_keys_group"
                         },
                         {
-                            "type": "group",
-                            "header": "Keyblades",
+                            "type": "layout",
                             "dock": "left",
-                            "content": {
-                                "type": "layout",
-                                "key": "keyblade_unlocks"
-                            }
+                            "key": "keyblades_group"
                         },
                         {
                             "type": "group",
@@ -50,7 +42,7 @@
                             "dock": "left",
                             "content": {
                                 "type": "layout",
-                                "key": "magic_trinities"
+                                "key": "magic_trinities_rows"
                             }
                         },
                         {
@@ -59,7 +51,7 @@
                             "dock": "left",
                             "content": {
                                 "type": "layout",
-                                "key": "abilities"
+                                "key": "abilities_rows"
                             }
                         },
                         {
@@ -68,7 +60,7 @@
                             "dock": "left",
                             "content": {
                                 "type": "layout",
-                                "key": "collectibles"
+                                "key": "collectibles_rows"
                             }
                         }
                     ]

@@ -10,7 +10,8 @@ SLOT_CODES =
             postcards = 2,
             lucky_emblems = 3,
             puppies = 4,
-            final_rest = 5
+            final_rest = 5,
+            anywhere = 6
         }
     },
     end_of_the_world_unlock =
@@ -107,6 +108,24 @@ SLOT_CODES =
             [true] = 1
         }
     },
+    evidence_bundle =
+    {
+        code = "evidence_bundle",
+        mapping =
+        {
+            [false] = 0,
+            [true] = 1
+        }
+    },
+    slides_bundle =
+    {
+        code = "slides_bundle",
+        mapping =
+        {
+            [false] = 0,
+            [true] = 1
+        }
+    },
     halloween_town_key_item_bundle =
     {
         code = "halloween_town_key_item_bundle",
@@ -124,5 +143,14 @@ SLOT_CODES =
             [false] = 0,
             [true] = 1
         }
-    }
+    },
+    accessory_augments =
+    {
+        code = "accessory_augments",
+        mapping =
+        {
+            [false] = 0,
+            [true] = 1
+        }
+    },
 }

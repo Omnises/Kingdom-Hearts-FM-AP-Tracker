@@ -27,6 +27,15 @@ LOGIC_NORMAL = 1
 LOGIC_PROUD = 2
 LOGIC_MINIMAL = 3
 
+-- Beta AP world version logic setting stages.
+VERSION_CORE = 0
+VERSION_1_1_0 = 1
+VERSION_1_2_0 = 2
+
+-- Values updated based on slot data.
+MAX_LEVEL_WITH_CHECK = 100
+IGNORE_SLOT_2_LEVELS = true
+
 -- settings helpers
 
 function is_keyblade_locks()
@@ -51,6 +60,24 @@ function logic_difficulty_at_least_minimal()
     return logic_difficulty_at_least(LOGIC_MINIMAL)
 end
 
+function beta_version_at_least(version_stage)
+    local beta_logic = Tracker:FindObjectForCode("beta_logic").CurrentStage
+    return beta_logic >= version_stage
+end
+
+function beta_version_at_least_1_2_0()
+    return beta_version_at_least(VERSION_1_2_0)
+end
+
+function beta_version_at_most(version_stage)
+    local beta_logic = Tracker:FindObjectForCode("beta_logic").CurrentStage
+    return beta_logic <= version_stage
+end
+
+function beta_version_at_most_1_1_0()
+    return beta_version_at_most(VERSION_1_1_0)
+end
+
 function is_stacking_worlds()
     local stacking_world_items_status = Tracker:FindObjectForCode("stacking_world_items").CurrentStage
     return stacking_world_items_status == 1
@@ -61,15 +88,107 @@ function is_halloween_town_bundled()
     return bundled_status == 1
 end
 
+function is_evidence_bundled()
+    local bundled_status = Tracker:FindObjectForCode("evidence_bundle").CurrentStage
+    return bundled_status == 1
+end
+
+function is_slides_bundled()
+    local bundled_status = Tracker:FindObjectForCode("slides_bundle").CurrentStage
+    return bundled_status == 1
+end
+
 function is_cups_enabled()
+    if beta_version_at_least_1_2_0() then
+        return true
+    end
     local cups_status = Tracker:FindObjectForCode("cups").CurrentStage
     return cups_status == 1 or cups_status == 2 -- 0 = off, 1 = on, 2 = hades
+end
+
+function is_cups_hades_enabled()
+    if beta_version_at_least_1_2_0() then
+        return true
+    end
+    local cups_status = Tracker:FindObjectForCode("cups").CurrentStage
+    return cups_status == 2 -- 0 = off, 1 = on, 2 = hades
 end
 
 -- TODO: return value of setting instead when random accessories are fixed.
 function is_random_accessory_visible()
     return false
 end
+
+function is_slot_2_visible()
+    return not IGNORE_SLOT_2_LEVELS
+end
+
+-- accessibility level helpers
+
+local access_for_bool = {
+    [true] = AccessibilityLevel.Normal,
+    [false] = AccessibilityLevel.None
+}
+
+function ALL(...)
+    local args = { ... }
+    local min = AccessibilityLevel.Normal
+    for _, v in ipairs(args) do
+        if type(v) == "function" then
+            v = v()
+        elseif type(v) == "string" then
+            v = HAS(v)
+        end
+        if type(v) == "boolean" then
+            v = access_for_bool[v]
+        end
+        if v == AccessibilityLevel.None then
+            return AccessibilityLevel.None
+        elseif v < min then
+            min = v
+        end
+    end
+    return min
+end
+
+function ANY(...)
+    local args = { ... }
+    local max = AccessibilityLevel.None
+    for _, v in ipairs(args) do
+        if type(v) == "function" then
+            v = v()
+        elseif type(v) == "string" then
+            v = HAS(v)
+        end
+        if type(v) == "boolean" then
+            v = access_for_bool[v]
+        end
+        if v == AccessibilityLevel.Normal then
+            return AccessibilityLevel.Normal
+        elseif v > max then
+            max = v
+        end
+    end
+    return max
+end
+
+function HAS(item, amount)
+    local count = Tracker:ProviderCountForCode(item)
+    if not amount and count > 0 then
+        return AccessibilityLevel.Normal
+    elseif amount and count >= amount then
+        return AccessibilityLevel.Normal
+    end
+    return AccessibilityLevel.None
+end
+
+function AT_LEAST(logic_difficulty)
+    if logic_difficulty_at_least(logic_difficulty) then
+        return AccessibilityLevel.Normal
+    end
+    return AccessibilityLevel.SequenceBreak
+end
+
 
 -- optional rules, if not met then checks are accessible out of logic
 
@@ -95,6 +214,10 @@ function world_count()
     return count
 end
 
+function level_checks()
+    return MAX_LEVEL_WITH_CHECK
+end
+
 function has_defenses()
     if logic_difficulty_at_least_minimal() then
         return true
@@ -113,58 +236,97 @@ function access_chest_for(world_name)
 end
 
 function access_broken_chest_for(world_name)
-    -- Used to show chests as out of logic for beginners if keyblade unlocking
-    -- is broken for the location. Should always be optional.
-    return logic_difficulty_at_least_normal() or access_chest_for(world_name)
+    if access_chest_for(world_name) then
+        return AccessibilityLevel.Normal
+    elseif not beta_version_at_least(VERSION_1_1_0) then
+        -- Used to show chests as out of logic for beginners if keyblade unlocking
+        -- is broken for the location (broken before v1.1.0 of the AP world).
+        if logic_difficulty_at_least_normal() then
+            return AccessibilityLevel.Normal
+        else
+            return AccessibilityLevel.SequenceBreak
+        end
+    end
+    return AccessibilityLevel.None
 end
 
 function wl_after_footprints()
-    if has("footprints") then
-        return true
+    if beta_version_at_least_1_2_0() then
+        if has("wonderland") and not is_evidence_bundled() and has("evidence", 1) then
+            return true
+        elseif has("wonderland") and is_evidence_bundled() and has("footprints") then
+            return true
+        else
+            return is_stacking_worlds() and has("deep_jungle", 2)
+        end
+    else
+        if has("wonderland") and has("footprints") then
+            return true
+        else
+            return is_stacking_worlds() and has("wonderland", 2)
+        end
     end
-    return is_stacking_worlds() and has("wonderland", 2)
 end
 
 function oc_after_entry_pass()
-    if has("entry_pass") then
+    if has("olympus_coliseum") and has("entry_pass") then
         return true
     end
     return is_stacking_worlds() and has("olympus_coliseum", 2)
 end
 
 function dj_after_slides()
-    if has("slides") then
-        return true
+    if beta_version_at_least_1_2_0() then
+        if has("deep_jungle") and has("slides", 6) then
+            return true
+        elseif has("deep_jungle") and is_slides_bundled() and has("slide_1") then
+            return true
+        else
+            return is_stacking_worlds() and has("deep_jungle", 2)
+        end
+    else
+        if has("deep_jungle") and has("slide_1") then
+            return true
+        else
+            return is_stacking_worlds() and has("deep_jungle", 2)
+        end
     end
-    return is_stacking_worlds() and has("deep_jungle", 2)
 end
 
 function ht_after_forget_me_not()
-    if has("forget_me_not") then
+    if has("halloween_town") and has("forget_me_not") then
         return true
     end
     return is_stacking_worlds() and has("halloween_town", 2)
 end
 
 function ht_after_jack_in_the_box()
-    if has("forget_me_not") and (has("jack_box") or is_halloween_town_bundled()) then
+    if has("halloween_town") and has("forget_me_not") and (has("jack_box") or is_halloween_town_bundled()) then
         return true
     end
     return is_stacking_worlds() and has("halloween_town", 2)
 end
 
 function at_after_crystal_trident()
-    if has("trident") then
+    if has("atlantica") and has("trident") then
         return true
     end
     return is_stacking_worlds() and has("atlantica", 2)
 end
 
 function hb_after_theon_6()
-    if has("theon_6") then
+    if has("hollow_bastion") and has("theon_6") then
         return true
     end
     return is_stacking_worlds() and has("hollow_bastion", 2)
+end
+
+function tt_secret_waterway_access()
+    if beta_version_at_least_1_2_0() then
+        return has("red_trinity")
+    else
+        return true
+    end
 end
 
 function haw_access()
@@ -188,6 +350,33 @@ end
 function di_day_2_access()
     local materials_required = Tracker:FindObjectForCode("day_2_materials_req").AcquiredCount
     return has("destiny_islands") and has("raft_materials", materials_required)
+end
+
+function di_homecoming_materials()
+    local materials_required = Tracker:FindObjectForCode("homecoming_materials_req").AcquiredCount
+    return has("destiny_islands") and has("raft_materials", materials_required)
+end
+
+function can_open_final_door()
+    local goal_status = Tracker:FindObjectForCode("goal").CurrentStage -- 3 = lucky emblems, 5 = final rest chest
+    local lucky_emblems_required = Tracker:FindObjectForCode("door_req").AcquiredCount
+    if goal_status == 3 and has("lucky_emblem", lucky_emblems_required) then
+        return true
+    elseif goal_status == 5 and eotw_access() then
+        return true
+    elseif has("final_door_key") then
+        return true
+    end
+    return false
+end
+
+function homecoming_access()
+    if di_homecoming_materials() then
+        return true
+    elseif eotw_access() and can_open_final_door() then
+        return true
+    end
+    return false
 end
 
 --- item access
@@ -242,7 +431,11 @@ function has_basic_tools()
         has("dodge_roll") and has("cure")
         and (has("combo_master") or has("strike_raid") or has("sonic_blade") or has("counterattack"))
         and (has("leaf_bracer") or has("second_chance") or has("guard"))
-        and has_offensive_magic()
+        and (
+            has_offensive_magic()
+            -- Older versions also allowed for thunder or gravity as beginner offensive magic.
+            or (beta_version_at_most(VERSION_CORE) and (has("thunder") or has("gravity")))
+        )
     )
 end
 
@@ -252,4 +445,8 @@ end
 
 function can_minimal_air_combo_jump()
    return has("combo_master") and has("high_jump", 3) and has("air_combo_plus", 2)
+end
+
+function can_air_dodge()
+    return has("dodge_roll") and has("air_guard_dodge_roll")
 end

@@ -15,6 +15,15 @@
         "img": "images/worlds/Evidence.png"
     },
     {
+        "name": "Evidence",
+        "type": "consumable",
+        "max_quantity": 4,
+        "codes": "evidence",
+        "img": "images/worlds/Evidence.png",
+        "overlay_background": "#000000",
+        "overlay_font_size": 20
+    },
+    {
         "name": "Deep Jungle",
         "type": "consumable",
         "max_quantity": 2,
@@ -26,8 +35,17 @@
     {
         "name": "Slides",
         "type": "toggle",
-        "codes": "slides",
+        "codes": "slide_1",
         "img": "images/worlds/Slides.png"
+    },
+    {
+        "name": "Slides",
+        "type": "consumable",
+        "max_quantity": 6,
+        "codes": "slides",
+        "img": "images/worlds/Slides.png",
+        "overlay_background": "#000000",
+        "overlay_font_size": 20
     },
     {
         "name": "Olympus Coliseum",
@@ -166,6 +184,18 @@
         "img": "images/worlds/Destiny Islands.png",
         "type": "toggle",
         "codes": "destiny_islands"
+    },
+    {
+        "name": "Empty Bottle",
+        "img": "images/worlds/Empty Bottle.png",
+        "type": "toggle",
+        "codes": "empty_bottle"
+    },
+    {
+        "name": "Old Book",
+        "img": "images/worlds/100 Acre Wood.png",
+        "type": "toggle",
+        "codes": "old_book"
     },
     {
         "name": "Final Door Key",

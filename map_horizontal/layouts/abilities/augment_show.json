@@ -1,0 +1,13 @@
+{
+    "abilities_items": {
+        "type": "itemgrid",
+        "margin": "0,5,5,5",
+        "item_margin": "2,2",
+        "item_size": "40,40",
+        "rows": [
+            ["high_jump", "glide", "mermaid_kick", "air_guard_dodge_roll"],
+            ["combo_master", "guard", "counterattack", "sonic_blade", "strike_raid"], 
+            ["air_combo_plus", "dodge_roll", "second_chance", "leaf_bracer", "mp_rage"]
+        ]
+    }
+}

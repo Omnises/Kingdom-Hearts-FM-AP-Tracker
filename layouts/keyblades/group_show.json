@@ -1,0 +1,10 @@
+{
+    "keyblades_group": {
+        "type": "group",
+        "header": "Keyblades",
+        "content": {
+            "type": "layout",
+            "key": "keyblades_rows"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "world_keys_final_door_key": {
+        "type": "itemgrid",
+        "item_margin": "2,2",
+        "item_size": "40,40",
+        "rows": [
+            ["final_door_key"]
+        ]
+    }
+}

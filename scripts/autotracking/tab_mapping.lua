@@ -1,0 +1,16 @@
+TAB_MAPPING = {  
+    ["0"] = {"Overworld"},
+    ["1"] = {"Destiny Islands"},
+    ["3"] = {"Traverse Town"},
+    ["4"] = {"Wonderland"},
+    ["5"] = {"Deep Jungle"},
+    ["6"] = {"100 Acre Wood"},
+    ["8"] = {"Agrabah", "Agrabah - Cave of Wonders"},
+    ["9"] = {"Atlantica"},
+    ["10"] = {"Halloween Town"},
+    ["11"] = {"Olympus Coliseum"},
+    ["12"] = {"Monstro"},
+    ["13"] = {"Neverland"},
+    ["15"] = {"Hollow Bastion"},
+    ["16"] = {"End of the World"},
+}

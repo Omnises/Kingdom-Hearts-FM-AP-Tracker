@@ -23,6 +23,33 @@
         "img": "/images/settings/title_collectible_requirements.png",
         "codes": "title_collectible_requirements"
     },
+    {
+        "name": "Beta Only Settings",
+        "type": "static",
+        "img": "/images/settings/title_beta_only_settings.png",
+        "codes": "title_beta_only_settings"
+    },
+    {
+        "name": "Auto-Tab Map",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "/images/settings/auto_tab_map_off.png",
+                "codes": "auto_tab_map, auto_tab_map_off",
+                "inherit_codes": false,
+                "name": "Auto-Tab Map Off"
+            },
+            {
+                "img": "/images/settings/auto_tab_map_on.png",
+                "codes": "auto_tab_map, auto_tab_map_on",
+                "inherit_codes": false,
+                "name": "Auto-Tab Map On"
+            }
+        ]
+    },
     // Goal
     {
         "name": "Goal - Final Rest Door Key",
@@ -65,6 +92,12 @@
                 "codes": "goal, goal_final_rest",
                 "inherit_codes": false,
                 "name": "Goal - Open Chest in Final Rest"
+            },
+            {
+                "img": "/images/settings/final_rest_door_anywhere.png",
+                "codes": "goal, goal_anywhere",
+                "inherit_codes": false,
+                "name": "Goal - Final Rest Door Key can be Anywhere"
             }
         ]
     },
@@ -243,13 +276,13 @@
         "loop": true,
         "stages": [
             {
-                "img": "/images/settings/100_acre_woods_off.png",
+                "img": "/images/settings/100_acre_wood_off.png",
                 "codes": "100_acre_checks, 100_acre_off",
                 "inherit_codes": false,
                 "name": "100 Acre Wood Off"
             },
             {
-                "img": "/images/settings/100_acre_woods_on.png",
+                "img": "/images/settings/100_acre_wood_on.png",
                 "codes": "100_acre_checks, 100_acre_on",
                 "inherit_codes": false,
                 "name": "100 Acre Wood On"
@@ -350,6 +383,46 @@
         ]
     },
     {
+        "name": "Evidence Bundle",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/evidence_bundled_off.png",
+                "codes": "evidence_bundle, evidence_bundle_off",
+                "inherit_codes": false,
+                "name": "Evidence Bundle Off"
+            },
+            {
+                "img": "/images/settings/evidence_bundled_on.png",
+                "codes": "evidence_bundle, evidence_bundle_on",
+                "inherit_codes": false,
+                "name": "Evidence Bundle On"
+            }
+        ]
+    },
+    {
+        "name": "Slides Bundle",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/slides_bundled_off.png",
+                "codes": "slides_bundle, slides_bundle_off",
+                "inherit_codes": false,
+                "name": "Slides Bundle Off"
+            },
+            {
+                "img": "/images/settings/slides_bundled_on.png",
+                "codes": "slides_bundle, slides_bundle_on",
+                "inherit_codes": false,
+                "name": "Slides Bundle On"
+            }
+        ]
+    },
+    {
         "name": "Halloween Town Key Item Bundle",
         "type": "progressive",
         "allow_disabled": false,
@@ -386,6 +459,52 @@
                 "codes": "random_accessories, random_accessories_on",
                 "inherit_codes": false,
                 "name": "Randomize Party Member Starting Accessories On"
+            }
+        ]
+    },
+    {
+        "name": "Beta Logic",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/beta_logic_off.png",
+                "codes": "beta_logic",
+                "inherit_codes": false,
+                "name": "Beta Logic Off"
+            },
+            {
+                "img": "/images/settings/beta_logic_v1.1.0.png",
+                "codes": "beta_logic",
+                "inherit_codes": false,
+                "name": "Beta Logic On - v1.1.0"
+            },
+            {
+                "img": "/images/settings/beta_logic_v1.2.0.png",
+                "codes": "beta_logic",
+                "inherit_codes": false,
+                "name": "Beta Logic On - v1.2.0+"
+            }
+        ]
+    },
+    {
+        "name": "Accessory Augments",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "stages": [
+            {
+                "img": "/images/settings/accessory_augments_off.png",
+                "codes": "accessory_augments, accessory_augments_off",
+                "inherit_codes": false,
+                "name": "Accessory Augments Off"
+            },
+            {
+                "img": "/images/settings/accessory_augments_on.png",
+                "codes": "accessory_augments, accessory_augments_on",
+                "inherit_codes": false,
+                "name": "Accessory Augments On"
             }
         ]
     }

@@ -1,0 +1,10 @@
+{
+    "world_keys_group": {
+        "type": "group",
+        "header": "World Keys",
+        "content": {
+            "type": "layout",
+            "key": "world_keys_rows"
+        }
+    }
+}

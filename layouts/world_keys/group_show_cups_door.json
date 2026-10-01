@@ -1,0 +1,17 @@
+{
+    "world_keys_group": {
+        "type": "group",
+        "header": "World Keys",
+        "content": {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "0,5,0,0",
+            "content": [
+                {
+                    "type": "layout",
+                    "key": "world_keys_cups_and_door"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "magic_trinities_items": {
+        "type": "itemgrid",
+        "margin": "0,5,5,5",
+        "item_margin": "2,2",
+        "item_size": "40,40",
+        "rows": [
+            ["fire", "blizzard", "thunder", "cure", "gravity", "stop", "aero"],
+            ["simba", "bambi", "genie", "dumbo", "tinkerbell", "mushu", "summon_anywhere"],
+            ["blue_trinity", "red_trinity", "green_trinity", "yellow_trinity", "white_trinity"]
+        ]
+    }
+}

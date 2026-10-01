@@ -62,6 +62,18 @@
         "overlay_font_size": 20
     },
     {
+        "name": "Air Guard/Dodge Roll",
+        "img": "images/misc/augment_air_guard_dodge_roll.png",
+        "type": "toggle",
+        "codes": "air_guard_dodge_roll"
+    },
+    {
+        "name": "Summon Anywhere",
+        "img": "images/misc/augment_summon_anywhere.png",
+        "type": "toggle",
+        "codes": "summon_anywhere"
+    },
+    {
         "name": "High Jump",
         "img": "images/misc/High Jump.png",
         "type": "consumable",

@@ -1,0 +1,10 @@
+{
+    "worlds_eotw": {
+        "type": "itemgrid",
+        "item_margin": "2,2",
+        "item_size": "40,40",
+        "rows": [
+            ["end_of_the_world"]
+        ]
+    }
+}
